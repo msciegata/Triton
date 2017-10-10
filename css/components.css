@@ -584,13 +584,3 @@ p {
   color: #CC6744;
   display: block;
 }
-
-/* line 6, sass/styles.scss */
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
