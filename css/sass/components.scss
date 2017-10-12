@@ -91,25 +91,43 @@ p {
 	border-radius:2px;
 	border:1px solid transparent;
 	background-color:transparent;
+
+	&:active {
+		box-shadow:0px;
+		outline: 0px;
+	}
 }
 
 	// Primary
 .btn-primary {
 	background-color:$cyan;
 
+	&.disabled {
+		background-color:$lightCyan;
+	}
+
 	&:hover {
 		background-color:$mediumCyan;
 		border:1px solid transparent;
 	}
 
-	&.disabled {
-		background-color:$lightCyan;
+	&:visited {
+		background-color:$cyan;
 	}
+
+	
+
 }
 
 .btn-ghost-primary {
 	border:1px solid $cyan;
 	color:$cyan;
+
+	&.disabled {
+		background-color:none;
+		border:1px solid $lightCyan;
+		color:$lightCyan;
+	}
 
 	&:hover {
 		border:1px solid transparent;
@@ -117,31 +135,42 @@ p {
 		color:white;
 	}
 
-	&.disabled {
-		background-color:none;
-		border:1px solid $lightCyan;
-		color:$lightCyan;
+	&:visited {
+		background-color:$cyan;
 	}
+
+	
 }
 
 	// Success
 .btn-success {
 	background-color:$green;
 
+	&.disabled {
+		background-color:$lightGreen;
+	}
+
 	&:hover {
 		background-color: $mediumGreen;
 		border:1px solid transparent;
 		color:$white;
 	}
-	
-	&.disabled {
-		background-color:$lightGreen;
+
+	&:visited {
+		background-color:$green;
 	}
+	
 }
 
 .btn-ghost-success {
 	border:1px solid $green;
 	color:$green;
+
+	&.disabled {
+		background-color:none;
+		border:1px solid $lightGreen;
+		color:$lightGreen;
+	}
 
 	&:hover {
 		border:1px solid transparent;
@@ -149,10 +178,8 @@ p {
 		color:$white;
 	}
 
-	&.disabled {
-		background-color:none;
-		border:1px solid $lightGreen;
-		color:$lightGreen;
+	&:visited {
+		border:1px solid $green;
 	}
 }
 
@@ -160,13 +187,17 @@ p {
 .btn-warning {
 	background-color:$orange;
 
+	&.disabled {
+		background-color:$lightOrange;
+	}
+
 	&:hover {
 		background-color:$mediumOrange;
 		border:1px solid transparent;
 	}
-	
-	&.disabled {
-		background-color:$lightOrange;
+
+	&:visited {
+		background-color:$orange
 	}
 }
 
@@ -174,17 +205,21 @@ p {
 	border:1px solid $orange;
 	color:$orange;
 
+	&.disabled {
+		background-color: none;
+		border:1px solid $lightOrange;
+		color:$lightOrange;
+	}
+
 	&:hover {
 		border:1px solid transparent;
 		background-color:$mediumOrange;
 		color:$white;
 	}
 
-	&.disabled {
-		background-color: none;
-		border:1px solid $lightOrange;
-		color:$lightOrange;
-	}
+	&:visited {
+		border:1px solid $orange;
+	}	
 }
 
 	// Danger
@@ -194,6 +229,10 @@ p {
 	&:hover {
 		background-color:$mediumPurple;
 		border:1px solid transparent;
+	}
+
+	&:visited {
+		background-color: $purple;
 	}
 
 	&.disabled {
@@ -209,6 +248,10 @@ p {
 		border:1px solid transparent;
 		background-color:$mediumPurple;
 		color:$white;
+	}
+
+	&:visited {
+		border:1px solid $purple;
 	}
 
 	&.disabled {
@@ -228,6 +271,10 @@ p {
 		color:$white;
 	}
 
+	&:visited {
+		background-color:$black;
+	}
+
 	&.disabled {
 		background-color:$mediumGray;
 	}
@@ -236,12 +283,30 @@ p {
 .btn-ghost-neutral {
 	border:1px solid $black;
 	color:$black;
+	outline:none;
+	box-shadow:none;
 
 	&:hover {
 		border:1px solid transparent;
 		background-color:$darkGray;
 		color:$white;
+		outline: 0px;
 	}
+
+	&:active, &:focus {
+		border:1px solid transparent;
+		color:$white;
+		background-color:$black;
+		outline: 0px;
+	}
+
+	&:visited {
+		border:1px solid $black;
+		color:$white;
+		outline: 0px;
+	}
+
+
 
 	&.disabled {
 		background-color:none;
@@ -327,6 +392,44 @@ p {
 		&:hover {
 			color:$purple;
 		}
+	}
+}
+
+//Tags
+.tag {
+	display:inline-block;
+	border:1px solid $mediumGray;
+	padding:5px 10px;
+	border-radius:2px;
+	margin:10px 5px 5px 0;
+	width:auto;
+
+
+	p {
+		font-family: 'Open Sans Medium';
+		color:$black;
+	}
+
+	.close {
+		float: none;
+	    font-size: 18px;
+	    vertical-align: middle;
+	    padding: 0 0 2px 15px;
+	    outline: none;
+	    color:$mediumGray;
+
+
+	    &:hover {
+	    	color:$black;
+	    	opacity: 1.0;
+	    }
+
+	    &:active {
+	    	color:$lightGray;
+	    	opacity: 1.0;
+	    }
+
+
 	}
 }
 
