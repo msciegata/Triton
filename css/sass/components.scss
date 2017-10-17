@@ -92,9 +92,22 @@ p {
 	border:1px solid transparent;
 	background-color:transparent;
 
-	&:active {
-		box-shadow:0px;
-		outline: 0px;
+	&:active,
+	&:focus,
+	&:visited,
+	&:hover {
+		box-shadow:0px !important;
+		outline: 0px !important;
+		border: 1px solid transparent !important;
+	}
+
+	&.disabled {
+		caret-color: $cyan;
+
+		&:focus,
+		&:hover {
+			border:1px solid transparent !important;
+		}
 	}
 }
 
@@ -103,43 +116,56 @@ p {
 	background-color:$cyan;
 
 	&.disabled {
-		background-color:$lightCyan;
+		background-color: $lightCyan;
+		
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active {
+			background-color: $lightCyan !important;
+		}
 	}
 
+	&:focus,
+	&:active,
+	&:visited,
 	&:hover {
-		background-color:$mediumCyan;
-		border:1px solid transparent;
+		background-color: $mediumCyan !important;
 	}
-
-	&:visited {
-		background-color:$cyan;
-	}
-
-	
 
 }
 
 .btn-ghost-primary {
-	border:1px solid $cyan;
-	color:$cyan;
+	border:1px solid $mediumCyan;
+	color:$mediumCyan;
 
 	&.disabled {
-		background-color:none;
+		background-color:transparent !important;
 		border:1px solid $lightCyan;
 		color:$lightCyan;
+
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active {
+			background-color:transparent !important;
+			border:1px solid $lightCyan !important;
+			color:$lightCyan;
+		}
 	}
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		border:1px solid transparent;
-		background-color:$mediumCyan;
+		background-color:$cyan !important;
 		color:white;
 	}
 
 	&:visited {
-		background-color:$cyan;
+		border:1px solid $mediumCyan;
+		color:$mediumCyan;
 	}
-
-	
 }
 
 	// Success
@@ -148,16 +174,20 @@ p {
 
 	&.disabled {
 		background-color:$lightGreen;
+
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active {
+			background-color: $lightGreen !important;
+		}
 	}
 
+	&:focus,
+	&:active,
+	&:visited,
 	&:hover {
-		background-color: $mediumGreen;
-		border:1px solid transparent;
-		color:$white;
-	}
-
-	&:visited {
-		background-color:$green;
+		background-color: $mediumGreen !important;
 	}
 	
 }
@@ -167,19 +197,31 @@ p {
 	color:$green;
 
 	&.disabled {
-		background-color:none;
+		background-color:transparent !important;
 		border:1px solid $lightGreen;
 		color:$lightGreen;
+
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active {
+			background-color:transparent !important;
+			border:1px solid $lightGreen !important;
+			color:$lightGreen;
+		}
 	}
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		border:1px solid transparent;
-		background-color:$mediumGreen;
-		color:$white;
+		background-color:$mediumGreen !important;
+		color:white;
 	}
 
 	&:visited {
-		border:1px solid $green;
+		border:1px solid $mediumGreen;
+		color:$mediumGreen;
 	}
 }
 
@@ -189,15 +231,20 @@ p {
 
 	&.disabled {
 		background-color:$lightOrange;
+
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active {
+			background-color: $lightOrange !important;
+		}
 	}
 
+	&:focus,
+	&:active,
+	&:visited,
 	&:hover {
-		background-color:$mediumOrange;
-		border:1px solid transparent;
-	}
-
-	&:visited {
-		background-color:$orange
+		background-color: $mediumOrange !important;
 	}
 }
 
@@ -206,58 +253,87 @@ p {
 	color:$orange;
 
 	&.disabled {
-		background-color: none;
+		background-color:transparent !important;
 		border:1px solid $lightOrange;
 		color:$lightOrange;
+
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active {
+			background-color:transparent !important;
+			border:1px solid $lightOrange !important;
+			color:$lightOrange;
+		}
 	}
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		border:1px solid transparent;
-		background-color:$mediumOrange;
-		color:$white;
+		background-color:$mediumOrange !important;
+		color:white;
 	}
 
 	&:visited {
-		border:1px solid $orange;
-	}	
+		border:1px solid $mediumOrange;
+		color:$mediumOrange;
+	}
 }
 
 	// Danger
 .btn-danger {
 	background-color:$purple;
 
-	&:hover {
-		background-color:$mediumPurple;
-		border:1px solid transparent;
-	}
-
-	&:visited {
-		background-color: $purple;
-	}
-
 	&.disabled {
 		background-color:$lightPurple;
+
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active {
+			background-color: $lightPurple !important;
+		}
 	}
+
+	&:focus,
+	&:active,
+	&:visited,
+	&:hover {
+		background-color: $mediumPurple !important;
+	}	
 }
 
 .btn-ghost-danger {
 	border:1px solid $purple;
 	color:$purple;
 
-	&:hover {
+	&.disabled {
+		background-color:transparent !important;
+		border:1px solid $lightPurple;
+		color:$lightPurple;
+
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active {
+			background-color:transparent !important;
+			border:1px solid $lightPurple !important;
+			color:$lightPurple;
+		}
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
 		border:1px solid transparent;
-		background-color:$mediumPurple;
-		color:$white;
+		background-color:$mediumPurple !important;
+		color:white;
 	}
 
 	&:visited {
-		border:1px solid $purple;
-	}
-
-	&.disabled {
-		background-color:none;
-		border:1px solid $lightPurple;
-		color:$lightPurple;
+		border:1px solid $mediumPurple;
+		color:$mediumPurple;
 	}
 }
 
@@ -265,18 +341,23 @@ p {
 .btn-neutral {
 	background-color:$black;
 
+	&:focus,
+	&:active,
+	&:visited,
 	&:hover {
-		background-color:$darkGray;
-		border:1px solid transparent;
-		color:$white;
-	}
-
-	&:visited {
-		background-color:$black;
-	}
+		background-color: $darkGray !important;
+		color:white;
+	}	
 
 	&.disabled {
 		background-color:$mediumGray;
+
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active {
+			background-color: $mediumGray !important;
+		}
 	}
 }
 
@@ -286,32 +367,33 @@ p {
 	outline:none;
 	box-shadow:none;
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		border:1px solid transparent;
-		background-color:$darkGray;
-		color:$white;
-		outline: 0px;
-	}
-
-	&:active, &:focus {
-		border:1px solid transparent;
-		color:$white;
-		background-color:$black;
-		outline: 0px;
+		background-color:$darkGray !important;
+		color:white;
 	}
 
 	&:visited {
 		border:1px solid $black;
-		color:$white;
-		outline: 0px;
+		color:$black;
 	}
 
-
-
 	&.disabled {
-		background-color:none;
+		background-color:transparent !important;
 		border:1px solid $mediumGray;
 		color:$mediumGray;
+
+		&:hover,
+		&:visited,
+		&:focus,
+		&:active {
+			background-color:transparent !important;
+			border:1px solid $mediumGray !important;
+			color:$mediumGray;
+		}
+
 	}
 }
 
@@ -433,6 +515,19 @@ p {
 	}
 }
 
+.icons {
+	p {
+		width: 100%;
+		font-size:14px;
+
+		span {
+			display: inline-block;
+			padding-right:10px;
+			font-size:16px;
+		}
+	}
+}
+
 //Inputs
 .input-group {
 	display: block;
@@ -540,6 +635,7 @@ p {
 
 		.fa {
 	    	color:$purple;
+	    	font-size: 18px;
 	    }
 
 		input {
@@ -612,4 +708,56 @@ p {
 		}
 	}
 
+}
+
+//Controls
+.controls {
+	label {
+		font-family: 'Open Sans Light';
+		color:$darkGray;
+	}
+
+	input.custom-checkbox {
+		position:absolute;
+		opacity: 0;
+
+		& + label {
+			position:relative;
+			cursor:pointer;
+			padding:0;
+			margin-left: 30px;
+		}
+
+		& + label:before {
+			content:'';
+			margin-right: 10px;
+			display: inline-block;
+			vertical-align: sub;
+			width: 15px;
+			height: 15px;
+			border:1px solid $darkGray;
+			background-color:transparent;
+			border-radius:1px;
+			color:$cyan;
+		}
+
+		&:checked + label:before {
+			color:$cyan;
+			border:1px solid $cyan;
+		}
+
+		&:checked + label:after {
+			content:'';
+			position:absolute;
+			left: 5px;
+			top:9px;
+			background:transparent;
+			width: 2px;
+			height: 2px;
+		}
+	}
+
+	input.custom-checkbox:first-of-type {
+		margin-left:0 !important;
+	}
 }
