@@ -10,4 +10,291 @@
 	padding: 0;
 	border: 0;
 	box-sizing: border-box;
+	outline:none;
+
+	&:focus,
+	&:active,
+	&:hover {
+		outline: none !important;
+	}
 }
+
+.container-fluid {
+	padding: 0 45px;
+}
+
+//SPOT
+		//Laycan 
+	.laytime {
+		h5 {
+			margin:0 0 20px !important;
+		}
+
+		.col-lg-6 {
+			padding-left:0;
+		}
+
+		.tab-content {
+			text-align: inherit;
+		}
+	}
+
+	.f-cost {
+
+		.calculator {
+			button {
+				width: 100%;
+				position: relative;
+	    		top: 5px;
+			}
+		}
+
+		.no-results {
+			margin:55px 0 0;
+			text-align: center;
+			color:$mediumGray !important;
+
+			span {
+				font-size:52px;
+				display: block;
+			}
+
+			h3 {
+				display: block;
+				font-size: 36px;
+				color:$mediumGray;
+				font-family: 'din-regular';
+				margin:10px 0 0;
+			}
+
+			p {
+				font-size: 16px;
+				font-family: 'Open Sans Light';
+			}
+		}
+
+		.results {
+			button {
+				float: right;
+			}
+			.subtotals {
+				background-color: $lightGray;
+				padding:5px 5px 0;
+
+				.item {
+					display:inline-block;
+					margin:10px 30px 10px 10px;
+
+					h4 {
+						font-size: 16px;
+						color:$cyan;
+						font-family: 'Open Sans Light';
+						margin-bottom:0;
+					}
+
+					h2 {
+						font-size:36px;
+						color: $darkGray;
+						font-family: 'din-bold';
+
+						span {
+							font-family: 'din-light';
+							color: $mediumGray;
+						}
+					}
+				}
+			}
+			.total {
+				margin-top:10px;
+				background-color: $darkGray;
+				padding:10px 15px 5px;
+
+				.item {
+
+					h4 {
+						font-size: 16px;
+						font-family: 'Open Sans Light';
+						color:$white;
+						margin-bottom:0;
+					}
+
+					h2 {
+						font-size: 40px;
+						color: $white;
+						font-family: 'din-bold';
+
+						span {
+							font-family: 'din-light';
+						}
+					}
+
+				}
+
+			}
+		}
+	}
+
+	.r-cost-coa {
+
+		.monto-v-rel {
+			background-color: $lightGray;
+			padding:10px 15px;
+
+			.item {
+				display:inline-block;
+
+				h4 {
+					font-size: 16px;
+					color:$cyan;
+					font-family: 'Open Sans Light';
+					margin-bottom:0;
+				}
+
+				h2 {
+					font-size:32px;
+					color: $darkGray;
+					font-family: 'din-bold';
+
+					span {
+						font-family: 'din-light';
+						color: $mediumGray;
+					}
+				}
+			}
+		}
+
+		.saldo {
+			background-color: $darkGray;
+			padding:10px 15px;
+
+			.item {
+
+				h4 {
+					font-size: 16px;
+					font-family: 'Open Sans Light';
+					color:$white;
+					margin-bottom:0;
+				}
+
+				h2 {
+					font-size: 32px;
+					color: $white;
+					font-family: 'din-bold';
+
+					span {
+						font-family: 'din-light';
+					}
+				}
+
+			}
+		}
+
+	}
+
+	.ci-asociated {
+		.add {
+
+		}
+
+		.no-results {
+			text-align: center;
+
+			h3 {
+				display: block;
+				color:$mediumGray;
+				font-family: 'din-regular';
+				font-size: 32px;
+    			width: 40%;
+			    margin: 10px auto 10px;
+			    line-height: 1.2;
+			}
+
+			button {
+
+				&:hover {
+						span { 
+							background-color: $white;
+							color: $cyan;
+						}
+					}
+
+				span {
+					font-size: 12px;
+					font-family: 'FontAwesome';
+					color: $white;
+					background-color: $cyan;
+					padding:5px 6px 4px;
+					margin-right: 10px;
+					border-radius:15px;
+
+
+				}
+			}
+		}
+
+		.results {
+
+			table {
+				width: 100%;
+				margin:0 auto;
+
+				tr {
+					border-bottom:3px solid $white;
+					
+
+					td {
+						background-color:$lightGray;
+						margin-right: 50px;
+						padding: 15px 0 15px 15px;
+						color:$darkGray;
+						font-size: 14px;
+
+						span {
+							font-family: 'Open Sans Bold';
+						}
+
+						a {
+
+							&:hover {
+								text-decoration: none;
+							}
+
+							span {
+								font-size: 16px;
+								font-family: 'FontAwesome';
+								color:$darkGray;
+								margin:0 15px 0 0;
+
+								&.fa-trash {
+									color: $purple;
+								}
+							}
+
+
+						}
+
+					}
+
+					td:first-of-type {
+						font-family: 'Open Sans Bold';
+						text-transform: uppercase;
+					}
+
+					td:last-of-type {
+						padding-right:5px;
+						text-align: right;
+						background-color:$lightGray;
+					}
+				}
+			}
+			
+		}
+	}
+
+	.final-buttons {
+		width: 100%;
+		border-top:0.5px solid $mediumGray;
+		padding:15px 0;
+		text-align: right;
+		margin: 0 auto;
+	}

@@ -1,0 +1,17 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding:0;
+    text-align: center;
+}
+
+img {
+	width: 1366px;
+
+}
+
+a,
+a:focus {
+    outline: 0;
+    border: none; 
+}
