@@ -1417,28 +1417,28 @@ input::-ms-clear {
   border: none;
 }
 
-/* line 1409, sass/components.scss */
+/* line 1407, sass/components.scss */
 .tab-content {
   background-color: #EAEAEA;
   padding: 5px 20px 1px;
   margin-bottom: 20px;
   color: #666666;
 }
-/* line 1417, sass/components.scss */
+/* line 1415, sass/components.scss */
 .tab-content .tab-pane.fijo {
   height: 82px;
 }
-/* line 1421, sass/components.scss */
+/* line 1419, sass/components.scss */
 .tab-content .tab-pane.calculado {
   height: 92px;
 }
 
-/* line 1429, sass/components.scss */
+/* line 1427, sass/components.scss */
 .modal-backdrop {
   opacity: 0.5;
 }
 
-/* line 1432, sass/components.scss */
+/* line 1430, sass/components.scss */
 .modal {
   top: 25%;
   left: 20%;
@@ -1446,75 +1446,75 @@ input::-ms-clear {
   width: auto;
   margin: 0 auto;
 }
-/* line 1439, sass/components.scss */
+/* line 1437, sass/components.scss */
 .modal .modal-content {
   border-radius: 2px;
   border: 0 solid #FFFFFF;
   box-shadow: none;
 }
-/* line 1445, sass/components.scss */
+/* line 1443, sass/components.scss */
 .modal .modal-header {
   border-bottom: none;
   padding: 15px 15px 0;
   display: block;
 }
-/* line 1450, sass/components.scss */
+/* line 1448, sass/components.scss */
 .modal .modal-header .modal-title {
   display: inline-block !important;
   color: #005DB4 !important;
   font-family: 'din-light';
   font-size: 20px;
 }
-/* line 1457, sass/components.scss */
+/* line 1455, sass/components.scss */
 .modal .modal-header .button {
   display: inline-block;
 }
-/* line 1462, sass/components.scss */
+/* line 1460, sass/components.scss */
 .modal .modal-body {
   padding: 0 15px;
   border-bottom: none;
   display: block;
 }
-/* line 1468, sass/components.scss */
+/* line 1466, sass/components.scss */
 .modal .modal-body .col-lg-6:first-of-type {
   padding-left: 0;
 }
-/* line 1473, sass/components.scss */
+/* line 1471, sass/components.scss */
 .modal .modal-footer {
   display: block;
   border-top: none;
 }
 
-/* line 1481, sass/components.scss */
+/* line 1479, sass/components.scss */
 footer {
   background-color: #FFFFFF;
   padding: 20px 15px;
 }
-/* line 1485, sass/components.scss */
+/* line 1483, sass/components.scss */
 footer .version {
   display: inline-block;
 }
-/* line 1488, sass/components.scss */
+/* line 1486, sass/components.scss */
 footer .version img {
   display: inline-block;
   padding-right: 20px;
   margin-right: 20px;
   border-right: 1px solid #AAAAAA;
 }
-/* line 1495, sass/components.scss */
+/* line 1493, sass/components.scss */
 footer .version p {
   font-size: 14px;
   color: #AAAAAA;
   vertical-align: bottom;
 }
-/* line 1502, sass/components.scss */
+/* line 1500, sass/components.scss */
 footer .help {
   display: inline-block;
   position: relative;
   float: right;
   top: 2px;
 }
-/* line 1508, sass/components.scss */
+/* line 1506, sass/components.scss */
 footer .help p {
   font-size: 14px;
   color: #AAAAAA;
