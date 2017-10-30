@@ -127,11 +127,12 @@
 							<div class="card-body">
 								<div class="col-lg-6">
 									<div class="row">
-										<div class="col-lg-12">
+										<div class="col-lg-12 danger">
 											<div class="input-group">
 												<input id="fecha-cierre" class="input-date datapicker-here" type="text" required name="fecha-cierre" data-language="es">
 												<span class="fa fa-calendar" aria-hidden="true"></span>
 												<label for="fecha-cierre">Fecha de contrato<span>*</span></label>
+												<p>Este campo es obligatorio</p>
 											</div>
 										</div>
 									</div>
@@ -288,9 +289,10 @@
 											</div>
 										</div>
 										<div class="col-lg-12">
-											<div class="input-group">
+											<div class="input-group danger">
 												<input id="contrato-COA" type="text" required name="contrato-COA">
 												<label for="contrato-COA">Contrato COA<span>*</span></label>
+												<p>Este campo es obligatorio</p>
 											</div>
 										</div>
 										<!-- Cuando se está dando de alta el contrato COA, aplicar la clase hidden al siguiente div -->
@@ -431,7 +433,7 @@
 		<script src="js/datepicker.es.js"></script>
 		<script src="js/timepicker.js"></script>
 		<script src="js/select-search.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<script>
 			$(function () {
 				// Tab

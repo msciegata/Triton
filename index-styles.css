@@ -109,13 +109,24 @@ a {
     text-decoration: none;
 }
 
+.zip-destacado {
+    background: #005DB4;
+    padding: 30px;
+    display: inline-block;
+}
+
+.zip-destacado a {
+    color: white;
+    text-transform: uppercase;
+}
+
 .destacado {
     background: #ddd;
     padding: 30px;
     display: inline-block;
 }
 
-p.danger {
+p.warning {
     margin:0 15px !important;
-    color:#A41A67;
+    color:#CA5D4E;
 }

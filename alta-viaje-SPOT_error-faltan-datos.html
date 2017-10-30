@@ -202,7 +202,7 @@
 									</div>
 								</div>
 								<div class="col-lg-6">
-									<div class="input-group">
+									<div class="input-group error">
 										<select id="armador" name="armador" required>
 											<option value="" selected>Seleccione</option>
 											<option value="v1">Armador 1</option>
@@ -212,6 +212,7 @@
 											<option value="v5">Armador 5</option>
 										</select>
 										<label for="armador">Armador<span>*</span></label>
+										<p>Este campo es obligatorio</p>
 									</div>
 									<div class="input-group">
 										<select id="broker" name="broker" required>
@@ -310,9 +311,9 @@
 									<div class="row">
 										<div class="col-lg-12">
 											<div class="input-group autoheight margin-top-20">
-                                                                                            <textarea id="observaciones" required name="observaciones" rows="1" cols="50"></textarea>
-                                                                                            <label for="observaciones">Observaciones</label>
-                                                                                        </div>
+                                                <textarea id="observaciones" required name="observaciones" rows="1" cols="50"></textarea>
+                                                <label for="observaciones">Observaciones</label>
+                                            </div>
 										</div>
 									</div>
 								</div>
@@ -330,7 +331,7 @@
 								<div class="col-lg-6 calculator" >
 									<div class="row">
 										<div class="col-lg-4">
-											<div class="input-group">
+											<div class="input-group error">
 												<select id="tipo-precio" name="tipo-precio" required>
 													<option value="" selected>Seleccione</option>
 													<option value="v1">Unitario</option>
@@ -338,6 +339,7 @@
 													<option value="v2">Lumpsun</option>
 												</select>
 												<label for="tipo-precio">Tipo de precio<span>*</span></label>
+												<p>Este campo es obligatorio</p>
 											</div>
 										</div>
 										<div class="col-lg-2">
@@ -411,13 +413,13 @@
 									</div>
 								</div>
 								<!-- Cuando haya resultados, aplicar la clase hidden al siguiente div -->
-								<div class="col-lg-6 no-results margin-top-60">
+								<div class="col-lg-6 no-results hidden margin-top-60">
 									<span class="fa fa-calculator"></span>
 									<h3>Resultados de cálculo</h3>
 									<p>Complete los campos para obtener resultados</p>
 								</div>
 								<!-- Cuando no haya resultados, aplicar la clase hidden al siguiente div -->
-								<div class="hidden col-lg-6 results">
+								<div class="col-lg-6 results">
 									<div class="subtotals">
 										<div class="item">
 											<h4>Total flete muerto</h4>
@@ -439,7 +441,7 @@
 										</div>
 									</div>
 									<!--Botón para eliminar el flete, versión editar -->
-									<button class="hidden btn btn-danger">CANCELAR VIAJE</button>
+									<button class="btn btn-danger">CANCELAR VIAJE</button>
 								</div>
 							</div>
 						</div>
@@ -459,11 +461,11 @@
 							</div>
 							<div class="card-body">
 								<!-- Cuando haya costos o ingresos asociados, agregar la clase hidden al siguiente div -->
-								<div class="no-results">
+								<div class="no-results hidden">
 									<h3>Actualmente no existe un costo o ingreso asociado a este viaje.</h3>
 									<button class="btn btn-ghost-primary"><span class="fa fa-plus"></span>AGREGAR UN COSTO / INGRESO ASOCIADO</button>
 								</div>
-								<div class="results  hidden">
+								<div class="results">
 									<table>
 										<tr class="ci-a">
 											<td>Ingreso</td>

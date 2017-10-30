@@ -19,10 +19,6 @@
 	}
 }
 
-.container-fluid {
-	padding: 0 45px;
-}
-
 //SPOT
 		//Laycan 
 	.laytime {
@@ -50,7 +46,6 @@
 		}
 
 		.no-results {
-			margin:55px 0 0;
 			text-align: center;
 			color:$mediumGray !important;
 
@@ -77,6 +72,7 @@
 			button {
 				float: right;
 			}
+
 			.subtotals {
 				background-color: $lightGray;
 				padding:5px 5px 0;
@@ -226,8 +222,6 @@
 					padding:5px 6px 4px;
 					margin-right: 10px;
 					border-radius:15px;
-
-
 				}
 			}
 		}
