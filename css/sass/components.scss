@@ -311,7 +311,7 @@ h5 {
 	width:100%;
 	display: inline-block;
     padding:25px 15px 15px 15px;
-    margin-bottom:40px;
+    margin-bottom:15px;
 
     h4 {
     	color:$white;
@@ -1558,6 +1558,7 @@ input::-ms-clear{
 				background-color:$cyan;
 			}
 		}
+<<<<<<< HEAD
                 
         &.active {
 
@@ -1575,6 +1576,8 @@ input::-ms-clear{
                 }
             }
         }
+=======
+>>>>>>> b879ff4e0075a1c4e93e7ff8eaa75b537cc35158
 	}
 }
 
