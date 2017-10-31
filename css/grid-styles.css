@@ -2,70 +2,259 @@
   font-family: 'din-light';
   src: url("../fonts/Din/Light/din-light.eot");
   src: url("../fonts/Din/Light/din-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Din/Light/din-light.woff") format("woff"), url("../fonts/Din/Light/din-light.ttf") format("truetype"), url("../fonts/Din/Light/din-light.svg#din-light") format("svg");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'din-regular';
   src: url("../fonts/Din/Regular/din-regular.eot");
   src: url("../fonts/Din/Regular/din-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Din/Regular/din-regular.woff") format("woff"), url("../fonts/Din/Regular/din-regular.ttf") format("truetype"), url("../fonts/Din/Regular/din-regular.svg#din-regular") format("svg");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'din-medium';
   src: url("../fonts/Din/Medium/din-medium.eot");
   src: url("../fonts/Din/Medium/din-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Din/Medium/din-medium.woff") format("woff"), url("../fonts/Din/Medium/din-medium.ttf") format("truetype"), url("../fonts/Din/Medium/din-medium.svg#din-medium") format("svg");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'din-bold';
   src: url("../fonts/Din/Bold/din-bold.eot");
   src: url("../fonts/Din/Bold/din-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Din/Bold/din-bold.woff") format("woff"), url("../fonts/Din/Bold/din-bold.ttf") format("truetype");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'din-black';
   src: url("../fonts/Din/Black/din-black.eot");
   src: url("../fonts/Din/Black/din-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Din/Black/din-black.woff") format("woff"), url("../fonts/Din/Black/din-black.ttf") format("truetype"), url("../fonts/Din/Black/din-black.svg#din-medium") format("svg");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'Open Sans Light';
   src: url("../fonts/Open Sans/Light/OpenSans-Light.eot");
   src: url("../fonts/Open Sans/Light/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans/Light/OpenSans-Light.woff") format("woff"), url("../fonts/Open Sans/Light/OpenSans-Light.ttf") format("truetype");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'Open Sans Light Italic';
   src: url("../fonts/Open Sans/LightItalic/OpenSans-LightItalic.eot");
   src: url("../fonts/Open Sans/LightItalic/OpenSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans/LightItalic/OpenSans-LightItalic.woff") format("woff"), url("../fonts/Open Sans/LightItalic/OpenSans-LightItalic.ttf") format("truetype");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'Open Sans Regular';
   src: url("../fonts/Open Sans/Regular/OpenSans-Regular.eot");
   src: url("../fonts/Open Sans/Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans/Regular/OpenSans-Regular.woff") format("woff"), url("../fonts/Open Sans/Regular/OpenSans-Regular.ttf") format("truetype");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'Open Sans Italic';
   src: url("../fonts/Open Sans/Italic/OpenSans-Italic.eot");
   src: url("../fonts/Open Sans/Italic/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans/Italic/OpenSans-Italic.woff") format("woff"), url("../fonts/Open Sans/Italic/OpenSans-Italic.ttf") format("truetype");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'Open Sans Semibold';
   src: url("../fonts/Open Sans/Semibold/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans/Semibold/OpenSans-Semibold.woff") format("woff"), url("../fonts/Open Sans/Semibold/OpenSans-Semibold.ttf") format("truetype");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'Open Sans Semibold Italic';
   src: url("../fonts/Open Sans/SemiboldItalic/OpenSans-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans/SemiboldItalic/OpenSans-SemiboldItalic.woff") format("woff"), url("../fonts/Open Sans/SemiboldItalic/OpenSans-SemiboldItalic.ttf") format("truetype");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'Open Sans Bold';
   src: url("../fonts/Open Sans/Bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans/Bold/OpenSans-Bold.woff") format("woff"), url("../fonts/Open Sans/Bold/OpenSans-Bold.ttf") format("truetype");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'Open Sans Bold Italic';
   src: url("../fonts/Open Sans/BoldItalic/OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans/BoldItalic/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/Open Sans/BoldItalic/OpenSans-BoldItalic.ttf") format("truetype");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'Open Sans Extrabold';
   src: url("../fonts/Open Sans/ExtraBold/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans/ExtraBold/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/Open Sans/ExtraBold/OpenSans-ExtraBold.ttf") format("truetype");
-  font-weight: normal; }
+  font-weight: normal;
+}
 @font-face {
   font-family: 'Open Sans Extrabold Italic';
   src: url("../fonts/Open Sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/Open Sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.ttf") format("truetype");
-  font-weight: normal; }
+  font-weight: normal;
+}
+body {
+  background-color: #F0EFEF;
+  margin-top: 30px;
+}
 
-/*# sourceMappingURL=fonts.css.map */
+/* JqGrid estilos generales */
+.ui-jqgrid {
+  font-family: "din-regular";
+  /* Encabezado de la tabla */
+  /* Celdas de la tabla */
+  /* Columna de acciones */
+  /* Paginado de la tabla */
+  /* Colores de la tabla */
+}
+.ui-jqgrid.responsive {
+  width: 100% !important;
+}
+.ui-jqgrid.ui-widget-content {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+}
+.ui-jqgrid .responsive {
+  width: 100% !important;
+}
+.ui-jqgrid input,
+.ui-jqgrid select,
+.ui-jqgrid textarea,
+.ui-jqgrid button {
+  font-family: "din-regular";
+  font-size: 14px;
+  outline: none;
+}
+.ui-jqgrid .ui-corner-all,
+.ui-jqgrid .ui-corner-top,
+.ui-jqgrid .ui-corner-right,
+.ui-jqgrid .ui-corner-tr {
+  border-top-right-radius: 0px;
+}
+.ui-jqgrid .ui-corner-all,
+.ui-jqgrid .ui-corner-top,
+.ui-jqgrid .ui-corner-left,
+.ui-jqgrid .ui-corner-tl {
+  border-top-left-radius: 0px;
+}
+.ui-jqgrid .ui-corner-all,
+.ui-jqgrid .ui-corner-bottom,
+.ui-jqgrid .ui-corner-right,
+.ui-jqgrid .ui-corner-br {
+  border-bottom-right-radius: 0px;
+}
+.ui-jqgrid .ui-corner-all,
+.ui-jqgrid .ui-corner-bottom,
+.ui-jqgrid .ui-corner-left,
+.ui-jqgrid .ui-corner-bl {
+  border-bottom-left-radius: 0px;
+}
+.ui-jqgrid .ui-jqgrid-hdiv {
+  background-color: #AAAAAA;
+}
+.ui-jqgrid .ui-jqgrid-htable th div {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: inherit;
+  line-height: normal;
+}
+.ui-jqgrid .ui-jqgrid-htable th {
+  padding: 13px 5px 13px 20px;
+}
+.ui-jqgrid .ui-jqgrid-hbox {
+  padding-right: 0px;
+}
+.ui-jqgrid .ui-th-column,
+.ui-jqgrid .ui-jqgrid-htable th.ui-th-column {
+  text-align: left;
+}
+.ui-jqgrid .ui-jqgrid-sortable {
+  height: auto;
+}
+.ui-jqgrid tr.ui-row-ltr td {
+  background-color: #FFFFFF;
+}
+.ui-jqgrid tr.ui-row-ltr td {
+  border-right-width: 0px;
+}
+.ui-jqgrid tr.jqgrow td {
+  font-size: 14px;
+  padding: 11px 5px 11px 20px;
+  border-bottom-width: 2px;
+  border-bottom-color: #F0EFEF;
+  overflow: visible;
+  white-space: normal;
+  height: auto;
+}
+.ui-jqgrid .btn-acciones {
+  cursor: pointer;
+  width: 28px;
+  font-size: 16px;
+}
+.ui-jqgrid .btn-acciones.fa-trash {
+  color: #7F1F56;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-pager-control {
+  height: 40px;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-pager-table {
+  width: 100%;
+  table-layout: fixed;
+  height: 100%;
+  color: black;
+  font-size: 14px;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-input {
+  font-size: 14px;
+  margin: 0 -6px 0 0;
+  line-height: inherit;
+  border: none;
+  padding: 1px 1px;
+  border-radius: 0px;
+  background-color: transparent;
+  text-align: center;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-selbox {
+  padding: 3px 0 5px;
+  border-radius: 0px;
+  font-size: inherit;
+  height: auto;
+  display: inline-block;
+  border-bottom: 0.5px solid #666666;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-widget-content {
+  background-image: none;
+  background-color: transparent;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-button .fa {
+  color: black;
+  margin: 5px !important;
+  background-color: transparent;
+  padding: 2px 8px;
+  font-size: 22px;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-button .ui-separator {
+  display: none;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-paging-pager .cantidad-a-mostrar {
+  margin: 0 15px;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-button:hover {
+  padding: 0px 1px;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-state-disabled:hover {
+  padding: 0px 1px;
+}
+.ui-jqgrid #prowed2_left,
+.ui-jqgrid #prowed2_right {
+  display: none;
+}
+.ui-jqgrid #prowed2_center {
+  text-align: left;
+}
+.ui-jqgrid #prowed2_center .ui-paging-pager td:last-of-type {
+  width: 100%;
+  text-align: right;
+}
+.ui-jqgrid .txt-cyan {
+  color: #28B1CA;
+}
+.ui-jqgrid .txt-green {
+  color: #BAC72A;
+}
+.ui-jqgrid .txt-orange {
+  color: #BB3B29;
+}
+.ui-jqgrid .txt-purple {
+  color: #7F1F56;
+}

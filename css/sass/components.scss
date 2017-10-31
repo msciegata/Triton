@@ -286,6 +286,9 @@ h5 {
 	}
 
 	button {
+		position:relative;
+		top:15px;
+
 		&:hover {
 			span { 
 				background-color: $white;
@@ -337,7 +340,7 @@ h5 {
 
     .vip-item {
     	background-color: $cyan;
-    	padding:20px 20px 5px;
+    	padding:20px 20px 10px;
 
     	h6 {
     		font-size:18px;
@@ -349,6 +352,7 @@ h5 {
     		font-family:'din-medium';
     		color:$white;
     		font-size:36px;
+    		margin-bottom:0;
 
     		span {
     			font-family: 'din-light';
@@ -372,39 +376,89 @@ h5 {
 				display: inline-block;
 				color:$azulYPF;
 				font-family:'din-light';
-				font-size:20px;	
+				font-size:20px;
+				margin-bottom:0;	
 			}
 		}
 	}
 
 	.list-body {
 		display:inline-block;
-		padding: 25px 20px 30px;
-		margin-bottom:30px;
+		padding:0;
 		width: 100%;
 
 		.list-filters {
-			a {
-				position: relative;
-			    top: 30px;
-			    color:$black;
-			    text-align: right;
-			    text-transform: uppercase;
-			    font-family: 'Open Sans Medium';
+			.actions {
+				text-align: right;
+				vertical-align: middle;
 
-			    span {
-			    	margin-right: 5px;
-			    }
+				a {
+					margin-right: 15px;
+				    color:$black;
+				    text-transform: uppercase;
+				    font-family: 'Open Sans Medium';
 
-			    &:hover {
-				
+				    span {
+				    	margin-right: 5px;
+				    }
+
+				    &:hover {
+						text-decoration: none;
+					}
+				}
+
+				button {
+					position:relative;
+					right: 0;
+
+					span {
+						margin-right: 5px;
+					}
 				}
 			}
 
+			.tags-group {
+				text-align: right;
+			    top: -15px;
+			    position: relative;
 
+				.tag {
+					display: none;
+				}
 
-			button {
+				.show-tag {
+					display:inline-block;
+				}
+			}
+			
 
+			.filters {
+				width: 100%;
+				position:relative;
+				padding:15px 20px 0;
+				background-color: $white;
+				top:-10px;
+				display:none;
+
+				h4 {
+					margin:0;
+				}
+
+				h6 {
+					font-size: 14px;
+					color: $darkGray;
+				}
+
+				.filter-group {
+					background-color: $extraLightGray;
+					margin:15px 0 10px;
+					padding:5px;
+				}
+
+				button {
+					display: inline-block;
+					float: right;
+				}
 			}
 		}
 	}
@@ -894,7 +948,7 @@ p {
 
 	// Neutral
 .btn-neutral {
-	background-color:$black;
+	background-color:$darkGray;
 
 	&:focus,
 	&:active,
@@ -1558,8 +1612,7 @@ input::-ms-clear{
 				background-color:$cyan;
 			}
 		}
-<<<<<<< HEAD
-                
+  
         &.active {
 
             a {
@@ -1576,8 +1629,6 @@ input::-ms-clear{
                 }
             }
         }
-=======
->>>>>>> b879ff4e0075a1c4e93e7ff8eaa75b537cc35158
 	}
 }
 
