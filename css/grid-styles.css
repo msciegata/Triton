@@ -82,111 +82,126 @@
   src: url("../fonts/Open Sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/Open Sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.ttf") format("truetype");
   font-weight: normal;
 }
-body {
-  background-color: #F0EFEF;
-  margin-top: 30px;
-}
-
-/* JqGrid estilos generales */
+/* line 6, sass/grid-styles.scss */
 .ui-jqgrid {
-  font-family: "din-regular";
-  /* Encabezado de la tabla */
-  /* Celdas de la tabla */
-  /* Columna de acciones */
-  /* Paginado de la tabla */
-  /* Colores de la tabla */
+  font-family: "Open Sans Regular";
 }
+/* line 9, sass/grid-styles.scss */
 .ui-jqgrid.responsive {
   width: 100% !important;
 }
+/* line 13, sass/grid-styles.scss */
+.ui-jqgrid .responsive {
+  width: 100% !important;
+}
+/* line 17, sass/grid-styles.scss */
 .ui-jqgrid.ui-widget-content {
   border: none;
   background-image: none;
   background-color: transparent;
 }
-.ui-jqgrid .responsive {
-  width: 100% !important;
-}
+/* line 23, sass/grid-styles.scss */
 .ui-jqgrid input,
 .ui-jqgrid select,
 .ui-jqgrid textarea,
 .ui-jqgrid button {
-  font-family: "din-regular";
+  font-family: "Open Sans Regular";
   font-size: 14px;
   outline: none;
 }
+/* line 32, sass/grid-styles.scss */
 .ui-jqgrid .ui-corner-all,
 .ui-jqgrid .ui-corner-top,
 .ui-jqgrid .ui-corner-right,
 .ui-jqgrid .ui-corner-tr {
   border-top-right-radius: 0px;
 }
+/* line 39, sass/grid-styles.scss */
 .ui-jqgrid .ui-corner-all,
 .ui-jqgrid .ui-corner-top,
 .ui-jqgrid .ui-corner-left,
 .ui-jqgrid .ui-corner-tl {
   border-top-left-radius: 0px;
 }
+/* line 46, sass/grid-styles.scss */
 .ui-jqgrid .ui-corner-all,
 .ui-jqgrid .ui-corner-bottom,
 .ui-jqgrid .ui-corner-right,
 .ui-jqgrid .ui-corner-br {
   border-bottom-right-radius: 0px;
 }
+/* line 53, sass/grid-styles.scss */
 .ui-jqgrid .ui-corner-all,
 .ui-jqgrid .ui-corner-bottom,
 .ui-jqgrid .ui-corner-left,
 .ui-jqgrid .ui-corner-bl {
   border-bottom-left-radius: 0px;
 }
+/* line 61, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-hdiv {
   background-color: #AAAAAA;
 }
+/* line 66, sass/grid-styles.scss */
+.ui-jqgrid .ui-jqgrid-htable th {
+  padding: 13px 5px 13px 20px;
+}
+/* line 69, sass/grid-styles.scss */
+.ui-jqgrid .ui-jqgrid-htable th.ui-th-column {
+  text-align: left;
+}
+/* line 73, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-htable th div {
   color: #FFFFFF;
   font-size: 16px;
   margin: inherit;
   line-height: normal;
 }
-.ui-jqgrid .ui-jqgrid-htable th {
-  padding: 13px 5px 13px 20px;
-}
+/* line 82, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-hbox {
   padding-right: 0px;
 }
-.ui-jqgrid .ui-th-column,
-.ui-jqgrid .ui-jqgrid-htable th.ui-th-column {
+/* line 89, sass/grid-styles.scss */
+.ui-jqgrid .ui-th-column th.ui-th-column {
   text-align: left;
 }
+/* line 95, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-sortable {
   height: auto;
 }
+/* line 102, sass/grid-styles.scss */
 .ui-jqgrid tr.ui-row-ltr td {
   background-color: #FFFFFF;
-}
-.ui-jqgrid tr.ui-row-ltr td {
   border-right-width: 0px;
 }
+/* line 109, sass/grid-styles.scss */
 .ui-jqgrid tr.jqgrow td {
   font-size: 14px;
   padding: 11px 5px 11px 20px;
   border-bottom-width: 2px;
-  border-bottom-color: #F0EFEF;
-  overflow: visible;
+  border-bottom-color: #EAEAEA;
+  overflow: hidden;
   white-space: normal;
   height: auto;
 }
+/* line 118, sass/grid-styles.scss */
+.ui-jqgrid tr.jqgrow td:last-of-type {
+  text-align: center;
+}
+/* line 126, sass/grid-styles.scss */
 .ui-jqgrid .btn-acciones {
   cursor: pointer;
   width: 28px;
   font-size: 16px;
 }
+/* line 133, sass/grid-styles.scss */
 .ui-jqgrid .btn-acciones.fa-trash {
   color: #7F1F56;
 }
+/* line 141, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-pager .ui-pager-control {
   height: 40px;
 }
+/* line 145, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-pager .ui-pager-table {
   width: 100%;
   table-layout: fixed;
@@ -194,6 +209,7 @@ body {
   color: black;
   font-size: 14px;
 }
+/* line 153, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-pager .ui-pg-input {
   font-size: 14px;
   margin: 0 -6px 0 0;
@@ -204,6 +220,7 @@ body {
   background-color: transparent;
   text-align: center;
 }
+/* line 164, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-pager .ui-pg-selbox {
   padding: 3px 0 5px;
   border-radius: 0px;
@@ -212,10 +229,12 @@ body {
   display: inline-block;
   border-bottom: 0.5px solid #666666;
 }
+/* line 173, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-pager .ui-widget-content {
   background-image: none;
   background-color: transparent;
 }
+/* line 179, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-pager .ui-pg-button .fa {
   color: black;
   margin: 5px !important;
@@ -223,38 +242,49 @@ body {
   padding: 2px 8px;
   font-size: 22px;
 }
+/* line 187, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-pager .ui-pg-button .ui-separator {
   display: none;
 }
-.ui-jqgrid .ui-jqgrid-pager .ui-paging-pager .cantidad-a-mostrar {
-  margin: 0 15px;
-}
+/* line 191, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-pager .ui-pg-button:hover {
   padding: 0px 1px;
 }
+/* line 197, sass/grid-styles.scss */
+.ui-jqgrid .ui-jqgrid-pager .ui-paging-pager .cantidad-a-mostrar {
+  margin: 0 15px;
+}
+/* line 203, sass/grid-styles.scss */
 .ui-jqgrid .ui-jqgrid-pager .ui-state-disabled:hover {
   padding: 0px 1px;
 }
+/* line 210, sass/grid-styles.scss */
 .ui-jqgrid #prowed2_left,
 .ui-jqgrid #prowed2_right {
   display: none;
 }
+/* line 215, sass/grid-styles.scss */
 .ui-jqgrid #prowed2_center {
   text-align: left;
 }
+/* line 219, sass/grid-styles.scss */
 .ui-jqgrid #prowed2_center .ui-paging-pager td:last-of-type {
   width: 100%;
   text-align: right;
 }
+/* line 227, sass/grid-styles.scss */
 .ui-jqgrid .txt-cyan {
   color: #28B1CA;
 }
+/* line 231, sass/grid-styles.scss */
 .ui-jqgrid .txt-green {
   color: #BAC72A;
 }
+/* line 235, sass/grid-styles.scss */
 .ui-jqgrid .txt-orange {
   color: #BB3B29;
 }
+/* line 239, sass/grid-styles.scss */
 .ui-jqgrid .txt-purple {
   color: #7F1F56;
 }

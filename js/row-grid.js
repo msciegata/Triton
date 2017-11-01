@@ -28,15 +28,18 @@ jQuery(document).ready(function ($) {
             var ids = jQuery("#rowed2").jqGrid('getDataIDs');
             for (var i = 0; i < ids.length; i++) {
                 var cl = ids[i];
-                be = "<span class='fa fa-eye btn-acciones' type='button' value='E' />";
-                se = "<span class='fa fa-pencil btn-acciones' type='button' value='S' />";
-                ce = "<span class='fa fa-trash btn-acciones' type='button' value='C' />";
-                jQuery("#rowed2").jqGrid('setRowData', ids[i], {campo9: be + se + ce});
+                ver = "<span class='fa fa-eye btn-acciones' type='button' value='E' />";
+                editar = "<span class='fa fa-pencil btn-acciones' type='button' value='S' />";
+                cancelar = "<span class='fa fa-trash btn-acciones' type='button' value='C' />";
+                descartar = "<span class='fa fa-trash btn-acciones' type='button' value='C' />";
+                jQuery("#rowed2").jqGrid('setRowData', ids[i], {campo9: ver + editar + cancelar + descartar });
             }
         }
     });
     jQuery("#rowed2").jqGrid('navGrid', "#prowed2", {refresh: false, search: false, edit: false, add: false, del: false});
 });
+
+//--
 
 $(document).ready(function () {
     $("#gview_tree").addClass("responsive");
