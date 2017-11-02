@@ -19,9 +19,7 @@
 @font-face {
   font-family: 'din-bold';
   src: url("../fonts/Din/Bold/din-bold.eot");
-  src: url("../fonts/Din/Bold/din-bold.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/Din/Bold/din-bold.woff") format("woff"),
-       url("../fonts/Din/Bold/din-bold.ttf") format("truetype");
+  src: url("../fonts/Din/Bold/din-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Din/Bold/din-bold.woff") format("woff"), url("../fonts/Din/Bold/din-bold.ttf") format("truetype");
   font-weight: normal;
 }
 @font-face {

@@ -12,12 +12,26 @@
 
     .responsive {
         width: 100% !important;
+        overflow:hidden;
     }
 
     &.ui-widget-content {
         border: none;
         background-image: none;
         background-color: transparent;
+
+        a {
+            font-family:'Open Sans Bold';
+            color: $azulYPF;
+            margin-left:10px;
+            line-height: 1.5;
+            vertical-align: middle;
+
+            &:hover {
+                text-decoration: none;
+                font-size: 16px;
+            }
+        }
     }
     
     input,
@@ -108,9 +122,8 @@
         &.jqgrow {
             td {
                 font-size: 14px;
-                padding: 11px 5px 11px 20px;
-                border-bottom-width: 2px;
-                border-bottom-color: $lightGray;
+                padding: 15px 10px 15px 20px;
+                border-bottom: 1px solid $lightGray;
                 overflow: hidden;
                 white-space: normal;
                 height: auto;
@@ -125,16 +138,29 @@
     //Columna de acciones
     .btn-acciones {
         cursor: pointer;
-        width: 28px;
-        font-size: 16px;
-    }
-    
-    .btn-acciones {
+        margin:0 5px;
+        font-size: 18px;
+        text-align:center;
+        vertical-align: middle;
+        width: 20px;
+
+        &.fa-plus {
+            color: $white;
+            background-color: $cyan;
+            border-radius: 20px;
+            padding:5px 1px 4px 1px;
+            font-size: 11px;
+        }
+
         &.fa-trash {
-            color: $mediumPurple;
+            color: $orange;
+        }
+
+        &.fa-close {
+            color: $purple
         }
     }
-
+    
     //Paginado de la tabla
     .ui-jqgrid-pager {
 
