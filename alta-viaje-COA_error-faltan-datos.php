@@ -13,97 +13,7 @@
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<header>
-			<div class="top">
-				<img src="img/ypf-logo.png">
-				<h3>NUEVO <span>TRITÓN</span></h3>
-				<div class="user">
-					<h5>SE21626</h5>
-					<p>Martín Horacio García Begher</p>
-					<span class="fa fa-user"></span>
-				</div>
-			</div>
-			<div class="navbar">
-				<ul class="nav navbar-nav">
-					<!-- Necesidades de compra -->
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Necesidades de compra</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#">Demo email validador</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Acuerdos comerciales</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item">
-		                		<a href="#">De terceros</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">De trading</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">A plazo</a>
-		                	</li>
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">Tipo Spot</a>
-		                		<!-- Submenú -->
-		                		<ul class="dropdown-menu level-2">
-		                			<li class="menu-item">
-										<a href="#">Venta local</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#" class="menu-item">Venta internacional</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#">Compra local</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#">Compra internacional</a>
-		                			</li>
-		                		</ul>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="menu-item dropdown">
-						<a href="#">Riesgo crediticio</a>
-					</li>
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Fletes</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">Spot</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">COA</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Operaciones</a>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Gestión aduanera</a>
-					</li>
-					<li class="new-item">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Pagos</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">De Fletes</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Inspectoría</a>
-					</li>
-				</ul>
-			</div>
-		</header>
+		<?php include 'header.php';?>
 		<main class="main">
 			<div class="container-fluid">
 				<div class="row page-title">
@@ -184,10 +94,11 @@
 							</div>
 							<div class="card-body">
 								<div class="col-lg-6">
-									<div class="input-group">
+									<div class="input-group error">
 										<input id="fecha-cierre" class="input-date datapicker-here" type="text" required name="fecha-cierre" data-language="es">
 										<span class="fa fa-calendar" aria-hidden="true"></span>
 										<label for="fecha-cierre">Fecha de cierre<span>*</span></label>
+										<p>Este campo es obligatorio</p>
 									</div>
 									<div class="input-group">
 										<select id="mov-triton" class="select-buscador" required style="width: 100%">
@@ -341,9 +252,9 @@
 									<div class="row">
 										<div class="col-lg-12">
 											<div class="input-group autoheight margin-top-20">
-                                                                                            <textarea id="observaciones" required name="observaciones" rows="1" cols="50"></textarea>
-                                                                                            <label for="observaciones">Observaciones</label>
-                                                                                        </div>
+                                                <textarea id="observaciones" required name="observaciones" rows="1" cols="50"></textarea>
+                                                <label for="observaciones">Observaciones</label>
+                                            </div>
 										</div>
 									</div>
 								</div>
@@ -362,7 +273,7 @@
 									<div class="row">
 										<div class="col-lg-12">
 											<div class="input-group">
-												<select id="tipo-precio" name="tipo-precio" required>
+												<select id="armador" name="armador" required>
 													<option value="" selected>Seleccione</option>
 													<option value="v1">Armador 1</option>
 													<option value="v2">Armador alternativo 1</option>
@@ -371,11 +282,11 @@
 													<option value="v2">Armador alternativo 4</option>
 													<option value="v2">Armador alternativo 5</option>
 												</select>
-												<label for="tipo-precio">Armador<span>*</span></label>
+												<label for="armador">Armador<span>*</span></label>
 											</div>
 										</div>
 										<div class="col-lg-4">
-											<div class="input-group">
+											<div class="input-group error">
 												<select id="tipo-precio" name="tipo-precio" required>
 													<option value="" selected>Seleccione</option>
 													<option value="v1">Unitario</option>
@@ -383,6 +294,7 @@
 													<option value="v2">Lumpsun</option>
 												</select>
 												<label for="tipo-precio">Tipo de precio<span>*</span></label>
+												<p>Este campo es obligatorio</p>
 											</div>
 										</div>
 										<div class="col-lg-2">
@@ -578,113 +490,105 @@
 				</div>
 			</div>
 		</main>
-		<footer>
-			<div class="version">
-				<img src="img/ypf-logo-color.png">
-				<p>Tritón 2.0</p>
-			</div>
-			<div class="help">
-				<p>Soporte técnico - Int. 1234</p>
-			</div>
-		</footer>
+		<?php include 'footer.php';?>
 
 		<!--MODALS -->
-			<!-- CIA-modal -->
-			<div id="CIA-modal" class="modal" role="dialog" style="display: none;">
-				<div class="moda-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h3 class="modal-title">Modal title</h3>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<div class="col-lg-6">
-								<div class="col-lg-12">
-									<div class="radio-button">
-										<div class="radio">
-											<input type="radio" id="costo" name="costo-ingreso">
-											<label for="costo" class="radio-label">Costo</label>
-										</div>
-										<div class="radio">
-											<input type="radio" id="ingreso" name="costo-ingreso">
-											<label for="ingreso" class="radio-label">Ingreso</label>
-										</div>
+		<!-- CIA-modal -->
+		<div id="CIA-modal" class="modal" role="dialog" style="display: none;">
+			<div class="moda-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">Modal title</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="col-lg-6">
+							<div class="col-lg-12">
+								<div class="radio-button">
+									<div class="radio">
+										<input type="radio" id="costo" name="costo-ingreso">
+										<label for="costo" class="radio-label">Costo</label>
 									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="input-group">
-										<select name="concepto" id="concepto" required>
-											<option value="" selected>Seleccione</option>
-											<option value="v1">Resultado 1</option>
-											<option value="v2">Resultado 2</option>
-											<option value="v3">Resultado 3</option>
-											<option value="v4">Resultado 4</option>
-										</select>
-										<label for="concepto">Concepto<span>*</span></label>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="col-lg-4">
-									<div class="input-group">
-										<select name="divisa" id="divisa" required>
-											<option value="" selected>Seleccione</option>
-											<option value="v1">ARS</option>
-											<option value="v2">USD</option>
-											<option value="v3">EUR</option>
-											<option value="v4">GBP</option>
-											<option value="v5">BRL</option>
-										</select>
-										<label for="divisa">Divisa<span>*</span></label>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="input-group">
-										<input id="importe" type="text" required name="importe">
-										<label for="importe">Importe<span>*</span></label>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="input-group">
-										<select name="contraparte" id="contraparte" required>
-											<option value="" selected>Seleccione</option>
-											<option value="v1">Resultado 1</option>
-											<option value="v2">Resultado 2</option>
-											<option value="v3">Resultado 3</option>
-											<option value="v4">Resultado 4</option>
-										</select>
-										<label for="contraparte">Contraparte</label>
+									<div class="radio">
+										<input type="radio" id="ingreso" name="costo-ingreso">
+										<label for="ingreso" class="radio-label">Ingreso</label>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-12">
 								<div class="input-group">
-									<input id="detalle" type="text" required name="detalle">
-									<label for="detalle">Detalle</label>
+									<select name="concepto" id="concepto" required>
+										<option value="" selected>Seleccione</option>
+										<option value="v1">Resultado 1</option>
+										<option value="v2">Resultado 2</option>
+										<option value="v3">Resultado 3</option>
+										<option value="v4">Resultado 4</option>
+									</select>
+									<label for="concepto">Concepto<span>*</span></label>
 								</div>
 							</div>
-					    </div>
-					    <div class="modal-footer">
-							<button class="btn btn-primary">AGREGAR</button>
-							<button class="btn btn-ghost-neutral" data-dismiss="modal">CANCELAR</button>
-					    </div>
-					</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="col-lg-4">
+								<div class="input-group">
+									<select name="divisa" id="divisa" required>
+										<option value="" selected>Seleccione</option>
+										<option value="v1">ARS</option>
+										<option value="v2">USD</option>
+										<option value="v3">EUR</option>
+										<option value="v4">GBP</option>
+										<option value="v5">BRL</option>
+									</select>
+									<label for="divisa">Divisa<span>*</span></label>
+								</div>
+							</div>
+							<div class="col-lg-8">
+								<div class="input-group">
+									<input id="importe" type="text" required name="importe">
+									<label for="importe">Importe<span>*</span></label>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="input-group">
+									<select name="contraparte" id="contraparte" required>
+										<option value="" selected>Seleccione</option>
+										<option value="v1">Resultado 1</option>
+										<option value="v2">Resultado 2</option>
+										<option value="v3">Resultado 3</option>
+										<option value="v4">Resultado 4</option>
+									</select>
+									<label for="contraparte">Contraparte</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="input-group">
+								<input id="detalle" type="text" required name="detalle">
+								<label for="detalle">Detalle</label>
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer">
+						<button class="btn btn-primary">AGREGAR</button>
+						<button class="btn btn-ghost-neutral" data-dismiss="modal">CANCELAR</button>
+				    </div>
 				</div>
 			</div>
+		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/datepicker.min.js"></script>
 		<script src="js/datepicker.es.js"></script>
 		<script src="js/timepicker.js"></script>
 		<script src="js/select-search.min.js"></script>
-                <script src="js/autosize.min.js"></script>
+        <script src="js/autosize.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script>
 			$(function () {
                             
-                                // TextAreas con autoresize        
-                                autosize($('textarea'));
+                // TextAreas con autoresize        
+                autosize($('textarea'));
             
 				// Tab
 				$('#laytime-tab a').click(function (e) {

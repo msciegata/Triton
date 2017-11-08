@@ -12,176 +12,23 @@
 		<link rel="stylesheet" href="css/font-awesome.css">
 		<link href="js/plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/ui.jqgrid.css">
-        <link rel="stylesheet" href="css/grid-styles.css">
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<header>
-			<div class="top">
-				<img src="img/ypf-logo.png">
-				<h3>NUEVO <span>TRITÓN</span></h3>
-				<div class="user">
-					<h5>SE21626</h5>
-					<p>Martín Horacio García Begher</p>
-					<span class="fa fa-user"></span>
-				</div>
-			</div>
-			<div class="navbar">
-				<ul class="nav navbar-nav">
-					<!-- Necesidades de compra -->
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Necesidades de compra</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#">Demo email validador</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Acuerdos comerciales</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item">
-		                		<a href="#">De terceros</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">De trading</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">A plazo</a>
-		                	</li>
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">Tipo Spot</a>
-		                		<!-- Submenú -->
-		                		<ul class="dropdown-menu level-2">
-		                			<li class="menu-item">
-										<a href="#">Venta local</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#" class="menu-item">Venta internacional</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#">Compra local</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#">Compra internacional</a>
-		                			</li>
-		                		</ul>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="menu-item dropdown">
-						<a href="#">Riesgo crediticio</a>
-					</li>
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Fletes</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">Spot</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">COA</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Operaciones</a>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Gestión aduanera</a>
-					</li>
-					<li class="new-item">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Pagos</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">De Fletes</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Inspectoría</a>
-					</li>
-				</ul>
-			</div>
-		</header>
+		<?php include 'header.php';?>
 		<main class="main">
 			<div class="container-fluid">
 				<div class="row page-title">
 					<div class="col-lg-10">
-						<h1>Acuerdo <span>COA.0001</span></h1>
+						<h1>Fletes por viajes</h1>
 					</div>
 					<div class="col-lg-2 text-right">
 						<button class="btn btn-primary"><span class="fa fa-plus"></span> ALTA DE VIAJE</button>
 					</div>
 				</div>
 				<div class="row">
-					<div class="info-header">
-						<div class="col-lg-12">
-							<h4>Datos del acuerdo</h4>
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="item">
-										<h6>Fletador</h6>
-										<h4>vYPF GAS</h4>
-									</div>
-								</div>
-								<div class="col-lg-5">
-									<div class="item">
-										<h6>Armador</h6>
-										<h4>Empresa de Armadores S.R.L.</h4>
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="item">
-										<h6>Broker</h6>
-										<h4>Nombre del Broker</h4>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-2">
-									<div class="item">
-										<h6>Fecha de inicio</h6>
-										<h4>04/11/2017</h4>
-									</div>
-								</div>
-								<div class="col-lg-2">
-									<div class="item">
-										<h6>Fecha de finalización</h6>
-										<h4>04/11/2018</h4>
-									</div>
-								</div>
-								<div class="col-lg-2">
-									<div class="item">
-										<h6>Volumen estimado</h6>
-										<h4>543 TN</h4>
-									</div>
-								</div>
-								<div class="col-lg-2">
-									<div class="item">
-										<h6>Valor estimado</h6>
-										<h4>$1.222.222</h4>
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="vip-item">
-										<h6>Saldo del contrato</h6>
-										<h4><span>US$</span>1.999.999</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="col-lg-12">
 						<div class="list">
-							<div class="list-header">
-								<div class="list-title">
-									<h3>Viajes relacionados</h3>
-								</div>
-							</div>
 							<div class="list-body">
 								<div class="list-filters">
 									<div class="row">
@@ -381,15 +228,7 @@
 				</div>
 			</div>
 		</main>
-		<footer>
-			<div class="version">
-				<img src="img/ypf-logo-color.png">
-				<p>Tritón 2.0</p>
-			</div>
-			<div class="help">
-				<p>Soporte técnico - Int. 1234</p>
-			</div>
-		</footer>
+		<?php include 'footer.php';?>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/datepicker.min.js"></script>
 		<script src="js/datepicker.es.js"></script>
@@ -397,7 +236,7 @@
 		<script src="js/select-search.min.js"></script>
         <script src="js/autosize.min.js"></script>
 		<!-- JQ Grid -->
-        <script src="js/listado_viajes-relacionados-COA.js"></script>
+        <script src="js/listado_viajes-SPOT.js"></script>
         <script src="js/plugins/jqgrid2/grid.locale-es.js"></script>
         <script src="js/plugins/jqgrid2/jquery.jqGrid.js"></script>
 

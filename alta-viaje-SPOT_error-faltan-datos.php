@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Tritón 2.0 | Alta viaje COA</title>
+		<title>Tritón 2.0 | Alta viaje SPOT</title>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<link href="css/datepicker.css" rel="stylesheet" type="text/css">
 		<link href="css/timepicker.css" rel="stylesheet" type="text/css">
@@ -13,103 +13,12 @@
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<header>
-			<div class="top">
-				<img src="img/ypf-logo.png">
-				<h3>NUEVO <span>TRITÓN</span></h3>
-				<div class="user">
-					<h5>SE21626</h5>
-					<p>Martín Horacio García Begher</p>
-					<span class="fa fa-user"></span>
-				</div>
-			</div>
-			<div class="navbar">
-				<ul class="nav navbar-nav">
-					<!-- Necesidades de compra -->
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Necesidades de compra</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#">Demo email validador</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Acuerdos comerciales</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item">
-		                		<a href="#">De terceros</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">De trading</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">A plazo</a>
-		                	</li>
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">Tipo Spot</a>
-		                		<!-- Submenú -->
-		                		<ul class="dropdown-menu level-2">
-		                			<li class="menu-item">
-										<a href="#">Venta local</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#" class="menu-item">Venta internacional</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#">Compra local</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#">Compra internacional</a>
-		                			</li>
-		                		</ul>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="menu-item dropdown">
-						<a href="#">Riesgo crediticio</a>
-					</li>
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Fletes</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">Spot</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">COA</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Operaciones</a>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Gestión aduanera</a>
-					</li>
-					<li class="new-item">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Pagos</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">De Fletes</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Inspectoría</a>
-					</li>
-				</ul>
-			</div>
-		</header>
-		<main class="main">
+		<?php include 'header.php';?>
+		<main>
 			<div class="container-fluid">
 				<div class="row page-title">
 					<div class="col-lg-10">
-						<h1>Registro de viaje <span>COA</span></h1>
-						<p>Relacionado con el acuerdo COA.0001</p>
+						<h1>Alta de viaje <span>SPOT</span></h1>
 					</div>
 					<div class="col-lg-2 state">
 						<div class="circle bg-gray">
@@ -118,63 +27,6 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="info-header">
-						<div class="col-lg-12">
-							<h4>Datos del acuerdo</h4>
-							<div class="row">
-								<div class="col-lg-3">
-									<div class="item">
-										<h6>Fletador</h6>
-										<h4>vYPF GAS</h4>
-									</div>
-								</div>
-								<div class="col-lg-5">
-									<div class="item">
-										<h6>Armador</h6>
-										<h4>Empresa de Armadores S.R.L.</h4>
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="item">
-										<h6>Broker</h6>
-										<h4>Nombre del Broker</h4>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-2">
-									<div class="item">
-										<h6>Fecha de inicio</h6>
-										<h4>04/11/2017</h4>
-									</div>
-								</div>
-								<div class="col-lg-2">
-									<div class="item">
-										<h6>Fecha de finalización</h6>
-										<h4>04/11/2018</h4>
-									</div>
-								</div>
-								<div class="col-lg-2">
-									<div class="item">
-										<h6>Volumen estimado</h6>
-										<h4>543 TN</h4>
-									</div>
-								</div>
-								<div class="col-lg-2">
-									<div class="item">
-										<h6>Valor estimado</h6>
-										<h4>$1.222.222</h4>
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="vip-item">
-										<h6>Saldo del contrato</h6>
-										<h4><span>US$</span>1.999.999</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="col-lg-12">
 						<div class="card">
 							<div class="card-header">
@@ -204,10 +56,10 @@
 									<div class="input-group">
 										<select name="fletador" id="fletador" required>
 											<option value="" selected>Seleccione</option>
-											<option value="v1">Papa Juan Pablo II</option>
-											<option value="v2">Papa Francisco</option>
+											<option value="v1">YPF S.A.</option>
+											<option value="v2">YPF GAS</option>
 										</select>
-										<label for="fletador">Buque<span>*</span></label>
+										<label for="fletador">Fletador<span>*</span></label>
 									</div>
 									<div class="laycan">
 										<h5>Laycan</h5>
@@ -260,6 +112,34 @@
 									</div>
 								</div>
 								<div class="col-lg-6">
+									<div class="input-group error">
+										<select id="armador" name="armador" required>
+											<option value="" selected>Seleccione</option>
+											<option value="v1">Armador 1</option>
+											<option value="v2">Armador 2</option>
+											<option value="v3">Armador 3</option>
+											<option value="v4">Armador 4</option>
+											<option value="v5">Armador 5</option>
+										</select>
+										<label for="armador">Armador<span>*</span></label>
+										<p>Este campo es obligatorio</p>
+									</div>
+									<div class="input-group">
+										<select id="broker" name="broker" required>
+											<option value="" selected>Seleccione</option>
+											<option value="v1">Broker 1</option>
+											<option value="v2">Broker 2</option>
+										</select>
+										<label for="broker">Broker</label>
+									</div>
+									<div class="input-group">
+										<select id="buque" name="buque" required>
+											<option value="" selected>Seleccione</option>
+											<option value="v1">Buque Papa Juan Pablo II</option>
+											<option value="v2">Buque Papa Francisco I</option>
+										</select>
+										<label for="buque">Buque<span>*</span></label>
+									</div>
 									<div class="row">
 										<div class="col-lg-12">
 											<div class=" laytime">
@@ -341,9 +221,9 @@
 									<div class="row">
 										<div class="col-lg-12">
 											<div class="input-group autoheight margin-top-20">
-                                                                                            <textarea id="observaciones" required name="observaciones" rows="1" cols="50"></textarea>
-                                                                                            <label for="observaciones">Observaciones</label>
-                                                                                        </div>
+                                                <textarea id="observaciones" required name="observaciones" rows="1" cols="50"></textarea>
+                                                <label for="observaciones">Observaciones</label>
+                                            </div>
 										</div>
 									</div>
 								</div>
@@ -360,22 +240,8 @@
 							<div class="card-body">
 								<div class="col-lg-6 calculator" >
 									<div class="row">
-										<div class="col-lg-12">
-											<div class="input-group">
-												<select id="tipo-precio" name="tipo-precio" required>
-													<option value="" selected>Seleccione</option>
-													<option value="v1">Armador 1</option>
-													<option value="v2">Armador alternativo 1</option>
-													<option value="v2">Armador alternativo 2</option>
-													<option value="v2">Armador alternativo 3</option>
-													<option value="v2">Armador alternativo 4</option>
-													<option value="v2">Armador alternativo 5</option>
-												</select>
-												<label for="tipo-precio">Armador<span>*</span></label>
-											</div>
-										</div>
 										<div class="col-lg-4">
-											<div class="input-group">
+											<div class="input-group error">
 												<select id="tipo-precio" name="tipo-precio" required>
 													<option value="" selected>Seleccione</option>
 													<option value="v1">Unitario</option>
@@ -383,6 +249,7 @@
 													<option value="v2">Lumpsun</option>
 												</select>
 												<label for="tipo-precio">Tipo de precio<span>*</span></label>
+												<p>Este campo es obligatorio</p>
 											</div>
 										</div>
 										<div class="col-lg-2">
@@ -456,13 +323,13 @@
 									</div>
 								</div>
 								<!-- Cuando haya resultados, aplicar la clase hidden al siguiente div -->
-								<div class="col-lg-6 no-results margin-top-100">
+								<div class="col-lg-6 no-results hidden margin-top-60">
 									<span class="fa fa-calculator"></span>
 									<h3>Resultados de cálculo</h3>
 									<p>Complete los campos para obtener resultados</p>
 								</div>
 								<!-- Cuando no haya resultados, aplicar la clase hidden al siguiente div -->
-								<div class="hidden col-lg-6 results">
+								<div class="col-lg-6 results">
 									<div class="subtotals">
 										<div class="item">
 											<h4>Total flete muerto</h4>
@@ -484,7 +351,7 @@
 										</div>
 									</div>
 									<!--Botón para eliminar el flete, versión editar -->
-									<button class="hidden btn btn-danger">CANCELAR VIAJE</button>
+									<button class="btn btn-danger">CANCELAR VIAJE</button>
 								</div>
 							</div>
 						</div>
@@ -495,7 +362,7 @@
 								<div class="card-title">
 									<h3>Otros costos / Ingresos asociados</h3>
 									<!-- Cuando haya costos o ingresos asociados, sacar la clase hidden al siguiente div -->
-									<div class="add hidden">
+									<div class="add">
 										<a href="#" data-toggle="modal" data-target="#CIA-modal"> 
 											<span class="fa fa-plus"></span>Agregar
 										</a>
@@ -504,11 +371,11 @@
 							</div>
 							<div class="card-body">
 								<!-- Cuando haya costos o ingresos asociados, agregar la clase hidden al siguiente div -->
-								<div class="no-results">
+								<div class="no-results hidden">
 									<h3>Actualmente no existe un costo o ingreso asociado a este viaje.</h3>
 									<button class="btn btn-ghost-primary"><span class="fa fa-plus"></span>AGREGAR UN COSTO / INGRESO ASOCIADO</button>
 								</div>
-								<div class="results  hidden">
+								<div class="results">
 									<table>
 										<tr class="ci-a">
 											<td>Ingreso</td>
@@ -577,113 +444,105 @@
 				</div>
 			</div>
 		</main>
-		<footer>
-			<div class="version">
-				<img src="img/ypf-logo-color.png">
-				<p>Tritón 2.0</p>
-			</div>
-			<div class="help">
-				<p>Soporte técnico - Int. 1234</p>
-			</div>
-		</footer>
+		<?php include 'footer.php';?>
 
 		<!--MODALS -->
-			<!-- CIA-modal -->
-			<div id="CIA-modal" class="modal" role="dialog" style="display: none;">
-				<div class="moda-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h3 class="modal-title">Modal title</h3>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<div class="col-lg-6">
-								<div class="col-lg-12">
-									<div class="radio-button">
-										<div class="radio">
-											<input type="radio" id="costo" name="costo-ingreso">
-											<label for="costo" class="radio-label">Costo</label>
-										</div>
-										<div class="radio">
-											<input type="radio" id="ingreso" name="costo-ingreso">
-											<label for="ingreso" class="radio-label">Ingreso</label>
-										</div>
+		<!-- CIA-modal -->
+		<div id="CIA-modal" class="modal" role="dialog" style="display: none;">
+			<div class="moda-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">Modal title</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="col-lg-6">
+							<div class="col-lg-12">
+								<div class="radio-button">
+									<div class="radio">
+										<input type="radio" id="costo" name="costo-ingreso">
+										<label for="costo" class="radio-label">Costo</label>
 									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="input-group">
-										<select name="concepto" id="concepto" required>
-											<option value="" selected>Seleccione</option>
-											<option value="v1">Resultado 1</option>
-											<option value="v2">Resultado 2</option>
-											<option value="v3">Resultado 3</option>
-											<option value="v4">Resultado 4</option>
-										</select>
-										<label for="concepto">Concepto<span>*</span></label>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="col-lg-4">
-									<div class="input-group">
-										<select name="divisa" id="divisa" required>
-											<option value="" selected>Seleccione</option>
-											<option value="v1">ARS</option>
-											<option value="v2">USD</option>
-											<option value="v3">EUR</option>
-											<option value="v4">GBP</option>
-											<option value="v5">BRL</option>
-										</select>
-										<label for="divisa">Divisa<span>*</span></label>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="input-group">
-										<input id="importe" type="text" required name="importe">
-										<label for="importe">Importe<span>*</span></label>
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="input-group">
-										<select name="contraparte" id="contraparte" required>
-											<option value="" selected>Seleccione</option>
-											<option value="v1">Resultado 1</option>
-											<option value="v2">Resultado 2</option>
-											<option value="v3">Resultado 3</option>
-											<option value="v4">Resultado 4</option>
-										</select>
-										<label for="contraparte">Contraparte</label>
+									<div class="radio">
+										<input type="radio" id="ingreso" name="costo-ingreso">
+										<label for="ingreso" class="radio-label">Ingreso</label>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-12">
 								<div class="input-group">
-									<input id="detalle" type="text" required name="detalle">
-									<label for="detalle">Detalle</label>
+									<select name="concepto" id="concepto" required>
+										<option value="" selected>Seleccione</option>
+										<option value="v1">Resultado 1</option>
+										<option value="v2">Resultado 2</option>
+										<option value="v3">Resultado 3</option>
+										<option value="v4">Resultado 4</option>
+									</select>
+									<label for="concepto">Concepto<span>*</span></label>
 								</div>
 							</div>
-					    </div>
-					    <div class="modal-footer">
-							<button class="btn btn-primary">AGREGAR</button>
-							<button class="btn btn-ghost-neutral" data-dismiss="modal">CANCELAR</button>
-					    </div>
-					</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="col-lg-4">
+								<div class="input-group">
+									<select name="divisa" id="divisa" required>
+										<option value="" selected>Seleccione</option>
+										<option value="v1">ARS</option>
+										<option value="v2">USD</option>
+										<option value="v3">EUR</option>
+										<option value="v4">GBP</option>
+										<option value="v5">BRL</option>
+									</select>
+									<label for="divisa">Divisa<span>*</span></label>
+								</div>
+							</div>
+							<div class="col-lg-8">
+								<div class="input-group">
+									<input id="importe" type="text" required name="importe">
+									<label for="importe">Importe<span>*</span></label>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="input-group">
+									<select name="contraparte" id="contraparte" required>
+										<option value="" selected>Seleccione</option>
+										<option value="v1">Resultado 1</option>
+										<option value="v2">Resultado 2</option>
+										<option value="v3">Resultado 3</option>
+										<option value="v4">Resultado 4</option>
+									</select>
+									<label for="contraparte">Contraparte</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="input-group">
+								<input id="detalle" type="text" required name="detalle">
+								<label for="detalle">Detalle</label>
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer">
+						<button class="btn btn-primary">AGREGAR</button>
+						<button class="btn btn-ghost-neutral" data-dismiss="modal">CANCELAR</button>
+				    </div>
 				</div>
 			</div>
+		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/datepicker.min.js"></script>
 		<script src="js/datepicker.es.js"></script>
 		<script src="js/timepicker.js"></script>
 		<script src="js/select-search.min.js"></script>
-                <script src="js/autosize.min.js"></script>
+        <script src="js/autosize.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script>
 			$(function () {
                             
-                                // TextAreas con autoresize        
-                                autosize($('textarea'));
+                // TextAreas con autoresize        
+                autosize($('textarea'));
             
 				// Tab
 				$('#laytime-tab a').click(function (e) {
@@ -718,7 +577,6 @@
                     }
                     ;
                 });
-
             });
 		</script>
 	</body>

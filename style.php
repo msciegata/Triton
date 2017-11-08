@@ -9,103 +9,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header>
-		<div class="top">
-			<img src="img/ypf-logo.png">
-			<h3><span>TRITÓN</span> 2.0</h3>
-			<div class="user">
-				<h5>SE21626</h5>
-				<p>Martín Horacio García Begher</p>
-				<span class="fa fa-user"></span>
-			</div>
-		</div>
-		<div class="navbar">
-			<ul class="nav navbar-nav">
-				<!-- Necesidades de compra -->
-				<li class="menu-item dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Necesidades de compra</a>
-					<!-- Menu 1 -->
-					<ul class="dropdown-menu">
-	                	<li class="menu-item dropdown dropdown-submenu">
-	                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">Item 1</a>
-	                		<!-- Submenú -->
-	                		<ul class="dropdown-menu level-2">
-	                			<li class="menu-item">
-									<a href="#">Link 1</a>
-	                			</li>
-	                			<li class="menu-item level-2">
-									<a href="#" class="menu-item">Link 2</a>
-	                			</li>
-	                			<li class="menu-item level-2">
-									<a href="#">Link 3</a>
-	                			</li>
-	                		</ul>
-	                	</li>
-	                	<li class="menu-item">
-	                		<a href="#">Item 2</a>
-	                	</li>
-	                	<li class="menu-item">
-	                		<a href="#">Item 3</a>
-	                	</li>
-	                	<li class="menu-item">
-	                		<a href="#">Item 4</a>
-	                	</li>
-	                	<li class="menu-item">
-	                		<a href="#">Item 5</a>
-	                	</li>	                  	
-	                </ul>
-				</li>
-				<li class="new-item">
-					<a class="nav-link" href="#">Acuerdos comerciales</a>
-				</li>
-				<li class="menu-item dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Fletes</a>
-					<!-- Menu 1 -->
-					<ul class="dropdown-menu">
-	                	<li class="menu-item dropdown dropdown-submenu">
-	                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">Item 1</a>
-	                		<!-- Submenú -->
-	                		<ul class="dropdown-menu level-2">
-	                			<li class="menu-item">
-									<a href="#">Link 1</a>
-	                			</li>
-	                			<li class="menu-item level-2">
-									<a href="#" class="menu-item">Link 2</a>
-	                			</li>
-	                			<li class="menu-item level-2">
-									<a href="#">Link 3</a>
-	                			</li>
-	                		</ul>
-	                	</li>
-	                	<li class="menu-item">
-	                		<a href="#">Item 2</a>
-	                	</li>
-	                	<li class="menu-item">
-	                		<a href="#">Item 3</a>
-	                	</li>
-	                	<li class="menu-item">
-	                		<a href="#">Item 4</a>
-	                	</li>
-	                	<li class="menu-item">
-	                		<a href="#">Item 5</a>
-	                	</li>	                  	
-	                </ul>
-				</li>
-				<li class="new-item">
-					<a class="nav-link" href="#">Operaciones</a>
-				</li>
-				<li class="new-item">
-					<a class="nav-link" href="#">Gestión aduanera</a>
-				</li>
-				<li class="new-item">
-					<a class="nav-link" href="#">Pagos</a>
-				</li>
-				<li class="new-item">
-					<a class="nav-link" href="#">Inspectoría</a>
-				</li>
-			</ul>
-		</div>
-	</header>
+	<?php include 'header.php';?>
 	<main>
 		<div class="container-fluid">
 			<div class="row">
@@ -437,15 +341,7 @@
 			</div>
 		</div>
 	</main>
-	<footer>
-		<div class="version">
-			<img src="img/ypf-logo-color.png">
-			<p>Tritón 2.0</p>
-		</div>
-		<div class="help">
-			<p>Soporte técnico - Int. 1234</p>
-		</div>
-	</footer>
+	<?php include 'footer.php';?>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>

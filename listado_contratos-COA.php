@@ -12,101 +12,10 @@
 		<link rel="stylesheet" href="css/font-awesome.css">
 		<link href="js/plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/ui.jqgrid.css">
-        <link rel="stylesheet" href="css/grid-styles.css">
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<header>
-			<div class="top">
-				<img src="img/ypf-logo.png">
-				<h3>NUEVO <span>TRITÓN</span></h3>
-				<div class="user">
-					<h5>SE21626</h5>
-					<p>Martín Horacio García Begher</p>
-					<span class="fa fa-user"></span>
-				</div>
-			</div>
-			<div class="navbar">
-				<ul class="nav navbar-nav">
-					<!-- Necesidades de compra -->
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Necesidades de compra</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#">Demo email validador</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Acuerdos comerciales</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item">
-		                		<a href="#">De terceros</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">De trading</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">A plazo</a>
-		                	</li>
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">Tipo Spot</a>
-		                		<!-- Submenú -->
-		                		<ul class="dropdown-menu level-2">
-		                			<li class="menu-item">
-										<a href="#">Venta local</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#" class="menu-item">Venta internacional</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#">Compra local</a>
-		                			</li>
-		                			<li class="menu-item level-2">
-										<a href="#">Compra internacional</a>
-		                			</li>
-		                		</ul>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="menu-item dropdown">
-						<a href="#">Riesgo crediticio</a>
-					</li>
-					<li class="menu-item dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Fletes</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">Spot</a>
-		                	</li>
-		                	<li class="menu-item">
-		                		<a href="#">COA</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Operaciones</a>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Gestión aduanera</a>
-					</li>
-					<li class="new-item">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Pagos</a>
-						<!-- Menu 1 -->
-						<ul class="dropdown-menu">
-		                	<li class="menu-item dropdown dropdown-submenu">
-		                		<a href="#" class="dropdown-toggle"  data-toggle="dropdown">De Fletes</a>
-		                	</li>
-		                </ul>
-					</li>
-					<li class="new-item">
-						<a class="nav-link" href="#">Inspectoría</a>
-					</li>
-				</ul>
-			</div>
-		</header>
+		<?php include 'header.php';?>
 		<main class="main">
 			<div class="container-fluid">
 				<div class="row page-title">
@@ -114,7 +23,7 @@
 						<h1>Fletes por viajes</h1>
 					</div>
 					<div class="col-lg-2 text-right">
-						<button class="btn btn-primary"><span class="fa fa-plus"></span> ALTA DE VIAJE</button>
+						<button class="btn btn-primary"><span class="fa fa-plus"></span> ALTA DE COA</button>
 					</div>
 				</div>
 				<div class="row">
@@ -125,9 +34,9 @@
 									<div class="row">
 										<div class="col-lg-3">
 											<div class="input-group">
-												<input id="buscar-viaje" class="" type="search" required name="buscar-viaje" data-language="es">
+												<input id="buscar-COA" class="" type="search" required name="buscar-COA" data-language="es">
 												<span class="fa fa-search" aria-hidden="true"></span>
-												<label for="buscar-viaje">Buscar viaje</label>
+												<label for="buscar-COA">Buscar N° COA</label>
 											</div>
 										</div>
 										<div class="col-lg-offset-3 col-lg-6 actions">
@@ -137,21 +46,7 @@
 										<div class="col-lg-12">
 											<div class="filters">
 												<div class="row">
-													<div class="col-lg-3">
-														<div class="input-group">
-															<select id="mov" class="select-buscador" required style="width: 100%">
-																<option value="" selected>Seleccione</option>
-																<option value="v1">Resultado 1</option>
-																<option value="v2">Resultado 2</option>
-																<option value="v3">Resultado 3</option>
-																<option value="v4">Resultado 4</option>
-																<option value="v5">Resultado 5</option>
-																<option value="v6">Resultado 6</option>
-															</select>
-															<label for="mov">Movimiento</label>
-														</div>
-													</div>
-													<div class="col-lg-3">
+													<div class="col-lg-4">
 														<div class="input-group">
 															<select id="armador" class="select-buscador" required style="width: 100%">
 																<option value="" selected>Seleccione</option>
@@ -162,12 +57,12 @@
 																<option value="v5">Resultado 5</option>
 																<option value="v6">Resultado 6</option>
 															</select>
-															<label for="mov">Armador</label>
+															<label for="armador">Armador</label>
 														</div>
 													</div>
-													<div class="col-lg-3">
+													<div class="col-lg-4">
 														<div class="input-group">
-															<select id="buque" class="select-buscador" required style="width: 100%">
+															<select id="viajes-asociados" class="select-buscador" required style="width: 100%">
 																<option value="" selected>Seleccione</option>
 																<option value="v1">Resultado 1</option>
 																<option value="v2">Resultado 2</option>
@@ -176,20 +71,7 @@
 																<option value="v5">Resultado 5</option>
 																<option value="v6">Resultado 6</option>
 															</select>
-															<label for="mov">Buque</label>
-														</div>
-													</div>
-													<div class="col-lg-3">
-														<div class="input-group">
-															<select name="fletador" id="fletador" required>
-																<option value="" selected>Seleccione</option>
-																<option value="v1">No iniciado</option>
-																<option value="v2">Aprobado</option>
-																<option value="v2">Facturado</option>
-																<option value="v2">Cancelado</option>
-																<option value="v2">Descartado</option>
-															</select>
-															<label for="fletador">Estado</label>
+															<label for="viajes-asociados">Viajes asociados</label>
 														</div>
 													</div>
 												</div>
@@ -282,23 +164,23 @@
 										<div class="col-lg-12">
 											<div class="tags-group">
 												<div class="alert tag" id="tag1">
-													<p>YPF GAS</p>
+													<p>COA.003</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag2">
-													<p>10.000 - 230.000 lbs</p>
+													<p>YPF GAS</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag3">
-													<p>10/03/2016 - 29/9/2017</p>
+													<p>10 VIAJES ASOCIADOS</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag4">
-													<p>0056578</p>
+													<p>10.000 - 230.000 lbs</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag5">
-													<p>NO INICIADO</p>
+													<p>10/03/2016 - 29/9/2017</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 											</div>
@@ -319,15 +201,7 @@
 				</div>
 			</div>
 		</main>
-		<footer>
-			<div class="version">
-				<img src="img/ypf-logo-color.png">
-				<p>Tritón 2.0</p>
-			</div>
-			<div class="help">
-				<p>Soporte técnico - Int. 1234</p>
-			</div>
-		</footer>
+		<?php include 'footer.php';?>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/datepicker.min.js"></script>
 		<script src="js/datepicker.es.js"></script>
@@ -335,7 +209,7 @@
 		<script src="js/select-search.min.js"></script>
         <script src="js/autosize.min.js"></script>
 		<!-- JQ Grid -->
-        <script src="js/listado_viajes-SPOT.js"></script>
+        <script src="js/listado_contratos-COA.js"></script>
         <script src="js/plugins/jqgrid2/grid.locale-es.js"></script>
         <script src="js/plugins/jqgrid2/jquery.jqGrid.js"></script>
 
