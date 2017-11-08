@@ -71,7 +71,7 @@
 											<option value="v6">Resultado 6</option>
 										</select>
 										<label for="product-name">Nombre del producto<span>*</span></label>
-										<p>Familia de productos XXX</p>
+										<h6>Familia de productos XXX</h6>
 									</div>
 									<div class="well">
 										<div class="well-header">
