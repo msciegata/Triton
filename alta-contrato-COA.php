@@ -103,7 +103,7 @@
 												<div class="col-lg-4">
 													<div class="input-group">
 														<input id="contrato-SAP" type="text" required name="contrato-SAP">
-														<label for="contrato-SAP">N° Contrato SAP</label>
+														<label for="contrato-SAP">N° Contrato SAP </label>
 													</div>
 												</div>
 												<div class="col-lg-1">
