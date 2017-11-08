@@ -3,7 +3,7 @@
 @import "fonts";
 
 //JqGrid estilos generales
-.ui-jqgrid {
+.ui-jqgrid-jquery-ui {
     font-family: "Open Sans Regular";
 
     &.responsive {
@@ -25,15 +25,13 @@
             color: $azulYPF;
             margin-left:10px;
             line-height: 1.5;
-            vertical-align: middle;
 
             &:hover {
                 text-decoration: none;
-                font-size: 16px;
             }
         }
     }
-    
+
     input,
     select,
     textarea,
@@ -72,19 +70,27 @@
     }
 
     //Encabezado de la tabla
-    .ui-jqgrid-hdiv {
-        background-color: $mediumGray;
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button,
+    html .ui-button.ui-state-disabled:hover,
+        html .ui-button.ui-state-disabled:active {
+        border-width: 0px;
+        font-weight: bold;
+        background: $mediumGray;
     }
 
     .ui-jqgrid-htable { 
-        th {
+        .ui-jqgrid-labels th {
             padding: 13px 5px 13px 20px;
-            
             &.ui-th-column {
                 text-align: left;
             }
-
             div {
+                margin: 0;
+                white-space: normal;
                 color: $white;
                 font-size: 16px;
                 margin: inherit;
@@ -111,28 +117,48 @@
     }
 
     //Celdas de la tabla
-    tr {
-        &.ui-row-ltr { 
-            td {
-                background-color: $white;
-                border-right-width: 0px;
-            }
+    &.ui-jqgrid .ui-jqgrid-bdiv tr.ui-row-ltr>td {
+        border-bottom: 1px solid $lightGray;
+    }
+
+    .ui-jqgrid-bdiv {
+        .ui-state-highlight,
+        .ui-widget-content .ui-state-highlight,
+        .ui-widget-header .ui-state-highlight,
+        .ui-state-hover,
+        .ui-widget-content .ui-state-hover,
+        .ui-widget-header .ui-state-hover,
+        .ui-state-focus,
+        .ui-widget-content .ui-state-focus,
+        .ui-widget-header .ui-state-focus,
+        .ui-button:hover,
+            .ui-button:focus {
+            border: 1px solid $lightGray;
+            background: $white;
+            color: #333;
         }
+        tr {
+            &.ui-row-ltr { 
+                &>td {
+                    border-right-width: 0px;
+                }
+            }
 
-        &.jqgrow {
-            td {
-                font-size: 14px;
-                padding: 15px 10px 15px 20px;
-                border-bottom: 1px solid $lightGray;
-                overflow: hidden;
-                white-space: normal;
-                height: auto;
+            &.jqgrow {
+                td {
+                    font-size: 14px;
+                    padding: 15px 10px 15px 20px;
+                    overflow: hidden;
+                    white-space: normal;
+                    height: auto;
 
-                &:last-of-type {
-                    text-align: center;
+                    &:last-of-type {
+                        text-align: center;
+                    }
                 }
             }
         }
+
     }
 
     //Columna de acciones
@@ -160,20 +186,58 @@
             color: $purple
         }
     }
-    
+
     //Paginado de la tabla
     .ui-jqgrid-pager {
 
+        background: transparent;
+
+        .ui-icon {
+            font: normal normal normal 22px/1 FontAwesome;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background: none;
+            text-indent: 0;
+            width: auto;
+            height: auto;
+            margin: 0 10px;
+        }
+
+        .ui-icon-seek-first {
+            &:before {
+                content: "\f100";
+            }
+        }
+
+        .ui-icon-seek-prev {
+            &:before {
+                content: "\f104";
+            }
+        }
+
+        .ui-icon-seek-next {
+            &:before {
+                content: "\f105";
+            }
+        }
+
+        .ui-icon-seek-end {
+            &:before {
+                content: "\f101";
+            }
+        }
+        
         .ui-pager-control {
             height: 40px;
         }
 
-        .ui-pager-table {
-            width: 100%;
-            table-layout: fixed;
-            height: 100%;
-            color: black;
+        .ui-pg-table {
             font-size: 14px;
+            td {
+                font-weight: normal;
+                padding: 0px 1px;
+            }
         }
 
         .ui-pg-input {
@@ -188,16 +252,28 @@
         }
 
         .ui-pg-selbox {
-            padding: 3px 0 5px;
+            padding: 3px 18px 5px 0;
             border-radius: 0px;
             font-size: inherit;
             height: auto;
             display: inline-block;
-            border-bottom: 0.5px solid $darkGray;
+            border-width: 0 0 0.5px 0;
+            border-style: solid;
+            border-color: $darkGray;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            background-image: linear-gradient(45deg, transparent 50%, #666666 50%), linear-gradient(135deg, #666666 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
+            background-position: calc(100% - 5px) calc(1em - 4px), calc(100% - 0px) calc(1em - 4px), calc(100% - 2.5em) 0;
+            background-size: 5px 5px, 5px 5px, 0 0;
+            background-repeat: no-repeat;
+            &::-ms-expand {
+                display: none;
+            }  
         }
 
         .ui-widget-content {
-            background-image: none;
             background-color: transparent;
         }
 
@@ -219,34 +295,34 @@
             }
         }
 
-        .ui-paging-pager { 
-            .cantidad-a-mostrar {
-                margin: 0 15px;
-            }
-        }
-
         .ui-state-disabled {
             &:hover {
                 padding: 0px 1px;
             }
         }
 
-    }
+        .ui-jqgrid-pg-left,
+        .ui-jqgrid-pg-right {
+            display: none;
+        }
 
-    #prowed2_left,
-    #prowed2_right {
-        display: none;
-    }
-
-    #prowed2_center {
-        text-align: left;
-
-        .ui-paging-pager { 
-            td:last-of-type {
-                width: 100%;
-                text-align: right;
+        .ui-jqgrid-pg-center {
+            text-align: left;
+            .ui-pg-table { 
+                td:last-of-type {
+                    width: 100%;
+                    text-align: right;
+                }
             }
         }
+
+        .ui-pg-button.ui-state-hover,
+        .ui-pg-button:focus,
+            .ui-pg-button:hover {
+            border-color: transparent;
+            background-color: transparent;
+        }
+
     }
 
     //Colores de la tabla

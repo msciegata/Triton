@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Tritón 2.0 | Registrar necesidad de compra</title>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-		<link href="css/datepicker.css" rel="stylesheet" type="text/css">
-		<link href="css/timepicker.css" rel="stylesheet" type="text/css">
-		<link href="css/select-search.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="css/font-awesome.css">
-		<link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/datepicker.css">
+        <link rel="stylesheet" href="css/timepicker.css">
+        <link rel="stylesheet" href="css/select-search.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="js/plugins/jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/ui.jqgrid.min.css">
+        <link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 		<?php include 'header.php';?>
@@ -297,14 +299,22 @@
 				</div>
 			</div>
 		</div>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/datepicker.min.js"></script>
-		<script src="js/datepicker.es.js"></script>
-		<script src="js/timepicker.js"></script>
-		<script src="js/select-search.min.js"></script>
+		<!-- Scripts -->
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="js/datepicker.min.js"></script>
+        <script src="js/datepicker.es.js"></script>
+        <script src="js/timepicker.js"></script>
+        <script src="js/select-search.min.js"></script>
         <script src="js/autosize.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+
+        <!-- JQ Grid -->
+        <script src="js/plugins/jqgrid/jquery.jqgrid.min.js"></script>
+        <script src="js/plugins/jqgrid/grid.locale-es.js"></script>
+        <script src="js/listado_viajes-SPOT.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
 		<script>
 			$(function () {
                             

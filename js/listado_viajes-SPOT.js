@@ -41,7 +41,6 @@ jQuery(document).ready(function ($) {
 //--
 
 $(document).ready(function () {
-    $("#gview_tree").addClass("responsive");
     $(".ui-jqgrid-hdiv").addClass("responsive");
     $(".ui-jqgrid").addClass("responsive");
     $(".ui-jqgrid-htable").addClass("responsive");
@@ -50,6 +49,6 @@ $(document).ready(function () {
     $(".ui-jqgrid-pager").addClass("responsive");
     $(".ui-jqgrid-hbox").addClass("responsive");
     $(".ui-jqgrid-view").addClass("responsive");
-    $("#prowed2_center .ui-paging-pager .ui-pg-selbox option").prepend("Mostrar ");
-    $("#prowed2_center .ui-paging-pager .ui-pg-selbox option").append(" viajes");
+    $(".ui-jqgrid-pg-center .ui-pg-selbox option").prepend("Mostrar ");
+    $(".ui-jqgrid-pg-center .ui-pg-selbox option").append(" viajes");
 });
