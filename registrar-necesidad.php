@@ -71,7 +71,6 @@
 											<option value="v6">Resultado 6</option>
 										</select>
 										<label for="product-name">Nombre del producto<span>*</span></label>
-										<h6>Familia de productos XXX</h6>
 									</div>
 									<div class="well">
 										<div class="well-header">
@@ -171,12 +170,20 @@
 													<div class="input-group">
 														<input id="contrato-SAP" type="text" required name="contrato-SAP">
 														<span class="fa fa-file"></span>
-														<label for="contrato-SAP">Adjuntar archivo</label>
+														<label for="contrato-SAP">Adjuntar archivos</label>
 													</div>
 												</div>
 												<div class="col-lg-1">
 													<div class="well-trash">
 														<a href="#"> 
+															<span class="fa fa-trash"></span>
+														</a>
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<div class="file-upload">
+														<p><span class="fa fa-file"></span>Nombre archivo.ext</p>
+														<a href="#">
 															<span class="fa fa-trash"></span>
 														</a>
 													</div>

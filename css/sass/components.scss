@@ -1078,12 +1078,29 @@ p {
 
 	}
 }
+
+// Upload
+.file-upload {
+	p {
+		font-size: 14px;
+		color: $mediumGray;
+
+		span {
+			margin-right: 10px;
+		}
+	}
+
+	span {
+
+	}
+}
+
 // Remarks
 .remark {
 	display:block;
 	width:100%;
 	font-size:14px;
-	margin:45px 0 10px;
+	margin:40px 0 10px;
 	padding:15px;
 	border-radius:0;
 	line-height:1.3;
