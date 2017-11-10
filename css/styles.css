@@ -1744,9 +1744,8 @@ input::-ms-clear {
   color: #666666;
 }
 /* line 1292, sass/components.scss */
-.input-group .select2-container.select2-container--default {
-    position: inherit;
-    margin-top: 15px;
+.input-group .select2-container {
+  top: 15px;
 }
 /* line 1297, sass/components.scss */
 .input-group .select2-container .select2-selection--single .select2-selection__rendered {
@@ -1843,7 +1842,7 @@ input::-ms-clear {
   color: #AAAAAA;
 }
 /* line 1414, sass/components.scss */
-.input-group input:focus ~ label, .input-group input ~ label.label-arriba, .input-group select:focus ~ label, .input-group select  ~ label.label-arriba, .input-group textarea:focus ~ label, .input-group textarea ~ label.label-arriba {
+.input-group input:focus ~ label, .input-group input:valid ~ label, .input-group input.label-arriba, .input-group select:focus ~ label, .input-group select:valid ~ label, .input-group select.label-arriba, .input-group textarea:focus ~ label, .input-group textarea:valid ~ label, .input-group textarea.label-arriba {
   margin-top: 25px;
   top: -30px;
   font-size: 14px;
