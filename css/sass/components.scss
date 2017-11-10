@@ -1290,8 +1290,6 @@ input::-ms-clear{
 
 	// Select with search
     .select2-container {
-    	top:15px;
-		
   		.select2-selection--single {
 
   			.select2-selection__rendered {
@@ -1303,6 +1301,8 @@ input::-ms-clear{
   	}
 
 	.select2-container--default {
+                position: inherit;
+                margin-top: 15px;
 		.select2-search--dropdown {
 			input.select2-search__field {
 				border:0px solid $black !important;
@@ -1411,9 +1411,8 @@ input::-ms-clear{
 			}
 		}
 
-		&:focus ~ label,
-		&:valid ~ label,
-		&.label-arriba {
+		&:focus ~ label, 
+		& ~ label.label-arriba {
 			margin-top:25px;
 			top:-30px;
 			font-size:14px;

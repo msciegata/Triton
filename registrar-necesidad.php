@@ -60,7 +60,7 @@
 							</div>
 							<div class="card-body">
 								<div class="col-lg-6">
-									<div class="input-group">
+									<div class="input-group error">
 										<select id="product-name" class="select-buscador" required style="width: 100%">
 											<option value="" selected>Seleccione</option>
 											<option value="v1">Resultado 1</option>
@@ -71,7 +71,7 @@
 											<option value="v6">Resultado 6</option>
 										</select>
 										<label for="product-name">Nombre del producto<span>*</span></label>
-										<h6>Familia de productos XXX</h6>
+										<p>Familia de productos XXX</p>
 									</div>
 									<div class="well">
 										<div class="well-header">
@@ -354,6 +354,16 @@
                     }
                     ;
                 });
+                
+                var functionLabelPosition = function(){
+                    if ($(this).val() !== "") {
+                        $(this).parent('.input-group').find('label').addClass('label-arriba').removeClass('label-abajo');
+                    } else {
+                        $(this).parent('.input-group').find('label').addClass('label-abajo').removeClass('label-arriba');
+                    }
+		};				
+		$("select").change(functionLabelPosition);
+		$("input, textarea").blur(functionLabelPosition);
 
             });
 		</script>

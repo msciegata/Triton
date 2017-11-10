@@ -588,6 +588,16 @@
                     }
                     ;
                 });
+                
+                var functionLabelPosition = function(){
+                    if ($(this).val() !== "") {
+                        $(this).parent('.input-group').find('label').addClass('label-arriba').removeClass('label-abajo');
+                    } else {
+                        $(this).parent('.input-group').find('label').addClass('label-abajo').removeClass('label-arriba');
+                    }
+		};				
+		$("select").change(functionLabelPosition);
+		$("input, textarea").blur(functionLabelPosition);
             });
 		</script>
 	</body>
