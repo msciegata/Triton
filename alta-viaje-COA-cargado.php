@@ -114,12 +114,12 @@
 										<label for="mov-triton">Movimiento tritón<span>*</span></label>
 									</div>
 									<div class="input-group">
-										<select name="fletador" id="fletador" required>
-											<option value="" selected>Seleccione</option>
+										<select name="fletador" id="fletador">
+											<option></option>
 											<option value="v1">Papa Juan Pablo II</option>
 											<option value="v2">Papa Francisco</option>
 										</select>
-										<label for="fletador">Buque<span>*</span></label>
+										<label for="fletador">Buque</label>
 									</div>
 									<div class="laycan">
 										<h5>Laycan</h5>
@@ -253,7 +253,7 @@
 									<div class="row">
 										<div class="col-lg-12">
 											<div class="input-group autoheight margin-top-20">
-                                                <textarea id="observaciones" required name="observaciones" rows="1" cols="50"></textarea>
+                                                <textarea id="observaciones" name="observaciones" rows="1" cols="50"></textarea>
                                                 <label for="observaciones">Observaciones</label>
                                             </div>
 										</div>
@@ -352,7 +352,7 @@
 									<div class="row">
 										<div class="col-lg-4">
 											<div class="input-group">
-												<input id="cant-min" type="text" required name="cant-min">
+												<input id="cant-min" type="text" name="cant-min">
 												<label for="cant-min">Cantidad mínima</label>
 											</div>
 										</div>
@@ -631,6 +631,16 @@
                     }
                     ;
                 });
+				
+				var functionLabelPosition = function(){
+					 if ($(this).val() !== "") {
+                        $(this).parent('.input-group').find('label').addClass('label-arriba').removeClass('label-abajo');
+                    } else {
+                        $(this).parent('.input-group').find('label').addClass('label-abajo').removeClass('label-arriba');
+                    }
+				};				
+				$("select").change(functionLabelPosition);
+				$("input, textarea").blur(functionLabelPosition);
             });
 		</script>
 	</body>
