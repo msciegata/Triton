@@ -5,8 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>YPF Style | Components</title>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	    <link rel="stylesheet" href="css/datepicker.css">
-	    <link rel="stylesheet" href="css/timepicker.css">
+	    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
 	    <link rel="stylesheet" href="css/select-search.min.css">
 	    <link rel="stylesheet" href="css/font-awesome.css">
 	    <link rel="stylesheet" href="js/plugins/jquery-ui/jquery-ui.min.css">
@@ -350,9 +349,7 @@
 	<!-- Scripts -->
         <script src="js/jquery-2.2.4.min.js"></script>
         <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
-        <script src="js/datepicker.min.js"></script>
-        <script src="js/datepicker.es.js"></script>
-        <script src="js/timepicker.js"></script>
+        <script src="js/jquery.datetimepicker.full.min.js"></script>
         <script src="js/select-search.min.js"></script>
         <script src="js/autosize.min.js"></script>
 
@@ -375,13 +372,18 @@
 				  $(this).tab('show');
 				});
 
-				// Datepicker
-				$('.input-date').datepicker();
-
-				// Timepicker
-				$(".timepicker").click(function () {
-                    $(this).timepicker('showWidget');
-                });
+				//Datepicker
+                                $.datetimepicker.setLocale('es');
+                                $('.input-date').datetimepicker({
+                                    timepicker:false,
+                                    format: 'd/m/Y'
+                                });
+                                //Timepicker
+                                $('.timepicker').datetimepicker({
+                                    datepicker:false,
+                                    format:'H:i',
+                                    step: 5
+                                });
 
 				//Select with search 
                 $(".select-buscador").select2();
@@ -412,7 +414,7 @@
 		};				
 		$("select").change(functionLabelPosition);
 		$("input, textarea").blur(functionLabelPosition);
-
+                $("select, input, textarea").each(functionLabelPosition);
             });
 		</script>
 </body>

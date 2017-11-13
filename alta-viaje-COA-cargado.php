@@ -96,7 +96,7 @@
 							<div class="card-body">
 								<div class="col-lg-6">
 									<div class="input-group">
-										<input id="fecha-cierre" class="input-date datapicker-here" type="text" required name="fecha-cierre" data-language="es">
+										<input id="fecha-cierre" class="input-date datapicker-here" type="text" required name="fecha-cierre">
 										<span class="fa fa-calendar" aria-hidden="true"></span>
 										<label for="fecha-cierre">Fecha de cierre<span>*</span></label>
 									</div>
