@@ -257,7 +257,8 @@
                                 $.datetimepicker.setLocale('es');
                                 $('.input-date').datetimepicker({
                                     timepicker:false,
-                                    format: 'd/m/Y'
+                                    format: 'd/m/Y',
+                                    scrollInput: false
                                 });
                                 //Timepicker
                                 $('.timepicker').datetimepicker({
