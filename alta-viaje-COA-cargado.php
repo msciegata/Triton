@@ -6,13 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Tritón 2.0 | Alta viaje COA</title>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/datepicker.css">
-        <link rel="stylesheet" href="css/timepicker.css">
         <link rel="stylesheet" href="css/select-search.min.css">
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="js/plugins/jquery-ui/jquery-ui.min.css">
         <link rel="stylesheet" href="css/ui.jqgrid.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
 	</head>
 	<body>
 		<?php include 'header.php';?>
@@ -131,14 +130,14 @@
 												<div class="row">
 													<div class="col-lg-6">
 														<div class="input-group">
-															<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio" data-language="es">
+															<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio">
 															<span class="fa fa-calendar" aria-hidden="true"></span>
 															<label for="fecha-inicio">Fecha</label>
 														</div>
 													</div>
 													<div class="col-lg-6">
 														<div class="input-group">
-															<input id="horario-inicio" type="text" class="form-control input-small timepicker"  data-minute-step="5" data-default-time="current" data-show-seconds="false" data-show-meridian="false" required>
+															<input id="horario-inicio" type="text" class="input-small timepicker" required>
 															<span class="fa fa-clock-o" aria-hidden="true"></span>
 															<label for="horario-inicio">Horario</label>
 														</div>
@@ -154,14 +153,14 @@
 												<div class="row">
 													<div class="col-lg-6">
 														<div class="input-group">
-															<input id="fecha-fin" class="input-date" type="text" required name="fecha-fin" data-language="es">
+															<input id="fecha-fin" class="input-date" type="text" required name="fecha-fin">
 															<span class="fa fa-calendar" aria-hidden="true"></span>
 															<label for="fecha-fin">Fecha</label>
 														</div>
 													</div>
 													<div class="col-lg-6">
 														<div class="input-group">
-															<input id="horario-fin" type="text" class="form-control input-small timepicker"  data-minute-step="5" data-default-time="current" data-show-seconds="false" data-show-meridian="false" required>
+															<input id="horario-fin" type="text" class="input-small timepicker" required>
 															<span class="fa fa-clock-o" aria-hidden="true"></span>
 															<label for="horario-fin">Horario</label>
 														</div>
@@ -187,7 +186,7 @@
 												<div class="tab-content">
 													<div role="tabpanel" class="tab-pane fijo active" id="fijo">
 														<div class="input-group">
-															<input id="tiempo-fijo" type="text" class="form-control input-small timepicker"  data-minute-step="5" data-default-time="current" data-show-seconds="false" data-show-meridian="false" required>
+															<input id="tiempo-fijo" type="text" class="form-control input-small timepicker" required>
 															<span class="fa fa-clock-o" aria-hidden="true"></span>
 															<label for="tiempo-fijo">Tiempo</label>
 														</div>
@@ -212,7 +211,7 @@
 														</div>
 														<div class="col-lg-3">
 															<div class="input-group">
-																<input id="tiempo-calculado" type="text" class="form-control input-small timepicker"  data-minute-step="5" data-default-time="current" data-show-seconds="false" data-show-meridian="false" required>
+																<input id="tiempo-calculado" type="text" class="form-control input-small timepicker" required>
 																<span class="fa fa-clock-o" aria-hidden="true"></span>
 																<label for="tiempo-calculado">Tiempo</label>
 															</div>
@@ -579,11 +578,9 @@
 		</div>
 		<script src="js/jquery-2.2.4.min.js"></script>
         <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
-        <script src="js/datepicker.min.js"></script>
-        <script src="js/datepicker.es.js"></script>
-        <script src="js/timepicker.js"></script>
         <script src="js/select-search.min.js"></script>
         <script src="js/autosize.min.js"></script>
+        <script src="js/jquery.datetimepicker.full.min.js"></script>
 
         <!-- JQ Grid -->
         <script src="js/plugins/jqgrid/jquery.jqgrid.min.js"></script>
@@ -604,13 +601,18 @@
 				  $(this).tab('show');
 				});
 
-				// Datepicker
-				$('.input-date').datepicker();
-
-				// Timepicker
-				$(".timepicker").click(function () {
-                    $(this).timepicker('showWidget');
-                });
+				//Datepicker
+                                $.datetimepicker.setLocale('es');
+                                $('.input-date').datetimepicker({
+                                    timepicker:false,
+                                    format: 'd/m/Y'
+                                });
+                                //Timepicker
+                                $('.timepicker').datetimepicker({
+                                    datepicker:false,
+                                    format:'H:i',
+                                    step: 5
+                                });
 
 				//Select with search 
                 $(".select-buscador").select2();
@@ -641,6 +643,7 @@
 		};				
 		$("select").change(functionLabelPosition);
 		$("input, textarea").blur(functionLabelPosition);
+                $("select, input, textarea").each(functionLabelPosition);
             });
 		</script>
 	</body>
