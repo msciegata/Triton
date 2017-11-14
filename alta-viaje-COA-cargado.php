@@ -504,29 +504,26 @@
 					</div>
 					<div class="modal-body">
 						<div class="col-lg-6">
-							<div class="col-lg-12">
-								<div class="radio-button">
-									<div class="radio">
-										<input type="radio" id="costo" name="costo-ingreso">
-										<label for="costo" class="radio-label">Costo</label>
-									</div>
-									<div class="radio">
-										<input type="radio" id="ingreso" name="costo-ingreso">
-										<label for="ingreso" class="radio-label">Ingreso</label>
-									</div>
+							<div class="radio-button warning">
+								<div class="radio">
+									<input type="radio" id="costo" name="costo-ingreso">
+									<label for="costo" class="radio-label">Costo</label>
 								</div>
+								<div class="radio">
+									<input type="radio" id="ingreso" name="costo-ingreso">
+									<label for="ingreso" class="radio-label">Ingreso</label>
+								</div>
+								<p>Este campo es obligatorio</p>
 							</div>
-							<div class="col-lg-12">
-								<div class="input-group">
-									<select name="concepto" id="concepto" required>
-										<option value="" selected>Seleccione</option>
-										<option value="v1">Resultado 1</option>
-										<option value="v2">Resultado 2</option>
-										<option value="v3">Resultado 3</option>
-										<option value="v4">Resultado 4</option>
-									</select>
-									<label for="concepto">Concepto<span>*</span></label>
-								</div>
+							<div class="input-group">
+								<select name="concepto" id="concepto" required>
+									<option value="" selected>Seleccione</option>
+									<option value="v1">Resultado 1</option>
+									<option value="v2">Resultado 2</option>
+									<option value="v3">Resultado 3</option>
+									<option value="v4">Resultado 4</option>
+								</select>
+								<label for="concepto">Concepto<span>*</span></label>
 							</div>
 						</div>
 						<div class="col-lg-6">

@@ -263,8 +263,12 @@
 									color: $purple;
 								}
 							}
+						}
 
-
+						&.pay {
+							text-align: center;
+							color: $green;
+							font-family: 'Open Sans Bold';
 						}
 
 					}

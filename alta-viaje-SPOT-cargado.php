@@ -384,8 +384,9 @@
 											<td>Nombre demasiado largo del concepto</td>
 											<td>Nombre de la contraparte</td>
 											<td>USD <span>540.000.000</span></td>
+											<td></td>
 											<td>
-												<a href="#">
+												<a href="" class="detail" data-toggle="tooltip" data-placement="bottom" title="Este es un detalle de un costo o ingreso asociado. El límite de caracteres a mostrar es 100.">
 													<span class="fa fa-eye"></span>
 												</a>
 												<a href="#">
@@ -401,8 +402,9 @@
 											<td>Nombre largo del concepto</td>
 											<td>Nombre largo de la contraparte</td>
 											<td>ARS <span>230.000</span></td>
+											<td class="pay">PAGADO</td>
 											<td>
-												<a href="#">
+												<a href="" class="detail" data-toggle="tooltip" data-placement="bottom" title="Este es un detalle de un costo o ingreso asociado. El límite de caracteres a mostrar es 100.">
 													<span class="fa fa-eye"></span>
 												</a>
 												<a href="#">
@@ -418,8 +420,9 @@
 											<td>Nombre corto</td>
 											<td>Nombre super largo de la contraparte</td>
 											<td>EUR <span>30.000</span></td>
+											<td></td>
 											<td>
-												<a href="#">
+												<a href="" class="detail" data-toggle="tooltip" data-placement="bottom" title="Este es un detalle de un costo o ingreso asociado. El límite de caracteres a mostrar es 100.">
 													<span class="fa fa-eye"></span>
 												</a>
 												<a href="#">
@@ -549,6 +552,8 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>
 		<script>
 			$(function () {
+				// Tooltip
+				$('[data-toggle="tooltip"]').tooltip();
                             
                 // TextAreas con autoresize        
                 autosize($('textarea'));
