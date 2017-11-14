@@ -159,6 +159,11 @@
 									<div class="well">
 										<div class="well-header">
                                                                                         <h6>Especificaciones de calidad</h6>
+                                                                                        <div id="well-add-button" class="well-add">
+                                                                                            <a href="#"> 
+                                                                                                <span class="fa fa-plus"></span>
+                                                                                            </a>
+                                                                                        </div>
 										</div>
                                                                                 <div id="contrato-SAP-upload" name="contrato-SAP-upload" class="well-body"></div>
 									</div>
@@ -362,11 +367,6 @@
         </div>
         <div class="input-group">
             <label for="contrato-SAP" class="label-campo label-abajo">Adjuntar archivo</label>
-            <div class="qq-upload-button-selector well-add-button">
-                <a href="#">
-                    <span class="fa fa-plus well-add-button-fa"></span>
-                </a>
-            </div>
         </div>
         <span class="qq-drop-processing-selector qq-drop-processing">
             <span>Processing dropped files...</span>
@@ -450,7 +450,15 @@
             },
             validation: {
                 allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
-            }
+            },
+            extraButtons: [
+                {
+                    element: document.getElementById("well-add-button"),
+                    validation: {
+                        allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
+                    }
+                }
+            ]
         });
         </script>
 	</body>
