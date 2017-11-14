@@ -260,15 +260,72 @@
 								margin:0 15px 0 0;
 
 								&.fa-trash {
-									color: $purple;
+									color: $orange;
 								}
+							}
+						}
+
+						&.no-pay {
+							text-align: center;
+							font-family: 'Open Sans Regular';
+
+							.t-pay + .tooltip > .tooltip-arrow {
+								position:relative;
+								left:45% !important;
+								border-bottom-color: $black;
+							}
+
+							.t-pay + .tooltip > .tooltip-inner {
+							  	width:100%;
+							    color: white; 
+							    border: 1px solid $black; 
+							    padding: 10px;
+							    font-size: 12px;
+							    border-radius:0;
+							    display: inline-block;
+								text-align:center;
+								background-color: $black;
+							}
+
+							span {
+								font-family: 'FontAwesome';
+								background-color:$purple;
+								color: $white;
+								padding:10px 12px;
+								font-size: 18px;
+								margin:0 auto;
 							}
 						}
 
 						&.pay {
 							text-align: center;
-							color: $green;
-							font-family: 'Open Sans Bold';
+
+							.t-pay + .tooltip > .tooltip-arrow {
+								position:relative;
+								left:50% !important;
+								border-bottom-color: $black;
+							}
+
+							.t-pay + .tooltip > .tooltip-inner {
+							  	width:100%;
+							    color: white; 
+							    border: 1px solid $black; 
+							    padding: 10px;
+							    font-size: 12px;
+							    border-radius:0;
+							    display: inline-block;
+								text-align:center;
+								background-color: $black;
+							}
+
+							span {
+								font-family: 'FontAwesome';
+								background-color: $green;
+								font-size: 16px;
+								margin: 0 auto;
+								padding:10px;
+								color: $white;
+							}
 						}
 
 					}

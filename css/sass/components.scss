@@ -322,7 +322,8 @@ h5 {
 
 //Tooltip
 .detail + .tooltip > .tooltip-arrow {
-	left:-15px;
+	position:relative;
+	left:45% !important;
 	border-bottom-color: $black;
 }
 
@@ -1870,6 +1871,7 @@ input::-ms-clear{
 
 			&:hover {
 				background-color:$cyan;
+				color: $white;
 			}
 		}
   
