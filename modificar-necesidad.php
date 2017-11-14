@@ -189,8 +189,9 @@
 								</button>
 							</div>
 							<div class="col-lg-6 text-right">
-								<button class="btn btn-primary">REGISTRAR NECESIDAD</button>
-								<button class="btn btn-ghost-neutral">CANCELAR</button>
+								<button class="btn btn-primary">GUARDAR MODIFICACIÓN</button>
+								<button class="btn btn-danger">CANCELAR NECESIDAD</button>
+								<button class="btn btn-ghost-neutral">SALIR</button>
 							</div>
 						</div>
 					</div>

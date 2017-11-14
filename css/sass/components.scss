@@ -16,6 +16,10 @@
 	text-align:right !important;
 }
 
+.text-left {
+	text-align:left !important;
+}
+
 //Margin-top
 .margin-top-0 {
 	margin-top:0px !important;
@@ -373,6 +377,11 @@ h5 {
     .vip-item {
     	background-color: $cyan;
     	padding:20px 20px 10px;
+    	margin-bottom: 10px;
+
+    	&.purple {
+    		background-color: $purple;
+    	}
 
     	h6 {
     		font-size:18px;
@@ -816,6 +825,14 @@ p {
 			border:1px solid transparent !important;
 		}
 	}
+
+	.fa {
+		font-size: 14px;
+		border-radius:20px;
+		padding:3px 4px 3px;
+		background-color:$white;
+		margin-right: 10px;
+	}
 }
 
 	// Primary
@@ -838,6 +855,10 @@ p {
 	&:visited,
 	&:hover {
 		background-color: $mediumCyan !important;
+	}
+
+	.fa {
+		color: $cyan;
 	}
 
 }
@@ -896,6 +917,10 @@ p {
 	&:hover {
 		background-color: $mediumGreen !important;
 	}
+
+	.fa {
+		color: $green;
+	}
 	
 }
 
@@ -953,6 +978,10 @@ p {
 	&:hover {
 		background-color: $mediumOrange !important;
 	}
+
+	.fa {
+		color: $orange;
+	}
 }
 
 .btn-ghost-warning {
@@ -1008,6 +1037,10 @@ p {
 	&:visited,
 	&:hover {
 		background-color: $mediumPurple !important;
+	}
+
+	.fa {
+		color: $purple;
 	}	
 }
 
@@ -1042,6 +1075,11 @@ p {
 		border:1px solid $mediumPurple;
 		color:$mediumPurple;
 	}
+
+	.fa {
+		color: $white;
+		background-color:$purple;
+	}	
 }
 
 	// Neutral
@@ -1066,6 +1104,10 @@ p {
 			background-color: $mediumGray !important;
 		}
 	}
+
+	.fa {
+		color: $darkGray;
+	}	
 }
 
 .btn-ghost-neutral {
@@ -1100,8 +1142,12 @@ p {
 			border:1px solid $mediumGray !important;
 			color:$mediumGray;
 		}
-
 	}
+
+	.fa {
+		color: $white;
+		background-color:$black;
+	}	
 }
 // Remarks
 .remark {
