@@ -384,7 +384,7 @@
 											<td>Nombre demasiado largo del concepto</td>
 											<td>Nombre de la contraparte</td>
 											<td>USD <span>540.000.000</span></td>
-											<td class="no-pay">-</td>
+											<td></td>
 											<td>
 												<a href="" class="detail" data-toggle="tooltip" data-placement="bottom" title="Este es un detalle de un costo o ingreso asociado. El límite de caracteres a mostrar es 100.">
 													<span class="fa fa-eye"></span>
@@ -426,7 +426,7 @@
 											<td>EUR <span>30.000</span></td>
 											<td class="no-pay" title="No pagado">
 												<a href="#" class="t-pay" data-toggle="tooltip" data-placement="bottom"  title="No pagado">
-													<span class="fa fa-close"></span>
+													<span class="fa fa-cllse"></span>
 												</a>
 											<td>
 												<a href="" class="detail" data-toggle="tooltip" data-placement="bottom" title="Este es un detalle de un costo o ingreso asociado. El límite de caracteres a mostrar es 100.">
