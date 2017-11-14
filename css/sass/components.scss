@@ -499,7 +499,7 @@ h5 {
 			}
 		}
 
-		@at-root .well-add-button, & .well-add {
+		.well-add {
 			display: inline-block;
 		    position: absolute !important;
 		    right: 0;
@@ -529,10 +529,6 @@ h5 {
                                 }
 			}
 		}
-                
-                @at-root .well-add-button {
-                    background: none !important;
-                }
 	}
 
 	.well-body {
@@ -1287,7 +1283,7 @@ input::-ms-clear{
         height: auto;
     }
 
-    .fa:not(.well-add-button-fa) {
+    .fa {
     	position: relative;
     	padding-right:5px;
     	top: -23px;
@@ -1437,6 +1433,10 @@ input::-ms-clear{
 			height: auto;
 		}
 	}
+        
+        .label-campo {
+            padding-top: 0px;
+        }
         
     textarea {
         resize: none;
