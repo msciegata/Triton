@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.qq-uploader-selector {
+    min-height: 100px;
+    .qq-total-progress-bar-container-selector {
+        display: none;
+    }
+    .qq-upload-list-selector {
+        li {
+            background: none !important;
+        }
+        .fa-file-o {
+            margin-right: 15px;
+        }
+        .qq-upload-cancel-selector {
+            float: right;
+        }
+    }
+    .empty-message{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    .qq-upload-list-selector:empty + .empty-message {
+        display: block;
+    }
+}
+
+#well-add-button {
+    background: none;
+}
