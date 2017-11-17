@@ -21,9 +21,6 @@
 					<div class="col-lg-10">
 						<h1>Fletes por viajes</h1>
 					</div>
-					<div class="col-lg-2 text-right">
-						<button class="btn btn-primary"><span class="fa fa-plus"></span> ALTA DE VIAJE</button>
-					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-12">
@@ -223,6 +220,13 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 text-right">
+						<button class="btn btn-success">
+							<span class="fa fa-plus"></span> ALTA DE VIAJE
+						</button>
 					</div>
 				</div>
 			</div>

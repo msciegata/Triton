@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style-val-necesidad.css">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="header">
+				<img src="img/ypf-logo-color.png">
+				<h3>NUEVO <span>TRITÓN</span></h3>
+			</div>
+
+			<!-- Ojo que las siguientes alertas no contienen elX (close) porque no tiene sentido dejar la opción de cerrar la notificación -->
+
+			<div class="alert alert-success">
+				<p>
+					La necesidad de compra internacional #N2345A fue aprobada satisfactoriamente.
+				</p>
+			</div>
+
+			<!-- La siguiente alerta es de color azul porque si bien está rechazando una necesidad, la misma fue rechazada satisfactoriamente, con lo cual sería darle al usuario un mensaje confuso si la misma fuera una "danger"-->
+			<div class="alert alert-primary">
+				<p>
+					La necesidad de compra internacional #N2345A fue rechazada satisfactoriamente.
+				</p>
+			</div>
+
+			<!-- La sigueinte alerta es para cuando el usuario realiza correctamente la acción pero el sistema no logra llevar a cabo el proceso.-->
+			<div class="alert alert-danger">
+				<p>
+					La necesidad de compra internacional #N2345A no se pudo aceptar/rechazar. Intente nuevamente en unos minutos.
+				</p>
+			</div>
+			<div class="footer">
+				<h4>YPF</h4>
+				<p>Tritón 2.0</p>
+			</div>
+		</div>
+	</body>
+</html>

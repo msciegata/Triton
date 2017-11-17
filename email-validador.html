@@ -33,30 +33,30 @@
 			}
 
 			.header .budget {
-				background-color: #BFD518;
+				background-color: #D1DD98;
+				border:1px solid #BFD518;
+				padding:0;
+				text-align: center;
+				margin-bottom:10px;
 			}
 
 
 			.header .budget.out {
-				background-color: #A41A67;
-			}
-
-			.header .budget img {
-				display: inline-block;
-				float:left;
-				position:relative;
-				width: 40px;
-			}
-
-			.header .budget img.hidden {
-				display:none;
+				background-color: #D197A8;
+				border:1px solid #A41A67;
 			}
 
 
 			.header .budget h3 {
-				font-size:18px;
+				font-size:16px;
+				font-weight: bold;
 				padding:10px;
-				color: #fff;
+				color: #444;
+				margin:0;
+			}
+
+			.header .budget.out h3 {
+				color:#222;
 			}
 
 			.well {
@@ -206,14 +206,13 @@
 		<div class="content">
 			<div class="header">
 				<p>Martín Horacio García Begher (<span>SE21626</span>) ha registrado una necesidad de compra internacional:</p>
+
 				<!-- Cuando la necesidad se encuentre fuera del presupuesto agregar la clase "out" al siguiente div -->
 				<div class="budget">
-					<!-- Cuando la necesidad se encuentre fuera del presupuesto, aplicar la clase hidden a la siguiente imagen -->
-					<img src="img/check.png">
-					<!-- Cuando la necesidad se encuentre fuera del presupuesto, quitar la clase hidden a la siguiente imagen -->
-					<img src="img/no-check.png" class="hidden">
 					<h3>La necesidad #N2345 está dentro del presupuesto</h3>
 				</div>
+
+				
 			</div>
 			<div class="well">
 				<div class="item">
