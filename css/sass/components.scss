@@ -571,7 +571,7 @@ h5 {
 		    position: absolute;
 		    top:25px;
 
-		    a {
+		    @at-root .well-trash-button, & a {
 				text-transform:uppercase;
 				font-family: 'Open Sans Semibold';
 				font-size: 12px;
@@ -581,16 +581,13 @@ h5 {
 				&:focus {
 					text-decoration: none;
 
-					@at-root .well-trash-button, & span {
+					@at-root .well-trash-button:hover span, & span {
 						background-color: $mediumPurple !important;
 					}
                                         
-                                        @at-root .well-trash-button {
-                                            padding: 0px !important;
-                                        }
 				}
 
-				span {
+				@at-root .well-trash-button span, & span {
 					color: $white;
 					background-color: $purple;
 					padding:5px;

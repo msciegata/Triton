@@ -1,0 +1,90 @@
+diff a/css/components.css b/css/components.css	(rejected hunks)
+@@ -1866,61 +1866,74 @@
+   position: inherit;
+   margin-top: 15px;
+ }
+-/* line 1379, sass/components.scss */
++/* line 1380, sass/components.scss */
+ .input-group .select2-container--default .select2-search--dropdown input.select2-search__field {
+   border: 0px solid #222222 !important;
+ }
+-/* line 1390, sass/components.scss */
++/* line 1389, sass/components.scss */
++.input-group .select2-container--default .select2-selection--single .select2-selection__arrow b {
++  border-color: #666666 transparent transparent transparent;
++  border-width: 5px 5px 5px 5px;
++  margin-left: -10px !important;
++  margin-top: -5px;
++}
++/* line 1402, sass/components.scss */
++.input-group .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow {
++  right: 5px;
++}
++/* line 1405, sass/components.scss */
+ .input-group .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+   border-color: #666666 transparent transparent transparent;
+-  border-width: 5px 4px 4px 4px;
++  border-width: 5px 5px 5px 5px;
++  margin-left: -5px !important;
++  margin-top: -5px;
+ }
+-/* line 1398, sass/components.scss */
++/* line 1415, sass/components.scss */
+ .input-group .select2-container--default .select2-selection--single {
+   border-radius: 0;
+   border: none;
+   border-bottom: 0.5px solid #666666;
+   background-color: transparent;
+ }
+-/* line 1404, sass/components.scss */
++/* line 1421, sass/components.scss */
+ .input-group .select2-container--default .select2-selection--single .select2-selection__arrow {
+   width: 10px;
+ }
+-/* line 1407, sass/components.scss */
++/* line 1424, sass/components.scss */
+ .input-group .select2-container--default .select2-selection--single .select2-selection__arrow b {
+   border-color: #666666 transparent transparent transparent;
+ }
+-/* line 1412, sass/components.scss */
++/* line 1429, sass/components.scss */
+ .input-group .select2-container--default .select2-selection--single .select2-selection__rendered {
+   line-height: 25px;
+ }
+-/* line 1415, sass/components.scss */
++/* line 1432, sass/components.scss */
+ .input-group .select2-container--default .select2-selection--single .select2-selection__rendered.texto-blanco {
+   color: #FFFFFF;
+ }
+-/* line 1422, sass/components.scss */
++/* line 1439, sass/components.scss */
+ .input-group select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+   background-image: linear-gradient(45deg, transparent 50%, #666666 50%), linear-gradient(135deg, #666666 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
+-  background-position: calc(100% - 5px) calc(1em + 8px), calc(100% - 0px) calc(1em + 8px), calc(100% - 2.5em) 0;
++  background-position: calc(100% - 10px) calc(1em + 8px), calc(100% - 5px) calc(1em + 8px), calc(100% - 2.5em) 0;
+   background-size: 5px 5px, 5px 5px, 0 0;
+   background-repeat: no-repeat;
+ }
+-/* line 1440, sass/components.scss */
++/* line 1457, sass/components.scss */
+ .input-group select::-ms-expand {
+   display: none;
+ }
+-/* line 1444, sass/components.scss */
++/* line 1461, sass/components.scss */
+ .input-group select:invalid {
+   color: rgba(255, 0, 255, 0);
+ }
+-/* line 1448, sass/components.scss */
++/* line 1465, sass/components.scss */
+ .input-group select option {
+   color: #666666;
+ }
+-/* line 1453, sass/components.scss */
++/* line 1470, sass/components.scss */
+ .input-group input, .input-group select, .input-group textarea, .input-group .label-campo {
+   border-radius: 0;
+   color: #222222;
