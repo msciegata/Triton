@@ -635,8 +635,14 @@
 		var functionLabelPosition = function(){
                     if ($(this).val() !== "") {
                         $(this).parent('.input-group').find('label').addClass('label-arriba').removeClass('label-abajo');
+                        if($(this).is("select")){
+                            $(this).removeClass("emptySelected");
+                        }
                     } else {
                         $(this).parent('.input-group').find('label').addClass('label-abajo').removeClass('label-arriba');
+                        if($(this).is("select")){
+                            $(this).addClass("emptySelected");
+                        }
                     }
 		};				
 		$("select").change(functionLabelPosition);
