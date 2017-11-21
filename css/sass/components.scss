@@ -1341,7 +1341,7 @@ input::-ms-clear{
 
 .input-group {
     display: block;
-    margin:10px 0 50px;
+    margin:10px 0 55px;
     height: 30px;
     
     &.autoheight {
@@ -1571,7 +1571,7 @@ input::-ms-clear{
 			.label-campo {
 				border-radius:0;
 				color: $white;
-				font-family: 'Open Sans SemiBold';
+				font-family: 'Open Sans Regular';
 				font-size:16px;
 				padding:15px 5px 5px;
 				display:block;
@@ -1591,7 +1591,7 @@ input::-ms-clear{
 					top:-30px;
 					font-size:14px;
 					padding:0 5px;
-					color:$orange;
+					color:$lightBlack;
 					width: 100%;
 					background-color: $lightOrange;
 				}
@@ -1637,16 +1637,16 @@ input::-ms-clear{
 			p {
 				display:block;
 				font-size:12px;
-				color:$orange;
+				color:$darkGray;
 				padding:3px 0 0;
 				font-family: 'Open Sans Regular';
 
 				span {
 					display: inline-block;
-					font-size: 12px;
+					font-size: 10px;
 					color: $white;
 					margin-right: 3px;
-					padding:4px 7px 3px;
+					padding:4px 7px 3px 6px;
 					border-radius:20px;
 					background-color: $orange;
 					font-family: 'FontAwesome' !important;
@@ -1870,7 +1870,7 @@ input::-ms-clear{
 			.label-campo {
 				border-radius:0;
 				color: $white;
-				font-family: 'Open Sans SemiBold';
+				font-family: 'Open Sans Regular';
 				font-size:16px;
 				padding:15px 5px 5px;
 				display:block;
@@ -1936,15 +1936,18 @@ input::-ms-clear{
 			p {
 				display:block;
 				font-size:12px;
-				color:$cyan;
-				padding:3px 0 0;
+				color:$darkGray;
+				padding:5px 0 0;
 				font-family: 'Open Sans Regular';
 
 				span {
 					display: inline-block;
-					font-size: 16px;
-					color: $cyan;
-					margin:0;
+					font-size: 10px;
+					color: $white;
+					background-color: $orange;
+					border-radius:20px;
+					padding: 3px 6px 3px 7px;
+					margin-right: 3px;
 					font-family: 'FontAwesome' !important;
 					position:inherit;
 					float:none;

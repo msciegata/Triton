@@ -60,7 +60,7 @@
 											<option value="v2">YPF GAS</option>
 										</select>
 										<label for="fletador">Fletador<span>*</span></label>
-										<p><span class="fa fa-warning"></span> Este es un campo duplicado.</p>
+										<p><span class="fa fa-exclamation"></span> Este es un campo duplicado.</p>
 									</div>
 									<div class="laycan">
 										<h5>Laycan</h5>
@@ -123,7 +123,7 @@
 											<option value="v5">Armador 5</option>
 										</select>
 										<label for="armador">Armador<span>*</span></label>
-										<p><span class="fa fa-warning"></span> Este es un campo duplicado.</p>
+										<p><span class="fa fa-exclamation"></span> Este es un campo duplicado.</p>
 									</div>
 									<div class="input-group duplicated d-four">
 										<select id="broker" name="broker">
@@ -132,7 +132,7 @@
 											<option value="v2">Broker 2</option>
 										</select>
 										<label for="broker">Broker</label>
-										<p><span class="fa fa-warning"></span> Este es un campo duplicado.</p>
+										<p><span class="fa fa-exclamation"></span> Este es un campo duplicado.</p>
 									</div>
 									<div class="input-group duplicated d-four">
 										<select id="buque" name="buque">
@@ -141,7 +141,7 @@
 											<option value="v2">Buque Papa Francisco I</option>
 										</select>
 										<label for="buque">Buque<span>*</span></label>
-										<p><span class="fa fa-warning"></span> Este es un campo duplicado</p>
+										<p><span class="fa fa-exclamation"></span> Este es un campo duplicado</p>
 									</div>
 									<div class="row">
 										<div class="col-lg-12">
