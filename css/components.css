@@ -2247,10 +2247,10 @@ input::-ms-clear {
 /* line 1744, sass/components.scss */
 .input-group.duplicated.d-two p span {
   display: inline-block;
-  font-size: 12px;
+  font-size: 10px;
   color: #FFFFFF;
   margin-right: 3px;
-  padding: 4px 7px 3px;
+  padding: 3px 6px 3px 7px;
   border-radius: 20px;
   background-color: #CA5D4E;
   font-family: 'FontAwesome' !important;
