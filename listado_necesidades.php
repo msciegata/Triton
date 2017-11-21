@@ -146,13 +146,9 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-12 text-right">
-						<div class="final-buttons">
-							<div class="col-lg-6 text-left">
-								<button class="btn btn-success text-left">
-									<span class="fa fa-plus"></span> ALTA DE NECESIDAD DE COMPRA
-								</button>
-							</div>
-						</div>
+						<button class="btn btn-success">
+							<span class="fa fa-plus"></span> ALTA DE NECESIDAD DE COMPRA
+						</button>
 					</div>
 				</div>
 			</div>

@@ -1218,11 +1218,11 @@ p {
 	}
 
 	p {
-		color:$darkGray;
+		color:$lightBlack;
 
 		strong {
 			display: block;
-			font-family: 'Open Sans Bold'
+			font-family: 'Open Sans Bold';
 		}
 	}
 }
@@ -1230,6 +1230,7 @@ p {
 .alert-primary {
 	border:1px solid $mediumCyan;
 	background-color: $lightCyan;
+
 
 	button {
 		color:$mediumCyan;
@@ -1269,7 +1270,7 @@ p {
 .alert-danger {
 	border:1px solid $purple;
 	background-color: $lightPurple;
-
+	
 	button {
 		color:$purple;
 

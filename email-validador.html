@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css" media="screen">
+			body {
+				margin:0;
+				padding:0;
+			}
+
+			.content {
+				font-family: 'Arial';
+				display: inline-block;
+				margin:0;
+				padding:10px 20px 20px;
+				border:1px solid #CCC;
+				overflow-x: hidden;
+			}
+
+			.header {
+				border-bottom: 1px solid #CCC;
+			}
+
+			.header p {
+				font-size: 14px;
+				color:#444444;
+			}
+
+			.header p span {
+				font-weight: bold;
+			}
+
+			.header .budget {
+				background-color: #D1DD98;
+				border:1px solid #BFD518;
+				padding:0;
+				text-align: center;
+				margin-bottom:10px;
+			}
+
+
+			.header .budget.out {
+				background-color: #D197A8;
+				border:1px solid #A41A67;
+			}
+
+
+			.header .budget h3 {
+				font-size:16px;
+				font-weight: bold;
+				padding:10px;
+				color: #444;
+				margin:0;
+			}
+
+			.header .budget.out h3 {
+				color:#222;
+			}
+
+			.well {
+				background-color: #EAEAEA;
+				padding:10px 10px 0;
+				margin-bottom: 0;
+				border-bottom: 1px solid #ccc;
+			}
+
+			.well .item {
+				margin:0 0 15px;
+				padding-bottom:10px;
+			}
+
+			.well .item p {
+				font-size: 14px;
+				color: #666666;
+				margin:0;
+			}
+
+			.well .item h3 {
+				font-size:20px;
+				color:#444444;
+				margin:5px 0 0;
+			}
+
+			.well .item h6 {
+				font-size:16px;
+				color:#444444;
+				margin:5px 0 0;
+			}
+
+			.well table tr .date {
+				width: 100%;
+				display: table-cell;
+			}
+
+			.well table tr .date img {
+				width: 35px;
+				float:left;
+				position: relative;
+				left:-10px;
+				top:-10px;
+			}
+
+			.well table tr .date h6 {
+				font-size:16px;
+				font-weight: normal;
+				display: inline;
+				vertical-align: middle;
+				color: #666666;
+			}
+
+			.well table tr td .item p {
+				font-size: 14px;
+				color: #666666;
+				margin:0;
+			}
+
+			.well table tr td .item h5 {
+				font-size: 16px;
+				margin:5px 0 0;
+			}
+
+			.btn {
+				width: 100%;
+				display: inline-block;
+				color: #FFFFFF;
+				font-size: 14px;
+				font-weight: bold;
+				vertical-align: inherit;
+				text-transform: uppercase;
+				text-decoration: none;
+				margin: 5px 0;
+				padding: 8px 32px 10px;
+				border-radius: 2px;
+				border: 1px solid transparent;
+				background-color: transparent;
+			}
+
+			.btn:active, 
+			.btn:focus, 
+			.btn:visited, 
+			.btn:hover {
+				box-shadow: 0px !important;
+				outline: 0px !important;
+				border: 1px solid transparent !important;
+			}
+
+			.btn.disabled {
+				caret-color: #51CDD6;
+			}
+
+			.btn.disabled:focus, 
+			.btn.disabled:hover {
+				border: 1px solid transparent !important;
+			}
+
+			.btn-success {
+				background-color: #BFD518;
+			}
+
+			.btn-success:focus, 
+			.btn-success:active, 
+			.btn-success:visited, 
+			.btn-success:hover {
+				background-color: #BAC72A !important;
+			}
+
+			.btn-success.disabled {
+				background-color: #D1DD98;
+			}
+
+			.btn-success.disabled:hover, 
+			.btn-success.disabled:visited, 
+			.btn-success.disabled:focus, 
+			.btn-success.disabled:active {
+				background-color: #D1DD98 !important;
+			}
+
+			.btn.btn-danger {
+				background-color: #A41A67;
+			}
+
+			.btn-danger:focus, 
+			.btn-danger:active, 
+			.btn-danger:visited, 
+			.btn-danger:hover {
+				background-color: #7F1F56 !important;
+			}
+
+			.btn-danger.disabled {
+				background-color: #D197A8;
+			}
+
+			.btn-danger.disabled:hover, 
+			.btn-danger.disabled:visited, 
+			.btn-danger.disabled:focus, 
+			.btn-danger.disabled:active {
+				background-color: #D197A8 !important;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="header">
+				<p>Martín Horacio García Begher (<span>SE21626</span>) ha registrado una necesidad de compra internacional:</p>
+
+				<!-- Cuando la necesidad se encuentre fuera del presupuesto agregar la clase "out" al siguiente div -->
+				<div class="budget">
+					<h3>La necesidad #N2345 está dentro del presupuesto</h3>
+				</div>
+
+				
+			</div>
+			<div class="well">
+				<div class="item">
+					<p>Producto</p>
+					<h3>Fully Refined Paraffin Wax</h3>
+				</div>
+				<table>
+					<tbody>
+						<tr>
+							<td class="date" colspan="2">
+								<img src="img/calendar.png">
+								<h6>Fecha de arribo del producto</h6>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="item">
+									<p>Desde</p>
+									<h5>10/09/2017<p>
+								</div>
+							</td>
+							<td>
+								<div class="item">
+									<p>Hasta</p>
+									<h5>10/09/2017<p>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="item">
+					<p>Cantidad</p>
+					<h6>25 TN</h6>
+				</div>
+				<div class="item">
+					<p>Monto estimado</p>
+					<h6>US$2.500.000</h6>
+				</div>
+				<div class="item">
+					<p>Calidad</p>
+					<h6>FR 5815B (ver archivo adjunto)</h6>
+				</div>
+				<div class="item">
+					<p>Observaciones</p>
+					<h6>Acá van las observaciones que escribió el usuario y que deben ser tenidas en cuenta por el trader.</h6>
+				</div>
+			</div>
+			<button class="btn btn-success">APROBAR</button>
+			<button class="btn btn-danger">RECHAZAR</button>
+		</div>
+	</body>
+</html>
