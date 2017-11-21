@@ -375,16 +375,18 @@
                 <div class="qq-progress-bar-container-selector">
                     <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-progress-bar-selector qq-progress-bar"></div>
                 </div>
-                <span class="fa fa-file-o"></span>
+                <span class="fa fa-file"></span>
                 <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
                 <span class="qq-upload-file-selector qq-upload-file"></span>
-                <span class="qq-edit-filename-icon-selector qq-edit-filename-icon" aria-label="Edit filename"></span>
-                <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
                 <span class="qq-upload-size-selector qq-upload-size"></span>
-                <button type="button" class="qq-btn qq-upload-cancel-selector"><span class="fa fa-trash"></span></button>
-                <button type="button" class="qq-btn qq-upload-retry-selector qq-upload-retry">Retry</button>
-                <button type="button" class="qq-btn qq-upload-delete-selector qq-upload-delete">Delete</button>
-                <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
+                <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
+                <div class="buttons">
+                    <span class="qq-edit-filename-icon-selector qq-edit-filename-icon fa fa-pencil" aria-label="Edit filename"></span>
+                    <button type="button" class="qq-btn qq-upload-cancel-selector well-trash-button"><span class="fa fa-trash"></span></button>
+                    <button type="button" class="qq-btn qq-upload-retry-selector qq-upload-retry">Retry</button>
+                    <button type="button" class="qq-btn qq-upload-delete-selector qq-upload-delete">Delete</button>
+                    <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
+                </div>
             </li>
         </ul>
         <div class="empty-message">
