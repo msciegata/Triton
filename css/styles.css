@@ -1935,7 +1935,7 @@ input::-ms-clear {
   display: none;
 }
 /* line 1458, sass/components.scss */
-.input-group select:invalid {
+.input-group select.emptySelected {
   color: rgba(255, 0, 255, 0);
 }
 /* line 1462, sass/components.scss */
@@ -3273,3 +3273,5 @@ footer .help p {
   text-align: right;
   margin: 0 auto;
 }
+
+/*# sourceMappingURL=styles.css.map */

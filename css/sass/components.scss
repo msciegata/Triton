@@ -1455,7 +1455,7 @@ input::-ms-clear{
   			display:none;
   		}
 
-  		&:invalid {
+  		&.emptySelected {
   			color:rgba(255,0,255,0.0);
   		}
 
