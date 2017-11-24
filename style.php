@@ -26,29 +26,29 @@
 						<div class="alert alert-primary">
 							<button type="button" class="close" data-dismiss="alert">×</button>
 							<p>
-								<strong>Esto es una notificación del sistema</strong>
-								Esto es una aclaración de la notificación que arroja el sistema
+								<strong>Esto es una notificación NEUTRAL</strong>
+								Es una notificación para cuando la acción del usuario es negativa (borrar, eliminar, descartar) pero se da de forma correcta. Esto se hace porque ponerle una notificación de tipo success sería una contradición. 
 							</p>
 						</div>
 						<div class="alert alert-success">
 							<button type="button" class="close" data-dismiss="alert">×</button>
 							<p>
-								<strong>Esto es una notificación del sistema</strong>
-								Esto es una aclaración de la notificación que arroja el sistema
+								<strong>Esto es una notificación POSITIVA</strong>
+								Este tipo de notificación se da cuando la acción del usuario es positiva (alta, registro, guardar) y se da de forma correcta.
 							</p>
 						</div>
 						<div class="alert alert-warning">
 							<button type="button" class="close" data-dismiss="alert">×</button>
 							<p>
-								<strong>Esto es una notificación del sistema</strong>
-								Esto es una aclaración de la notificación que arroja el sistema
+								<strong>Esto es una notificación WARNING</strong>
+								Este tipo de notificación se da cuando se debe hacer una advertencia al usuario sobre el proceso en cuestión.
 							</p>
 						</div>
 						<div class="alert alert-danger">
 							<button type="button" class="close" data-dismiss="alert">×</button>
 							<p>
-								<strong>Esto es una notificación del sistema</strong>
-								Esto es una aclaración de la notificación que arroja el sistema
+								<strong>Esto es una notificación ERROR</strong>
+								Este tipo de notificación se da cuando el sistema no pudo realizar con éxito el proceso solicitado.
 							</p>
 						</div>
 					</div>
@@ -123,6 +123,70 @@
 						<div class="alert tag">
 							<p>10.000 - 300.000 USD</p>
 							<button type="button" class="close" data-dismiss="alert">×</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">
+								<h3>States</h3>
+							</div>
+						</div>
+						<div class="col-lg-3 state">
+							<div class="circle bg-darkgray">
+							</div>
+							<h5>INICIADO</h5>
+						</div>
+						<div class="col-lg-3 state">
+							<div class="circle bg-cyan">
+							</div>
+							<h5>INGRESADA</h5>
+						</div>
+						<div class="col-lg-3 state">
+							<div class="circle bg-green">
+							</div>
+							<h5>PLANIFICADA</h5>
+						</div>
+						<div class="col-lg-3 state">
+							<div class="circle bg-green">
+							</div>
+							<h5>REGISTRADO</h5>
+						</div>
+						<div class="col-lg-3 state">
+							<div class="circle bg-green">
+							</div>
+							<h5>CONFIRMADO</h5>
+						</div>
+						<div class="col-lg-3 state">
+							<div class="circle bg-yellow">
+							</div>
+							<h5>MODIFICADA</h5>
+						</div>
+						<div class="col-lg-3 state">
+							<div class="circle bg-yellow">
+							</div>
+							<h5>BORRADOR</h5>
+						</div>
+						<div class="col-lg-3 state">
+							<div class="circle bg-pink">
+							</div>
+							<h5>RECHAZADA</h5>
+						</div>
+						<div class="col-lg-3 state">
+							<div class="circle bg-purple">
+							</div>
+							<h5>CANCELADA</h5>
+						</div>
+						<div class="col-lg-3 state">
+							<div class="circle bg-orange">
+							</div>
+							<h5>PRE-CANCELADA</h5>
+						</div>
+						<div class="col-lg-3 state">
+							<div class="circle bg-orange">
+							</div>
+							<h5>BORRADO</h5>
 						</div>
 					</div>
 				</div>

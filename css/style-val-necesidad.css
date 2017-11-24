@@ -152,8 +152,8 @@ body {
 }
 /* line 72, sass/style-val-necesidad.scss */
 .content .alert-primary {
-  border: 1px solid #28B1CA;
-  background-color: #93C3D0;
+  border: 1px solid #00779b;
+  background-color: #BDD6D3;
 }
 /* line 76, sass/style-val-necesidad.scss */
 .content .alert-primary p {
@@ -161,11 +161,11 @@ body {
 }
 /* line 80, sass/style-val-necesidad.scss */
 .content .alert-primary button {
-  color: #28B1CA;
+  color: #00779b;
 }
 /* line 83, sass/style-val-necesidad.scss */
 .content .alert-primary button:hover {
-  color: #28B1CA;
+  color: #00779b;
 }
 /* line 89, sass/style-val-necesidad.scss */
 .content .alert-success {
@@ -174,16 +174,16 @@ body {
 }
 /* line 93, sass/style-val-necesidad.scss */
 .content .alert-success button {
-  color: #BAC72A;
+  color: #809E00;
 }
 /* line 96, sass/style-val-necesidad.scss */
 .content .alert-success button:hover {
-  color: #BAC72A;
+  color: #809E00;
 }
 /* line 102, sass/style-val-necesidad.scss */
 .content .alert-danger {
-  border: 1px solid #A41A67;
-  background-color: #D197A8;
+  border: 1px solid #a02789;
+  background-color: #D1AAC6;
 }
 /* line 106, sass/style-val-necesidad.scss */
 .content .alert-danger p {
@@ -191,11 +191,11 @@ body {
 }
 /* line 110, sass/style-val-necesidad.scss */
 .content .alert-danger button {
-  color: #A41A67;
+  color: #a02789;
 }
 /* line 113, sass/style-val-necesidad.scss */
 .content .alert-danger button:hover {
-  color: #A41A67;
+  color: #a02789;
 }
 /* line 119, sass/style-val-necesidad.scss */
 .content .footer {

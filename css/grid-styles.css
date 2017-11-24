@@ -237,18 +237,18 @@
 /* line 173, sass/grid-styles.scss */
 .ui-jqgrid-jquery-ui .btn-acciones.fa-plus {
   color: #FFFFFF;
-  background-color: #51CDD6;
+  background-color: #30ced6;
   border-radius: 20px;
   padding: 5px 1px 4px 1px;
   font-size: 11px;
 }
 /* line 181, sass/grid-styles.scss */
 .ui-jqgrid-jquery-ui .btn-acciones.fa-trash {
-  color: #CA5D4E;
+  color: #FF824A;
 }
 /* line 185, sass/grid-styles.scss */
 .ui-jqgrid-jquery-ui .btn-acciones.fa-close {
-  color: #A41A67;
+  color: #a02789;
 }
 /* line 191, sass/grid-styles.scss */
 .ui-jqgrid-jquery-ui .ui-jqgrid-pager {
@@ -376,17 +376,17 @@
 }
 /* line 329, sass/grid-styles.scss */
 .ui-jqgrid-jquery-ui .txt-cyan {
-  color: #28B1CA;
+  color: #00779b;
 }
 /* line 333, sass/grid-styles.scss */
 .ui-jqgrid-jquery-ui .txt-green {
-  color: #BAC72A;
+  color: #809E00;
 }
 /* line 337, sass/grid-styles.scss */
 .ui-jqgrid-jquery-ui .txt-orange {
-  color: #BB3B29;
+  color: #bb3b29;
 }
 /* line 341, sass/grid-styles.scss */
 .ui-jqgrid-jquery-ui .txt-purple {
-  color: #7F1F56;
+  color: #6d1d61;
 }

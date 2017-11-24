@@ -242,6 +242,90 @@ h5 {
 	}
 }
 
+/* Color Text */
+.text-darkGray {
+	color: $darkGray;
+}
+
+.text-cyan {
+	color: $cyan;
+}
+
+.text-green {
+	color: $green;
+}
+
+.text-yellow {
+	color: $yellow;
+}
+
+.text-orange {
+	color: $orange;
+}
+
+.text-pink {
+	color: $pink;
+}
+
+.text-purple {
+	color: $purple;
+}
+
+/* Color Background */
+.bg-darkgray {
+	background-color: $darkGray;
+}
+
+.bg-cyan {
+	background-color: $cyan;
+}
+
+.bg-green {
+	background-color: $green;
+}
+
+.bg-yellow {
+	background-color: $yellow;
+}
+
+.bg-orange {
+	background-color: $orange;
+}
+
+.bg-pink {
+	background-color: $pink;
+}
+
+.bg-purple {
+	background-color: $purple;
+}
+
+.state {
+	background-color:$white;
+	text-align:left;
+	padding:10px;
+	width: auto;
+	margin:0 10px 10px 0;
+    display: inline-block;
+
+    h5 {
+    	display: inline-block;
+		font-family: 'din-bold';
+		font-size:18px;
+		margin:0;
+		padding:0 0 0 5px;
+    }
+
+    .circle {
+    	display:inline-block;
+		border-radius:10px;
+		position: relative;
+    	top: 1px;
+		width: 13px;
+		height:13px;
+    }
+}
+
 .page-title {
 	margin: 15px -15px 15;
 
@@ -277,26 +361,6 @@ h5 {
 	    	top: 1px;
 			width: 13px;
 			height:13px;
-
-			&.bg-gray {
-				background-color:$darkGray;
-			}
-
-			&.bg-cyan {
-				background-color:$cyan;
-			}
-
-			&.bg-green {
-				background-color:$green;
-			}
-
-			&.bg-orange {
-				background-color:$orange;
-			}
-
-			&.bg-purple {
-				background-color:$purple;
-			}
 		}
 	}
 
@@ -1218,6 +1282,7 @@ p {
 	}
 
 	p {
+		width: 80%;
 		color:$lightBlack;
 
 		strong {
@@ -1291,6 +1356,7 @@ p {
 
 
 	p {
+		width: auto;
 		font-family: 'Open Sans Semibold';
 		color:$black;
 	}
@@ -1563,305 +1629,6 @@ input::-ms-clear{
 	}
 
 	&.duplicated {
-
-		&.d-one {
-			input, 
-			select, 
-			textarea, 
-			.label-campo {
-				border-radius:0;
-				color: $white;
-				font-family: 'Open Sans Regular';
-				font-size:16px;
-				padding:15px 5px 5px;
-				display:block;
-				border:none;
-				border-bottom:2px solid $orange;
-				width: 100%;
-				background-color:$lightOrange;
-				
-				&:focus {
-					outline:none;
-					border-bottom:1px solid $azulYPF;
-				}
-
-				&:focus ~ label, 
-				& ~ label.label-arriba {
-					margin-top:25px;
-					top:-30px;
-					font-size:14px;
-					padding:0 5px;
-					color:$lightBlack;
-					width: 100%;
-					background-color: $lightOrange;
-				}
-
-				&:focus ~ p {
-					display:block;
-				}
-
-				&.timepicker {
-					box-shadow:none;
-					height: auto;
-				}
-			}
-
-			.label-campo {
-            	padding-top: 0px;
-        	}
-        
-	    	textarea {
-	        	resize: none;
-	    	}
-
-			label, 
-			.label-abajo {
-				display: inline-block;
-				color:$darkGray;
-				font-family: 'Open Sans Light';
-				font-size:16px;
-				position:absolute;
-				left:0;
-				top:15px;
-				pointer-events:none;
-				transition:0.15s ease-in-out all;
-				-moz-transition:0.15s ease-in-out all;
-				-webkit-transition:0.15s ease-in-out all;
-				
-				span {
-					display: inline-block;
-					color:$orange;
-				}
-			}
-
-			p {
-				display:block;
-				font-size:12px;
-				color:$darkGray;
-				padding:3px 0 0;
-				font-family: 'Open Sans Regular';
-
-				span {
-					display: inline-block;
-					font-size: 10px;
-					color: $white;
-					margin-right: 3px;
-					padding:3px 6px 3px 7px;
-					border-radius:20px;
-					background-color: $orange;
-					font-family: 'FontAwesome' !important;
-					position:inherit;
-					float:none;
-				}
-			}
-
-			h6 {
-				display: inline-block;
-				font-size: 14px;
-				opacity: 1;
-				color:$white;
-				background-color:$black;
-				font-family: 'Open Sans Regular';
-				padding:3px 10px;
-			}
-		}
-
-		&.d-two {
-			input, 
-			select, 
-			textarea, 
-			.label-campo {
-				border-radius:0;
-				color: $lightBlack;
-				font-family: 'Open Sans Regular';
-				font-size:16px;
-				padding:15px 0 5px;
-				display:block;
-				border:none;
-				border-bottom:2px solid $orange;
-				width: 100%;
-				background-color:transparent;
-				
-				&:focus {
-					outline:none;
-					border-bottom:1px solid $azulYPF;
-				}
-
-				&:focus ~ label, 
-				& ~ label.label-arriba {
-					margin-top:25px;
-					top:-30px;
-					font-size:14px;
-					padding:0;
-					color:$orange;
-				}
-
-				&:focus ~ p {
-					display:block;
-				}
-
-				&.timepicker {
-					box-shadow:none;
-					height: auto;
-				}
-			}
-
-			.label-campo {
-            	padding-top: 0px;
-        	}
-        
-	    	textarea {
-	        	resize: none;
-	    	}
-
-			label, 
-			.label-abajo {
-				display: inline-block;
-				color:$darkGray;
-				font-family: 'Open Sans Light';
-				font-size:16px;
-				position:absolute;
-				left:0;
-				top:15px;
-				pointer-events:none;
-				transition:0.15s ease-in-out all;
-				-moz-transition:0.15s ease-in-out all;
-				-webkit-transition:0.15s ease-in-out all;
-				
-				span {
-					display: inline-block;
-					color:$orange;
-				}
-			}
-
-			p {
-				display:block;
-				font-size:12px;
-				color:$orange;
-				padding:5px 0 0;
-				font-family: 'Open Sans Regular';
-
-				span {
-					display: inline-block;
-					font-size: 10px;
-					color: $white;
-					margin-right: 3px;
-					padding: 3px 6px 3px 7px;
-					border-radius:20px;
-					background-color: $orange;
-					font-family: 'FontAwesome' !important;
-					position:inherit;
-					float:none;
-				}
-			}
-
-			h6 {
-				display: inline-block;
-				font-size: 14px;
-				opacity: 1;
-				color:$white;
-				background-color:$black;
-				font-family: 'Open Sans Regular';
-				padding:3px 10px;
-			}
-		}
-
-		&.d-three {
-			input, 
-			select, 
-			textarea, 
-			.label-campo {
-				border-radius:0;
-				color: $lightBlack;
-				font-family: 'Open Sans Regular';
-				font-size:16px;
-				padding:15px 0 5px;
-				display:block;
-				border:none;
-				border-bottom:2px solid $cyan;
-				width: 100%;
-				background-color:transparent;
-				
-				&:focus {
-					outline:none;
-					border-bottom:1px solid $azulYPF;
-				}
-
-				&:focus ~ label, 
-				& ~ label.label-arriba {
-					margin-top:25px;
-					top:-30px;
-					font-size:14px;
-					padding:0;
-					color:$cyan;
-				}
-
-				&:focus ~ p {
-					display:block;
-				}
-
-				&.timepicker {
-					box-shadow:none;
-					height: auto;
-				}
-			}
-
-			.label-campo {
-            	padding-top: 0px;
-        	}
-        
-	    	textarea {
-	        	resize: none;
-	    	}
-
-			label, 
-			.label-abajo {
-				display: inline-block;
-				color:$darkGray;
-				font-family: 'Open Sans Light';
-				font-size:16px;
-				position:absolute;
-				left:0;
-				top:15px;
-				pointer-events:none;
-				transition:0.15s ease-in-out all;
-				-moz-transition:0.15s ease-in-out all;
-				-webkit-transition:0.15s ease-in-out all;
-				
-				span {
-					display: inline-block;
-					color:$orange;
-				}
-			}
-
-			p {
-				display:block;
-				font-size:12px;
-				color:$cyan;
-				padding:5px 0 0;
-				font-family: 'Open Sans Regular';
-
-				span {
-					display: inline-block;
-					font-size: 14px;
-					color: $cyan;
-					margin:0;
-					font-family: 'FontAwesome' !important;
-					position:inherit;
-					float:none;
-				}
-			}
-
-			h6 {
-				display: inline-block;
-				font-size: 14px;
-				opacity: 1;
-				color:$white;
-				background-color:$black;
-				font-family: 'Open Sans Regular';
-				padding:3px 10px;
-			}
-		}
 
 		&.d-four {
 			input, 
