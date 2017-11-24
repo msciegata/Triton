@@ -5,13 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Tritón 2.0 | Alta viaje COA</title>
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
-        <link rel="stylesheet" href="css/select-search.min.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="js/plugins/jquery-ui/jquery-ui.min.css">
-        <link rel="stylesheet" href="css/ui.jqgrid.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+		<?php include 'css-elements.php';?>
 	</head>
 	<body>
 		<?php include 'header.php';?>
@@ -578,77 +572,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- Scripts -->
-        <script src="js/jquery-2.2.4.min.js"></script>
-        <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
-        <script src="js/jquery.datetimepicker.full.min.js"></script>
-        <script src="js/select-search.min.js"></script>
-        <script src="js/autosize.min.js"></script>
-
-        <!-- JQ Grid -->
-        <script src="js/plugins/jqgrid/jquery.jqgrid.min.js"></script>
-        <script src="js/plugins/jqgrid/grid.locale-es.js"></script>
-        <script src="js/listado_viajes-SPOT.js"></script>
-
-        <!-- Bootstrap -->
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-		<script>
-			$(function () {
-                            
-                // TextAreas con autoresize        
-                autosize($('textarea'));
-            
-				// Tab
-				$('#laytime-tab a').click(function (e) {
-				  e.preventDefault();
-				  $(this).tab('show');
-				});
-
-				//Datepicker
-                                $.datetimepicker.setLocale('es');
-                                $('.input-date').datetimepicker({
-                                    timepicker:false,
-                                    format: 'd/m/Y',
-                                    scrollInput: false
-                                });
-                                //Timepicker
-                                $('.timepicker').datetimepicker({
-                                    datepicker:false,
-                                    format:'H:i',
-                                    step: 5
-                                });
-
-				//Select with search 
-                $(".select-buscador").select2();
-
-                $(".select-buscador").each(function (i) {
-                    if ($(this).val() === "") {
-                        $(this).parent('.input-group').find('.select2-selection__rendered').addClass('texto-blanco');
-                    }
-                });
-
-                $(".select-buscador").change(function () {
-                    if ($(this).val() !== "") {
-                        $(this).parent('.input-group').find('label').addClass('label-arriba').removeClass('label-abajo');
-                        $(this).parent('.input-group').find('.select2-selection__rendered').removeClass('texto-blanco');
-                    } else {
-                        $(this).parent('.input-group').find('label').addClass('label-abajo').removeClass('label-arriba');
-                        $(this).parent('.input-group').find('.select2-selection__rendered').addClass('texto-blanco');
-                    }
-                    ;
-                });
-                
-                var functionLabelPosition = function(){
-                    if ($(this).val() !== "") {
-                        $(this).parent('.input-group').find('label').addClass('label-arriba').removeClass('label-abajo');
-                    } else {
-                        $(this).parent('.input-group').find('label').addClass('label-abajo').removeClass('label-arriba');
-                    }
-		};				
-		$("select").change(functionLabelPosition);
-		$("input, textarea").blur(functionLabelPosition);
-                $("select, input, textarea").each(functionLabelPosition);
-            });
-		</script>
+		<?php include 'js-elements.php';?>
 	</body>
 </html>
