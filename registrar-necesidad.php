@@ -152,7 +152,7 @@
                                                 </a>
                                             </div>
 										</div>
-                                    <div id="contrato-SAP-upload" name="contrato-SAP-upload" class="well-body"></div>
+                                    	<div id="contrato-SAP-upload" name="contrato-SAP-upload" class="well-body"></div>
 									</div>
 									<div class="row">
 										<div class="col-lg-12">

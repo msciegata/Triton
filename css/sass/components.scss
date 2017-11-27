@@ -610,7 +610,7 @@ h5 {
 					color: $mediumCyan;
 
 					span {
-						background-color: $mediumCyan;
+						background-color: $cyan;
 					}
 				}
 
@@ -627,7 +627,7 @@ h5 {
 
 	.well-body {
 		background-color:$lightGray;
-		padding:10px 15px 0;
+		padding:10px 15px 10px;
 		margin-top:15px;
 
 		.well-trash {
@@ -762,11 +762,7 @@ h5 {
 					&:visited,
 					&:focus {
 						text-decoration: none;
-						color: $mediumPurple;
-
-						span {
-							background-color: $mediumPurple;
-						}
+						color: $purple;
 					}
 
 					span {
@@ -775,6 +771,12 @@ h5 {
 						padding:4px 6px 5px;
 						margin-right: 10px;
 						border-radius:15px;
+
+						&:hover,
+						&:visited,
+						&:focus {
+							background-color:$mediumPurple;
+						}
 					}
 				}
 			}
@@ -789,10 +791,10 @@ h5 {
 		width: 100%;
 
 		h5 {
-			color:$mediumCyan;
+			color:$cyan;
 			font-family:'Open Sans Semibold';
 			font-size:16px;
-			margin:20px 0 0;
+			margin:0 0 20px;
 		}
 
 		h6 {
@@ -853,6 +855,12 @@ p {
 	display:inline-block;
 }
 
+.group {
+	p {
+		display: block;
+		margin-bottom:5px !important;
+	}
+}
 
 //Buttons
 .btn {
@@ -925,8 +933,8 @@ p {
 }
 
 .btn-ghost-primary {
-	border:1px solid $mediumCyan;
-	color:$mediumCyan;
+	border:1px solid $cyan;
+	color:$cyan;
 
 	&.disabled {
 		background-color:transparent !important;
@@ -947,7 +955,7 @@ p {
 	&:focus,
 	&:active {
 		border:1px solid transparent;
-		background-color:$cyan !important;
+		background-color:$mediumCyan !important;
 		color:white;
 	}
 
@@ -984,100 +992,6 @@ p {
 	}
 	
 }
-
-.btn-ghost-success {
-	border:1px solid $green;
-	color:$green;
-
-	&.disabled {
-		background-color:transparent !important;
-		border:1px solid $lightGreen;
-		color:$lightGreen;
-
-		&:hover,
-		&:visited,
-		&:focus,
-		&:active {
-			background-color:transparent !important;
-			border:1px solid $lightGreen !important;
-			color:$lightGreen;
-		}
-	}
-
-	&:hover,
-	&:focus,
-	&:active {
-		border:1px solid transparent;
-		background-color:$mediumGreen !important;
-		color:white;
-	}
-
-	&:visited {
-		border:1px solid $mediumGreen;
-		color:$mediumGreen;
-	}
-}
-
-	// Warning
-.btn-warning {
-	background-color:$orange;
-
-	&.disabled {
-		background-color:$lightOrange;
-
-		&:hover,
-		&:visited,
-		&:focus,
-		&:active {
-			background-color: $lightOrange !important;
-		}
-	}
-
-	&:focus,
-	&:active,
-	&:visited,
-	&:hover {
-		background-color: $mediumOrange !important;
-	}
-
-	.fa {
-		color: $orange;
-	}
-}
-
-.btn-ghost-warning {
-	border:1px solid $orange;
-	color:$orange;
-
-	&.disabled {
-		background-color:transparent !important;
-		border:1px solid $lightOrange;
-		color:$lightOrange;
-
-		&:hover,
-		&:visited,
-		&:focus,
-		&:active {
-			background-color:transparent !important;
-			border:1px solid $lightOrange !important;
-			color:$lightOrange;
-		}
-	}
-
-	&:hover,
-	&:focus,
-	&:active {
-		border:1px solid transparent;
-		background-color:$mediumOrange !important;
-		color:white;
-	}
-
-	&:visited {
-		border:1px solid $mediumOrange;
-		color:$mediumOrange;
-	}
-}
-
 	// Danger
 .btn-danger {
 	background-color:$purple;
@@ -1105,72 +1019,7 @@ p {
 	}	
 }
 
-.btn-ghost-danger {
-	border:1px solid $purple;
-	color:$purple;
-
-	&.disabled {
-		background-color:transparent !important;
-		border:1px solid $lightPurple;
-		color:$lightPurple;
-
-		&:hover,
-		&:visited,
-		&:focus,
-		&:active {
-			background-color:transparent !important;
-			border:1px solid $lightPurple !important;
-			color:$lightPurple;
-		}
-	}
-
-	&:hover,
-	&:focus,
-	&:active {
-		border:1px solid transparent;
-		background-color:$mediumPurple !important;
-		color:white;
-	}
-
-	&:visited {
-		border:1px solid $mediumPurple;
-		color:$mediumPurple;
-	}
-
-	.fa {
-		color: $white;
-		background-color:$purple;
-	}	
-}
-
 	// Neutral
-.btn-neutral {
-	background-color:$darkGray;
-
-	&:focus,
-	&:active,
-	&:visited,
-	&:hover {
-		background-color: $darkGray !important;
-		color:white;
-	}	
-
-	&.disabled {
-		background-color:$mediumGray;
-
-		&:hover,
-		&:visited,
-		&:focus,
-		&:active {
-			background-color: $mediumGray !important;
-		}
-	}
-
-	.fa {
-		color: $darkGray;
-	}	
-}
-
 .btn-ghost-neutral {
 	border:1px solid $black;
 	color:$black;
@@ -1582,9 +1431,9 @@ input::-ms-clear{
 		}
 	}
         
-        .label-campo {
-            padding-top: 0px;
-        }
+    .label-campo {
+        padding-top: 0px;
+    }
         
     textarea {
         resize: none;
@@ -1629,107 +1478,108 @@ input::-ms-clear{
 	}
 
 	&.duplicated {
+		.fa {
+			color: $white;
+		}
 
-		&.d-four {
-			input, 
-			select, 
-			textarea, 
-			.label-campo {
-				border-radius:0;
-				color: $white;
-				font-family: 'Open Sans Regular';
-				font-size:16px;
-				padding:15px 5px 5px;
-				display:block;
-				border:none;
-				border-bottom:2px solid $cyan;
+		input, 
+		select, 
+		textarea, 
+		.label-campo {
+			border-radius:0;
+			color: $white;
+			font-family: 'Open Sans Regular';
+			font-size:16px;
+			padding:15px 5px 5px;
+			display:block;
+			border:none;
+			border-bottom:2px solid $cyan;
+			width: 100%;
+			background-color:$lightCyan;
+			
+			&:focus {
+				outline:none;
+				border-bottom:2px solid $azulYPF;
+			}
+
+			&:focus ~ label, 
+			& ~ label.label-arriba {
+				margin-top:25px;
+				top:-30px;
+				font-size:14px;
+				padding:0 5px;
+				color:$lightBlack;
 				width: 100%;
-				background-color:$lightCyan;
-				
-				&:focus {
-					outline:none;
-					border-bottom:2px solid $azulYPF;
-				}
-
-				&:focus ~ label, 
-				& ~ label.label-arriba {
-					margin-top:25px;
-					top:-30px;
-					font-size:14px;
-					padding:0 5px;
-					color:$lightBlack;
-					width: 100%;
-					background-color: $lightCyan;
-				}
-
-				&:focus ~ p {
-					display:block;
-				}
-
-				&.timepicker {
-					box-shadow:none;
-					height: auto;
-				}
+				background-color: $lightCyan;
 			}
 
-			.label-campo {
-            	padding-top: 0px;
-        	}
-        
-	    	textarea {
-	        	resize: none;
-	    	}
-
-			label, 
-			.label-abajo {
-				display: inline-block;
-				color:$darkGray;
-				font-family: 'Open Sans Light';
-				font-size:16px;
-				position:absolute;
-				left:0;
-				top:15px;
-				pointer-events:none;
-				transition:0.15s ease-in-out all;
-				-moz-transition:0.15s ease-in-out all;
-				-webkit-transition:0.15s ease-in-out all;
-				
-				span {
-					display: inline-block;
-					color:$orange;
-				}
-			}
-
-			p {
+			&:focus ~ p {
 				display:block;
-				font-size:12px;
-				color:$darkGray;
-				padding:5px 0 0;
-				font-family: 'Open Sans Regular';
-
-				span {
-					display: inline-block;
-					font-size: 10px;
-					color: $white;
-					background-color: $orange;
-					border-radius:20px;
-					padding: 3px 6px 3px 7px;
-					margin-right: 3px;
-					font-family: 'FontAwesome' !important;
-					position:inherit;
-					float:none;
-				}
 			}
 
-			h6 {
+			&.timepicker {
+				box-shadow:none;
+				height: auto;
+			}
+		}
+
+		.label-campo {
+        	padding-top: 0px;
+    	}
+    
+    	textarea {
+        	resize: none;
+    	}
+
+		label, 
+		.label-abajo {
+			display: inline-block;
+			color:$darkGray;
+			font-family: 'Open Sans Light';
+			font-size:16px;
+			position:absolute;
+			left:0;
+			top:15px;
+			pointer-events:none;
+			transition:0.15s ease-in-out all;
+			-moz-transition:0.15s ease-in-out all;
+			-webkit-transition:0.15s ease-in-out all;
+			
+			span {
 				display: inline-block;
-				font-size: 14px;
-				opacity: 1;
-				color:$white;
-				background-color:$black;
-				font-family: 'Open Sans Regular';
-				padding:3px 10px;
+				color:$orange;
 			}
+		}
+
+		p {
+			display:block;
+			font-size:12px;
+			color:$darkGray;
+			padding:5px 0 0;
+			font-family: 'Open Sans Regular';
+
+			span {
+				display: inline-block;
+				font-size: 10px;
+				color: $white;
+				background-color: $orange;
+				border-radius:20px;
+				padding: 3px 6px 3px 7px;
+				margin-right: 3px;
+				font-family: 'FontAwesome' !important;
+				position:inherit;
+				float:none;
+			}
+		}
+
+		h6 {
+			display: inline-block;
+			font-size: 14px;
+			opacity: 1;
+			color:$white;
+			background-color:$black;
+			font-family: 'Open Sans Regular';
+			padding:3px 10px;
 		}
 	}
 
