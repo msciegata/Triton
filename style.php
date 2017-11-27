@@ -506,7 +506,7 @@
 								<div class="col-lg-4">
 									<h5>Disabled</h5>
 									<p>
-										Cuando el usuario haya terminado de completar el campo  y la información ingresada no sea correcta o el campo esté incompleto, si no tiene ícono en la parte derecha, se colocará una cruz dentro de un círculo y se pintarán tanto la línea, el ícono y el label de púrpura. Si el input tiene ícono se pintará de púrpura. Además, por debajo de la línea del input se colocará un mensaje de ayuda para que el usuario pueda comprender y corregir el error.
+										Cuando el campo se encuentre deshabilitado por cuestiones del sistema se pintarán tanto la línea, el ícono y el label de gris claro.
 									</p>
 									<div class="input-group">
 										<input id="input-example" disabled  type="text" required name="example" value="Information entered">
@@ -606,7 +606,7 @@
 								<div class="col-lg-4">
 									<h5>Duplicated</h5>
 									<p>
-										Cuando el usuario haya terminado de completar el campo y por un motivo u otro el usuario deba prestar atención al mismo, si no tiene ícono en la parte derecha, se colocará un signo de admiración y se pintarán tanto la línea, el ícono y el label de naranja. Si el input tiene ícono se pintará de naranja. Además, por debajo de la línea del input se colocará un mensaje de ayuda para que el usuario pueda comprender lo que tiene que hacer.
+										Cuando el usuario haya duplicado un formulario cargado en el sistema y haya campos a los cuales deba prestar atención para completar nuevamente o corroborar la información, estos campos se verán afectados por un fondo celeste claro, el nombre del label y el texto de ayuda serán gris oscuro, la linea inferior del input será color cyan y la información ingresada y el ícono, si tuviera, blancos. 
 									</p>
 									<div class="input-group duplicated">
 										<input id="input-example" type="text" required name="example" value="Information entered">
