@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -1388,5 +1387,4 @@
         });
         </script>
 </body>
->>>>>>> dac917821e6ad1f4da2dc2039154c6e44af06c8b
 </html>
