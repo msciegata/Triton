@@ -1730,6 +1730,23 @@ input::-ms-clear{
 	.checkbox {
 		margin-bottom:30px;
 
+		p {
+			margin-bottom:10px !important; 
+			display: block;
+			color: $darkGray !important;
+			font-size: 14px;
+			font-family: 'Open Sans Regular';
+
+			span {
+				display: inline-block;
+				color: $orange;
+			}
+		}
+
+		span {
+			display:none;
+		}
+
 		input.custom-checkbox {
 			position:absolute;
 			opacity: 0;
@@ -1757,7 +1774,7 @@ input::-ms-clear{
 				padding: 0 2.2px 20px;
 				height: 24px;
 				width: 22px;
-				border:1px solid $mediumGray;
+				border:1px solid $darkGray;
 				background-color:transparent;
 				border-radius:1px;
 			}
@@ -1779,6 +1796,79 @@ input::-ms-clear{
 		input.custom-checkbox:first-of-type {
 			margin-left:0 !important;
 		}
+
+		&.error {
+
+			p {
+				margin-bottom:10px !important; 
+				display: block;
+				color: $purple !important;
+				font-size: 14px;
+				font-family: 'Open Sans Regular';
+
+				span {
+					display: inline-block;
+					color: $purple;
+				}
+			}
+
+			span {
+				display:block;
+				color:$purple;
+				font-size:12px;
+
+			}
+
+			input.custom-checkbox {
+				position:absolute;
+				opacity: 0;
+
+				& + label {
+					position:relative;
+					cursor:pointer;
+					padding:0;
+					margin:10px;
+				}
+
+				& + label:first-of-type {
+					position:relative;
+					cursor:pointer;
+					padding:0;
+					margin:10px 10px 10px 0;
+				}
+
+				& + label:before {
+					content:"";
+					font-size: 14px;
+					margin-right: 10px;
+					display: inline-block;
+					vertical-align: bottom;
+					padding: 0 2.2px 20px;
+					height: 24px;
+					width: 22px;
+					border:1px solid $purple;
+					background-color:transparent;
+					border-radius:1px;
+				}
+
+				&:checked + label:before {
+					color:$purple;
+					border:1.5px solid $purple;
+					content:"\f00c";
+					font-family: 'FontAwesome';
+
+				}
+
+				&:checked + label:after {
+					content:'';
+					background:transparent;
+				}
+			}
+
+			input.custom-checkbox:first-of-type {
+				margin-left:0 !important;
+			}
+		}
 	}
 }
 
@@ -1791,13 +1881,35 @@ input::-ms-clear{
 		margin-left:0;
 	}
 
+	p {
+		margin-bottom:0 !important; 
+		display: block;
+		color: $darkGray !important;
+		font-size: 14px;
+		font-family: 'Open Sans Regular';
+
+		span {
+			display: inline-block;
+			color: $orange;
+		}
+	}
+
+	span {
+		display:none;
+	}
+
 	.radio {
 		margin:10px;
 		display: inline-block;
 
+		span {
+			display: none;
+		}
+
 		label {
 			margin:5px 0px;
 			padding-left:0;
+			color: $darkGray;
 		}
 
 		input {
@@ -1809,7 +1921,7 @@ input::-ms-clear{
 			content: '';
 			background-color:transparent;
 			border-radius:100%;
-			border:1px solid $mediumGray;
+			border:1px solid $darkGray;
 			display: inline-block;
 			width: 22px;
 			height: 22px;
@@ -1839,13 +1951,13 @@ input::-ms-clear{
 		}
 	}
 
-	p {
-		display: none;
-	}
 
 	&.warning {
 		.radio {
 			margin-bottom:0px;
+			label {
+				color: $darkGray;
+			}
 
 			input + .radio-label:before {
 				content: '';
@@ -1876,23 +1988,39 @@ input::-ms-clear{
 
 			input:disabled + .radio-label:before {
 				box-shadow:none;
-				border-color:$orange;
-				background-color:$orange;
+				border-color:$lightGray;
+				background-color:$lightGray;
 			}
 
 		}
 
 		p {
+			margin-bottom:0;
 			display: block;
 			color: $orange;
-			font-size: 13px;
+			font-size: 14px;
 			font-family: 'Open Sans Regular';
+
+			span {
+				display: inline-block;
+				color: $orange;
+			}
+		}
+
+		span {
+			color: $orange;
+			display: block;
+			font-size:12px;
+			margin-top:5px;
 		}
 	}
 
 	&.error {
 		.radio {
 			margin-bottom:0px;
+			label {
+				color: $darkGray;
+			}
 
 			input + .radio-label:before {
 				content: '';
@@ -1906,6 +2034,7 @@ input::-ms-clear{
 				margin-right: 10px;
 				vertical-align: bottom;
 				cursor:pointer;
+				color: $purple;
 			}
 
 			input:checked + .radio-label:before {
@@ -1930,10 +2059,23 @@ input::-ms-clear{
 		}
 
 		p {
+			margin-bottom:0;
 			display: block;
 			color: $purple;
-			font-size: 13px;
+			font-size: 14px;
 			font-family: 'Open Sans Regular';
+
+			span {
+				display: inline-block;
+				color: $purple;
+			}
+		}
+
+		span {
+			color: $purple;
+			display: block;
+			font-size:12px;
+			margin-top:5px;
 		}
 	}
 }
