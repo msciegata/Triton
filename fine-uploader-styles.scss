@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "colors";
+
+.qq-uploader-selector {
+    min-height: 100px;
+    color: $darkGray;
+    .qq-upload-file-selector, .qq-edit-filename-selector {
+        margin-left: 12px;
+    }
+    .qq-edit-filename-selector{
+        width: 85%;
+        &.qq-editing + .buttons {
+            display: none;
+        }
+    }
+    .qq-total-progress-bar-container-selector {
+        display: none;
+    }
+    .qq-upload-list-selector {
+        li {
+            background: none !important;
+        }
+        .fa-file-o {
+            margin-right: 15px;
+        }
+        .buttons {
+            float: right;
+        }
+    }
+    .empty-message{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    .qq-upload-list-selector:empty + .empty-message {
+        display: block;
+    }
+}
+
+#well-add-button {
+    background: none;
+}

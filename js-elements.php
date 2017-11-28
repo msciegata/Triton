@@ -61,14 +61,10 @@ $(function () {
     var functionLabelPosition = function(){
         if ($(this).val() !== "") {
             $(this).parent('.input-group').find('label').addClass('label-arriba').removeClass('label-abajo');
-            if($(this).is("select")){
-                $(this).removeClass("emptySelected");
-            }
+            $(this).addClass('mostrar');
         } else {
             $(this).parent('.input-group').find('label').addClass('label-abajo').removeClass('label-arriba');
-            if($(this).is("select")){
-                $(this).addClass("emptySelected");
-            }
+            $(this).removeClass('mostrar');
         }
     };
     $("select").change(functionLabelPosition);
