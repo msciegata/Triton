@@ -1468,6 +1468,9 @@ input::-ms-clear{
         select.mostrar + span .select2-selection__rendered {
             color: $black !important;
         }
+        select {
+            text-indent: -2px;
+        }
         
     .label-campo {
         padding-top: 0px;
