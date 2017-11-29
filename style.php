@@ -488,6 +488,35 @@
 							</div>
 						</div>
 					</div>
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">
+								<h3>Remarks</h3>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="remark remark-primary">
+								<p>
+									<span class="fa fa-bell"></span>Esto es una llamada de atención dentro de una card.
+								</p>
+							</div>
+							<div class="remark remark-warning">
+								<p>
+									<span class="fa fa-exclamation"></span>Esto es una llamada de atención dentro de una card.
+								</p>
+							</div>
+							<div class="remark remark-success">
+								<p>
+									<span class="fa fa-check"></span>Esto es una llamada de atención dentro de una card.
+								</p>
+							</div>
+							<div class="remark remark-danger">
+								<p>
+									<span class="fa fa-close"></span>Esto es una llamada de atención dentro de una card.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="card">
