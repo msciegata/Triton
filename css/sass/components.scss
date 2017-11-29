@@ -1365,10 +1365,6 @@ input::-ms-clear{
 
 			.select2-selection__rendered {
 					line-height: 25px;
-
-				&.texto-blanco {
-					color:$white;
-				}
 			}
 		}
 	}
@@ -1462,6 +1458,16 @@ input::-ms-clear{
 			height: auto;
 		}
 	}
+        
+        select + span .select2-selection__rendered {
+            color: $transparent !important;
+            transition:color 0.3s;
+            -moz-transition:color 0.3s;
+            -webkit-transition:color 0.3s;
+        }
+        select.mostrar + span .select2-selection__rendered {
+            color: $black !important;
+        }
         
     .label-campo {
         padding-top: 0px;

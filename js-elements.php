@@ -41,23 +41,7 @@ $(function () {
     //Select with search 
     $(".select-buscador").select2();
 
-    $(".select-buscador").each(function (i) {
-        if ($(this).val() === "") {
-            $(this).parent('.input-group').find('.select2-selection__rendered').addClass('texto-blanco');
-        }
-    });
-
-    $(".select-buscador").change(function () {
-        if ($(this).val() !== "") {
-            $(this).parent('.input-group').find('label').addClass('label-arriba').removeClass('label-abajo');
-            $(this).parent('.input-group').find('.select2-selection__rendered').removeClass('texto-blanco');
-        } else {
-            $(this).parent('.input-group').find('label').addClass('label-abajo').removeClass('label-arriba');
-            $(this).parent('.input-group').find('.select2-selection__rendered').addClass('texto-blanco');
-        }
-        ;
-    });
-
+    //input, select & textarea label behaviour
     var functionLabelPosition = function(){
         if ($(this).val() !== "") {
             $(this).parent('.input-group').find('label').addClass('label-arriba').removeClass('label-abajo');
