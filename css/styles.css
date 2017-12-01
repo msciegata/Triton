@@ -1946,7 +1946,7 @@ input::-ms-clear {
   -ms-appearance: none;
   background-image: linear-gradient(45deg, transparent 50%, #666666 50%), linear-gradient(135deg, #666666 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
   background-position: calc(100% - 10px) calc(1em + 8px), calc(100% - 5px) calc(1em + 8px), calc(100% - 2.5em) 0;
-  background-size: 5px 5px, 5px 5px, 0 0;
+  background-size: 6px 6px, 6px 6px, 0 0;
   background-repeat: no-repeat;
 }
 /* line 1439, sass/components.scss */

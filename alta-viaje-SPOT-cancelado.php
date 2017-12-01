@@ -13,12 +13,12 @@
 			<div class="container-fluid">
 				<div class="row page-title">
 					<div class="col-lg-10">
-						<h1>Alta de viaje <span>SPOT</span></h1>
+						<h1>Viaje <span>SPOT.0013</span></h1>
 					</div>
 					<div class="col-lg-2 state">
-						<div class="circle bg-gray">
+						<div class="circle bg-purple">
 						</div>
-						<h5>NO INICIADO</h5>
+						<h5>CANCELADO</h5>
 					</div>
 				</div>
 				<div class="row">

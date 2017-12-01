@@ -194,7 +194,7 @@
 										<label for="UOM">Select no search<span>*</span></label>
 									</div>
 									<div class="input-group">
-										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio">
+										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio" value="13/11/2017">
 										<span class="fa fa-calendar" aria-hidden="true"></span>
 										<label for="fecha-inicio">Date Picker</label>
 									</div>
@@ -396,12 +396,12 @@
 										<label for="UOM">Select No Search<span>*</span></label>
 									</div>
 									<div class="input-group warning">
-										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio">
+										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio" value="13/10/2017">
 										<span class="fa fa-calendar" aria-hidden="true"></span>
 										<label for="fecha-inicio">Date Picker</label>
 									</div>
 									<div class="input-group warning">
-										<input id="horario-inicio" type="text" class="input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required value="13:25">
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker<span>*</span></label>
 									</div>
@@ -415,13 +415,13 @@
 										<input id="input-example" type="text" required name="example" value="Information entered">
 										<span class="fa fa-exclamation" aria-hidden="true"></span>
 										<label for="input-example">Input No Icon<span>*</span></label>
-										<p>This is a help text</p>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 									<div class="input-group duplicated">
 										<input id="input-example" type="text" required name="example" value="Information entered">
 										<span class="fa fa-tag" aria-hidden="true"></span>
 										<label for="input-example">Input Icon<span>*</span></label>
-										<p>This is a help text</p>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 									<div class="input-group duplicated">
 										<select id="product-name" class="select-buscador" required style="width: 100%">
@@ -434,7 +434,7 @@
 											<option value="v6">Resultado 6</option>
 										</select>
 										<label for="product-name">Select Search<span>*</span></label>
-										<p>This is a help text</p>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 									<div class="input-group duplicated">
 										<select id="UOM" name="UOM" required>
@@ -444,16 +444,19 @@
 											<option value="v2">Opción 3</option>
 										</select>
 										<label for="UOM">Select No Search<span>*</span></label>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 									<div class="input-group duplicated">
-										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio">
+										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio" value="13/10/2017">
 										<span class="fa fa-calendar" aria-hidden="true"></span>
 										<label for="fecha-inicio">Date Picker</label>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 									<div class="input-group duplicated">
-										<input id="horario-inicio" type="text" class="input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required value="13:25">
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker<span>*</span></label>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 								</div>
 							</div>
