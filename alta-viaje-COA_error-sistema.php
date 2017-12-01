@@ -138,7 +138,7 @@
 													</div>
 													<div class="col-lg-6">
 														<div class="input-group">
-															<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
+															<input id="horario-inicio" type="text" class="input-small timepicker" required>
 															<span class="fa fa-clock-o" aria-hidden="true"></span>
 															<label for="horario-inicio">Horario</label>
 														</div>
@@ -161,7 +161,7 @@
 													</div>
 													<div class="col-lg-6">
 														<div class="input-group">
-															<input id="horario-fin" type="text" class="form-control input-small timepicker" required>
+															<input id="horario-fin" type="text" class="input-small timepicker" required>
 															<span class="fa fa-clock-o" aria-hidden="true"></span>
 															<label for="horario-fin">Horario</label>
 														</div>
@@ -187,7 +187,7 @@
 												<div class="tab-content">
 													<div role="tabpanel" class="tab-pane fijo active" id="fijo">
 														<div class="input-group">
-															<input id="tiempo-fijo" type="text" class="form-control input-small timepicker" required>
+															<input id="tiempo-fijo" type="text" class="input-small timepicker" required>
 															<span class="fa fa-clock-o" aria-hidden="true"></span>
 															<label for="tiempo-fijo">Tiempo</label>
 														</div>
@@ -212,7 +212,7 @@
 														</div>
 														<div class="col-lg-3">
 															<div class="input-group">
-																<input id="tiempo-calculado" type="text" class="form-control input-small timepicker" required>
+																<input id="tiempo-calculado" type="text" class="input-small timepicker" required>
 																<span class="fa fa-clock-o" aria-hidden="true"></span>
 																<label for="tiempo-calculado">Tiempo</label>
 															</div>

@@ -199,7 +199,7 @@
 										<label for="fecha-inicio">Date Picker</label>
 									</div>
 									<div class="input-group">
-										<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required>
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker</label>
 									</div>
@@ -249,7 +249,7 @@
 										<label for="fecha-inicio">Date Picker</label>
 									</div>
 									<div class="input-group validated">
-										<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required>
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker<span>*</span></label>
 									</div>
@@ -299,7 +299,7 @@
 										<label for="fecha-inicio">Date Picker<span>*</span></label>
 									</div>
 									<div class="input-group error">
-										<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required>
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker</label>
 									</div>
@@ -351,7 +351,7 @@
 										<label for="fecha-inicio">Date Picker<span>*</span></label>
 									</div>
 									<div class="input-group">
-										<input id="horario-inicio" disabled type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" disabled type="text" class="input-small timepicker" required>
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker</label>
 									</div>
@@ -401,7 +401,7 @@
 										<label for="fecha-inicio">Date Picker</label>
 									</div>
 									<div class="input-group warning">
-										<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required>
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker<span>*</span></label>
 									</div>
@@ -451,7 +451,7 @@
 										<label for="fecha-inicio">Date Picker</label>
 									</div>
 									<div class="input-group duplicated">
-										<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required>
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker<span>*</span></label>
 									</div>
