@@ -16,9 +16,9 @@
 						<h1>Alta de viaje <span>SPOT</span></h1>
 					</div>
 					<div class="col-lg-2 state">
-						<div class="circle bg-gray">
+						<div class="circle bg-green">
 						</div>
-						<h5>NO INICIADO</h5>
+						<h5>REGISTRADO</h5>
 					</div>
 				</div>
 				<div class="row">
@@ -231,7 +231,9 @@
 									<h3>Costo por flete</h3>
 								</div>
 								<div class="state">
-									<h5><span class="fa fa-check"></span>PAGADO</h5>
+									<div class="pay">
+										<h5><span class="fa fa-check"></span>PAGADO</h5>
+									</div>
 								</div>
 							</div>
 							<div class="card-body">
@@ -420,7 +422,7 @@
 											<td>EUR <span>30.000</span></td>
 											<td class="no-pay" title="No pagado">
 												<a href="#" class="t-pay" data-toggle="tooltip" data-placement="bottom"  title="No pagado">
-													<span class="fa fa-cllse"></span>
+													<span class="fa fa-close"></span>
 												</a>
 											<td>
 												<a href="" class="detail" data-toggle="tooltip" data-placement="bottom" title="Este es un detalle de un costo o ingreso asociado. El límite de caracteres a mostrar es 100.">

@@ -1412,8 +1412,8 @@ input::-ms-clear{
     		calc(100% - 5px) calc(1em + 8px), 
     		calc(100% - 2.5em) 0;
   		background-size:
-    		5px 5px,
-   			5px 5px,
+    		6px 6px,
+   			6px 6px,
     		0 0;
   		background-repeat: no-repeat;
 
@@ -1499,7 +1499,7 @@ input::-ms-clear{
             color: $black !important;
         }
         select {
-            text-indent: -2px;
+            text-indent: -1px;
         }
         
     .label-campo {
