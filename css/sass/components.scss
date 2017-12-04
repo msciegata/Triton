@@ -1335,10 +1335,6 @@ input::-ms-clear{
   				padding-left:0px;
   				font-size: 16px;
   				font-family: 'Open Sans Regular';
-                                color: $transparent;
-                                transition:color 0.3s;
-                                -moz-transition:color 0.3s;
-                                -webkit-transition:color 0.3s;
   			}
 	  	}
   	}
@@ -1402,23 +1398,8 @@ input::-ms-clear{
 			}
 		}
 	}
-        
-        select {
-            &.mostrar {
-                & + .select2-container .select2-selection--single .select2-selection__rendered {
-                    color:$black;
-                }
-                &:disabled + span .select2-selection__rendered {
-                    color:$mediumGray !important;
-                }
-            }
-            &:disabled + span  .select2-selection__arrow b {
-                border-color:$mediumGray transparent transparent transparent !important;
-            }
-        }
 
     select {
-        text-indent: -1px;
     	-webkit-appearance: none;
   		-moz-appearance: none;
   		-ms-appearance: none;
@@ -1431,8 +1412,8 @@ input::-ms-clear{
     		calc(100% - 5px) calc(1em + 8px), 
     		calc(100% - 2.5em) 0;
   		background-size:
-    		6px 6px,
-   			6px 6px,
+    		5px 5px,
+   			5px 5px,
     		0 0;
   		background-repeat: no-repeat;
 
@@ -1443,13 +1424,6 @@ input::-ms-clear{
   		option {
   			color:$darkGray;
   		}
-                
-                &:disabled {
-                    background-image:
-                        linear-gradient(45deg, transparent 50%, $mediumGray 50%),
-                        linear-gradient(135deg, $mediumGray 50%, transparent 50%),
-                        linear-gradient(to right, transparent, transparent) !important;
-                }
     }
 
 	input, select, textarea, .label-campo {
@@ -1479,8 +1453,8 @@ input::-ms-clear{
 			border-bottom:1px solid $azulYPF;
 		}
 
-		@at-root .input-group select:disabled + span .select2-selection--single, &:disabled {
-			border-bottom:0.5px solid $mediumGray !important;
+		&:disabled {
+			border-bottom:0.5px solid $mediumGray;
 
 			~ span.fa {
 				color:$mediumGray;
@@ -1514,7 +1488,20 @@ input::-ms-clear{
 			height: auto;
 		}
 	}
-	
+        
+        select + span .select2-selection__rendered {
+            color: $transparent !important;
+            transition:color 0.3s;
+            -moz-transition:color 0.3s;
+            -webkit-transition:color 0.3s;
+        }
+        select.mostrar + span .select2-selection__rendered {
+            color: $black !important;
+        }
+        select {
+            text-indent: -2px;
+        }
+        
     .label-campo {
         padding-top: 0px;
     }
@@ -1566,21 +1553,12 @@ input::-ms-clear{
 			color: $white;
 		}
 
-                .select2-selection--single {
-                    background-color:$lightCyan;
-                    border-bottom:2px solid $cyan;
-                }
-                
-                select.mostrar + .select2-container .select2-selection--single .select2-selection__rendered,
-                input.mostrar, select.mostrar, textarea.mostrar, .label-campo, input:focus, select:focus, textarea:focus, {
-                    color:$white;
-                }
-                
 		input, 
 		select, 
 		textarea, 
 		.label-campo {
 			border-radius:0;
+			color: $white;
 			font-family: 'Open Sans Regular';
 			font-size:16px;
 			padding:15px 5px 5px;
@@ -1682,10 +1660,11 @@ input::-ms-clear{
 	    	color:$green;
 	    }
 
-		.select2-selection--single, input, select, textarea {
+		input {
 			border-bottom:0.5px solid $green;
 	
-			&:focus ~ label, {
+			&:focus ~ label,
+			&:valid ~ label, {
 				margin-top:25px;
 				top:-30px;
 				font-size:14px;
@@ -1697,7 +1676,7 @@ input::-ms-clear{
 			}
 		}
 
-		label, label.label-arriba {
+		label {
 			color:$green;
 			font-family:'Open Sans Light';
 
@@ -1709,17 +1688,6 @@ input::-ms-clear{
 		p {
 			display:none;
 		}
-                
-                .select2-selection__arrow b {
-                    border-color:$green transparent transparent transparent !important;
-                }
-                
-                select {
-                    background-image:
-                        linear-gradient(45deg, transparent 50%, $green 50%),
-                        linear-gradient(135deg, $green 50%, transparent 50%),
-                        linear-gradient(to right, transparent, transparent);
-                }
 	}
 
 	&.error {
@@ -1729,10 +1697,11 @@ input::-ms-clear{
 	    	font-size: 18px;
 	    }
 
-		.select2-selection--single, input, select, textarea {
+		input {
 			border-bottom:0.5px solid $purple;
 	
-			&:focus ~ label {
+			&:focus ~ label,
+			&:valid ~ label, {
 				margin-top:25px;
 				top:-30px;
 				font-size:14px;
@@ -1745,7 +1714,7 @@ input::-ms-clear{
 			}
 		}
 
-		label, label.label-arriba {
+		label {
 			color:$purple;
 			font-family:'Open Sans Light';
 
@@ -1758,17 +1727,6 @@ input::-ms-clear{
 			color:$purple;
 			display:block;
 		}
-                
-                .select2-selection__arrow b {
-                    border-color:$purple transparent transparent transparent !important;
-                }
-                
-                select {
-                    background-image:
-                        linear-gradient(45deg, transparent 50%, $purple 50%),
-                        linear-gradient(135deg, $purple 50%, transparent 50%),
-                        linear-gradient(to right, transparent, transparent);
-                }
 	}
 
 	&.warning {
@@ -1777,10 +1735,11 @@ input::-ms-clear{
 	    	color:$orange;
 	    }
 
-		.select2-selection--single, input, select, textarea {
+		input {
 			border-bottom:0.5px solid $orange;
 	
-			&:focus ~ label {
+			&:focus ~ label,
+			&:valid ~ label, {
 				margin-top:25px;
 				top:-30px;
 				font-size:14px;
@@ -1793,7 +1752,7 @@ input::-ms-clear{
 			}
 		}
 
-		label, label.label-arriba {
+		label {
 			color:$orange;
 			font-family:'Open Sans Light';
 
@@ -1806,17 +1765,6 @@ input::-ms-clear{
 			color:$orange;
 			display:block;
 		}
-                
-                .select2-selection__arrow b {
-                    border-color:$orange transparent transparent transparent !important;
-                }
-                
-                select {
-                    background-image:
-                        linear-gradient(45deg, transparent 50%, $orange 50%),
-                        linear-gradient(135deg, $orange 50%, transparent 50%),
-                        linear-gradient(to right, transparent, transparent);
-                }
 	}
 }
 
