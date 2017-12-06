@@ -8,7 +8,6 @@
 <!-- JQ Grid -->
 <script src="js/plugins/jqgrid/jquery.jqgrid.min.js"></script>
 <script src="js/plugins/jqgrid/grid.locale-es.js"></script>
-<script src="js/listado_viajes-SPOT.js"></script>
 
 <!-- Bootstrap -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
