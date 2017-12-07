@@ -284,29 +284,37 @@
                 <?php include 'js-elements.php';?>
                 <script src="js/listado_viajes-SPOT.js"></script>
                 <script>
-                new qq.FineUploader({
-                    element: document.getElementById("contrato-SAP-upload"),
-                    template: 'qq-template',
-                    request: {
-                        endpoint: '/server/uploads'
-                    },
-                    thumbnails: {
-                        placeholders: {
-                            waitingPath: '/source/placeholders/waiting-generic.png',
-                            notAvailablePath: '/source/placeholders/not_available-generic.png'
-                        }
-                    },
-                    validation: {
-                        allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
-                    },
-                    extraButtons: [
-                        {
-                            element: document.getElementById("well-add-button"),
-                            validation: {
-                                allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
+                $(function () {
+                    new qq.FineUploader({
+                        element: document.getElementById("contrato-SAP-upload"),
+                        template: 'qq-template',
+                        autoUpload: false,
+                        request: {
+                            endpoint: '/server/uploads'
+                        },
+                        thumbnails: {
+                            placeholders: {
+                                waitingPath: '/source/placeholders/waiting-generic.png',
+                                notAvailablePath: '/source/placeholders/not_available-generic.png'
+                            }
+                        },
+                        validation: {
+                            allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
+                        },
+                        extraButtons: [
+                            {
+                                element: document.getElementById("well-add-button"),
+                                validation: {
+                                    allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
+                                }
+                            }
+                        ],
+                        callbacks: {
+                            onSubmitted: function () {
+                                $("#contrato-SAP-upload").find(".empty-message").hide();
                             }
                         }
-                    ]
+                    });
                 });
                 </script>
 	</body>
