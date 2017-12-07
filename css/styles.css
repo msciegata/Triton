@@ -466,8 +466,6 @@
 .ui-jqgrid-jquery-ui .txt-green {
   color: #809E00;
 }
-
-
 /* line 337, sass/grid-styles.scss */
 .ui-jqgrid-jquery-ui .txt-orange {
   color: #bb3b29;
@@ -577,8 +575,8 @@
 }
 
 /* line 43, sass/fine-uploader-styles.scss */
-#well-add-button {
-  background: none;
+.qq-upload-button-hover {
+  background: none !important;
 }
 
 /* line 11, sass/components.scss */

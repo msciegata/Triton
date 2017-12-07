@@ -575,8 +575,8 @@
 }
 
 /* line 43, sass/fine-uploader-styles.scss */
-#well-add-button {
-  background: none;
+.qq-upload-button-hover {
+  background: none !important;
 }
 
 /* line 11, sass/components.scss */
