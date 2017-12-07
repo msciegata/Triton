@@ -404,8 +404,15 @@
   .qq-uploader-selector .qq-upload-list-selector:empty + .empty-message {
     display: block; }
 
+<<<<<<< HEAD
 #well-add-button {
   background: none; }
+=======
+/* line 43, sass/fine-uploader-styles.scss */
+.qq-upload-button-hover {
+  background: none !important;
+}
+>>>>>>> 0e61222ae4571d973384e00a2fe070a672820e6c
 
 .text-center {
   text-align: center !important; }

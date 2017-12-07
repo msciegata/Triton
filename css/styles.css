@@ -138,6 +138,7 @@
   font-weight: normal; }
 /* line 6, sass/grid-styles.scss */
 .ui-jqgrid-jquery-ui {
+<<<<<<< HEAD
   font-family: "Open Sans Regular"; }
   /* line 9, sass/grid-styles.scss */
   .ui-jqgrid-jquery-ui.responsive {
@@ -392,6 +393,314 @@
   /* line 341, sass/grid-styles.scss */
   .ui-jqgrid-jquery-ui .txt-purple {
     color: #6d1d61; }
+=======
+  font-family: "Open Sans Regular";
+}
+/* line 9, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui.responsive {
+  width: 100% !important;
+}
+/* line 13, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .responsive {
+  width: 100% !important;
+  overflow: hidden;
+}
+/* line 18, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui.ui-widget-content {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+}
+/* line 23, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui.ui-widget-content a {
+  font-family: 'Open Sans Bold';
+  color: #005DB4;
+  margin-left: 10px;
+  line-height: 1.5;
+}
+/* line 29, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui.ui-widget-content a:hover {
+  text-decoration: none;
+}
+/* line 35, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui input,
+.ui-jqgrid-jquery-ui select,
+.ui-jqgrid-jquery-ui textarea,
+.ui-jqgrid-jquery-ui button {
+  font-family: "Open Sans Regular";
+  font-size: 14px;
+  outline: none;
+}
+/* line 44, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-corner-all,
+.ui-jqgrid-jquery-ui .ui-corner-top,
+.ui-jqgrid-jquery-ui .ui-corner-right,
+.ui-jqgrid-jquery-ui .ui-corner-tr {
+  border-top-right-radius: 0px;
+}
+/* line 51, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-corner-all,
+.ui-jqgrid-jquery-ui .ui-corner-top,
+.ui-jqgrid-jquery-ui .ui-corner-left,
+.ui-jqgrid-jquery-ui .ui-corner-tl {
+  border-top-left-radius: 0px;
+}
+/* line 58, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-corner-all,
+.ui-jqgrid-jquery-ui .ui-corner-bottom,
+.ui-jqgrid-jquery-ui .ui-corner-right,
+.ui-jqgrid-jquery-ui .ui-corner-br {
+  border-bottom-right-radius: 0px;
+}
+/* line 65, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-corner-all,
+.ui-jqgrid-jquery-ui .ui-corner-bottom,
+.ui-jqgrid-jquery-ui .ui-corner-left,
+.ui-jqgrid-jquery-ui .ui-corner-bl {
+  border-bottom-left-radius: 0px;
+}
+/* line 74, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-state-default,
+.ui-jqgrid-jquery-ui .ui-widget-content .ui-state-default,
+.ui-jqgrid-jquery-ui .ui-widget-header .ui-state-default,
+.ui-jqgrid-jquery-ui .ui-button,
+.ui-jqgrid-jquery-ui html .ui-button.ui-state-disabled:hover,
+.ui-jqgrid-jquery-ui html .ui-button.ui-state-disabled:active {
+  border-width: 0px;
+  font-weight: bold;
+  background: #AAAAAA;
+}
+/* line 86, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-htable .ui-jqgrid-labels th {
+  padding: 13px 5px 13px 20px;
+}
+/* line 88, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-htable .ui-jqgrid-labels th.ui-th-column {
+  text-align: left;
+}
+/* line 91, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-htable .ui-jqgrid-labels th div {
+  margin: 0;
+  white-space: normal;
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: inherit;
+  line-height: normal;
+}
+/* line 102, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-hbox {
+  padding-right: 0px;
+}
+/* line 109, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-th-column th.ui-th-column {
+  text-align: left;
+}
+/* line 115, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-sortable {
+  height: auto;
+}
+/* line 120, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui.ui-jqgrid .ui-jqgrid-bdiv tr.ui-row-ltr > td {
+  border-bottom: 1px solid #EAEAEA;
+}
+/* line 125, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv .ui-state-highlight,
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv .ui-widget-content .ui-state-highlight,
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv .ui-widget-header .ui-state-highlight,
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv .ui-state-hover,
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv .ui-widget-content .ui-state-hover,
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv .ui-widget-header .ui-state-hover,
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv .ui-state-focus,
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv .ui-widget-content .ui-state-focus,
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv .ui-widget-header .ui-state-focus,
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv .ui-button:hover,
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv .ui-button:focus {
+  border: 1px solid #EAEAEA;
+  background: #FFFFFF;
+  color: #333;
+}
+/* line 142, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv tr.ui-row-ltr > td {
+  border-right-width: 0px;
+}
+/* line 148, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv tr.jqgrow td {
+  font-size: 14px;
+  padding: 15px 10px 15px 20px;
+  overflow: hidden;
+  white-space: normal;
+  height: auto;
+}
+/* line 155, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-bdiv tr.jqgrow td:last-of-type {
+  text-align: center;
+}
+/* line 165, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .btn-acciones {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+}
+/* line 173, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .btn-acciones.fa-plus {
+  color: #FFFFFF;
+  background-color: #30ced6;
+  border-radius: 20px;
+  padding: 5px 1px 4px 1px;
+  font-size: 11px;
+}
+/* line 181, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .btn-acciones.fa-trash {
+  color: #FF824A;
+}
+/* line 185, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .btn-acciones.fa-close {
+  color: #a02789;
+}
+/* line 191, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager {
+  background: transparent;
+}
+/* line 195, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-icon {
+  font: normal normal normal 22px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: none;
+  text-indent: 0;
+  width: auto;
+  height: auto;
+  margin: 0 10px;
+}
+/* line 208, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-icon-seek-first:before {
+  content: "\f100";
+}
+/* line 214, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-icon-seek-prev:before {
+  content: "\f104";
+}
+/* line 220, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-icon-seek-next:before {
+  content: "\f105";
+}
+/* line 226, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-icon-seek-end:before {
+  content: "\f101";
+}
+/* line 231, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pager-control {
+  height: 40px;
+}
+/* line 235, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-table {
+  font-size: 14px;
+}
+/* line 237, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-table td {
+  font-weight: normal;
+  padding: 0px 1px;
+}
+/* line 243, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-input {
+  font-size: 14px;
+  margin: 0 -6px 0 0;
+  line-height: inherit;
+  border: none;
+  padding: 1px 1px;
+  border-radius: 0px;
+  background-color: transparent;
+  text-align: center;
+}
+/* line 254, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-selbox {
+  padding: 3px 18px 5px 0;
+  border-radius: 0px;
+  font-size: inherit;
+  height: auto;
+  display: inline-block;
+  border-width: 0 0 0.5px 0;
+  border-style: solid;
+  border-color: #666666;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #666666 50%), linear-gradient(135deg, #666666 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
+  background-position: calc(100% - 5px) calc(1em - 4px), calc(100% - 0px) calc(1em - 4px), calc(100% - 2.5em) 0;
+  background-size: 5px 5px, 5px 5px, 0 0;
+  background-repeat: no-repeat;
+}
+/* line 271, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-selbox::-ms-expand {
+  display: none;
+}
+/* line 276, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-widget-content {
+  background-color: transparent;
+}
+/* line 281, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button .fa {
+  color: black;
+  margin: 5px !important;
+  background-color: transparent;
+  padding: 2px 8px;
+  font-size: 22px;
+}
+/* line 289, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button .ui-separator {
+  display: none;
+}
+/* line 293, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button:hover {
+  padding: 0px 1px;
+}
+/* line 299, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-state-disabled:hover {
+  padding: 0px 1px;
+}
+/* line 304, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-jqgrid-pg-left,
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-jqgrid-pg-right {
+  display: none;
+}
+/* line 309, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-jqgrid-pg-center {
+  text-align: left;
+}
+/* line 312, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-jqgrid-pg-center .ui-pg-table td:last-of-type {
+  width: 100%;
+  text-align: right;
+}
+/* line 319, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button.ui-state-hover,
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button:focus,
+.ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button:hover {
+  border-color: transparent;
+  background-color: transparent;
+}
+/* line 329, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .txt-cyan {
+  color: #00779b;
+}
+/* line 333, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .txt-green {
+  color: #809E00;
+}
+/* line 337, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .txt-orange {
+  color: #bb3b29;
+}
+/* line 341, sass/grid-styles.scss */
+.ui-jqgrid-jquery-ui .txt-purple {
+  color: #6d1d61;
+}
+>>>>>>> 0e61222ae4571d973384e00a2fe070a672820e6c
 
 /* line 1, sass/dropdown-submenu.scss */
 .dropdown-submenu {
@@ -475,8 +784,14 @@
     display: block; }
 
 /* line 43, sass/fine-uploader-styles.scss */
+<<<<<<< HEAD
 #well-add-button {
   background: none; }
+=======
+.qq-upload-button-hover {
+  background: none !important;
+}
+>>>>>>> 0e61222ae4571d973384e00a2fe070a672820e6c
 
 /* line 11, sass/components.scss */
 .text-center {
