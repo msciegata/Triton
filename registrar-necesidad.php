@@ -20,15 +20,19 @@
 						</div>
 						<h5>NO INICIADO</h5>
 					</div>
-					<div class="col-lg-6 margin-top-10">
-						<div class="input-group">
-							<select id="mov-triton" class="select-buscador" required style="width: 100%">
-								<option value="" selected>Seleccione</option>
-								<option value="v1">Dentro del presupuesto</option>
-								<option value="v2">Fuera del presupuesto</option>
-							</select>
-							<label for="mov-triton">Condición respecto del presupuesto<span>*</span></label>
-						</div>
+					<div class="col-lg-6 margin-top-10 margin-bottom-30">
+                                <div class="radio-button">
+									<p>Condición respecto del presupuesto<span>*</span></p>
+									<div class="radio">
+										<input type="radio" id="radio-1" name="radio-a">
+										<label for="radio-1" class="radio-label">Dentro del presupuesto</label>
+									</div>
+									
+									<div class="radio">
+										<input type="radio" id="radio-2" name="radio-a">
+										<label for="radio-2" class="radio-label">Fuera del presupuesto</label>
+									</div>
+								</div>
 					</div>
 				</div>
 				<div class="row">
