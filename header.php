@@ -5,7 +5,7 @@
 		<div class="user">
 			<h5>SE21626</h5>
 			<p>Martín Horacio García Begher</p>
-			<span class="fa fa-user"></span>
+			<div class="foto-usuario" style="background-image: url(img/usuario.jpg)"></div>
 		</div>
 	</div>
 	<div class="navbar">

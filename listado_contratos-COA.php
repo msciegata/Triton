@@ -31,7 +31,7 @@
 										</div>
 										<div class="col-lg-offset-3 col-lg-6 actions">
 											<a href=""><span class="fa fa-arrow-down"></span> Exportar a excel</a>
-											<button id="btn-filter" class="btn btn-ghost-neutral"><span class="fa fa-filter"></span>Filtros</button>
+											<button id="btn-filter" class="btn btn-filtro"><span class="fa fa-filter"></span>Filtros</button>
 										</div>
 										<div class="col-lg-12">
 											<div class="filters">

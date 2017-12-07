@@ -117,7 +117,7 @@ header {
 		.user {
 			position:absolute;
 			right: 20px;
-			top:10px;
+			top:12px;
 			display: inline-block;
 			color:$white;
 
@@ -130,12 +130,26 @@ header {
 
 			p {
 				font-family: 'Open Sans Light';
-				margin-right: 10px;
+				margin-right: 10px; 
+				padding: 10px 0 0 0; 
 			}
 
 			span {
-				font-size: 18px;
+				
 			}
+
+				   
+            div.foto-usuario { 
+                height: 60px;
+                width: 60px;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                border-radius: 50%;
+                background-size: 100% auto;
+                float: right;
+            }
+
+
 		}
 	}
 
@@ -2290,3 +2304,39 @@ footer {
 		}
 	}
 }
+
+
+
+.btn-filtro {
+	border:1px solid $black;
+	color:$black;
+	outline:none;
+	box-shadow:none;
+	}
+
+
+	.btn-filtro:hover,
+	.btn-filtro:focus,
+	.btn-filtro:active {
+		border:1px solid transparent;
+		background-color:$darkGray !important;
+		color:white;
+	}
+
+	.btn-filtro:visited {
+		border:1px solid $black;
+		color:$black;
+	}
+
+	.btn-filtro .fa {
+		color: $white;
+		background-color:$black;
+	}		
+
+    .btn-filtro .fa:hover,
+    .btn-filtro .fa:focus,
+	.btn-filtro .fa:active {
+		background-color: $black;
+	}
+
+
