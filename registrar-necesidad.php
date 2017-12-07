@@ -306,9 +306,14 @@
                             allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
                         }
                     }
-                ]
+                ],
+                callbacks: {
+                    onSubmitted: function () {
+                        $("#contrato-SAP-upload").find(".empty-message").hide();
+                    }
+                }
             });
         });
-         </script>
-	</body>
+        </script>
+    </body>
 </html>
