@@ -61,13 +61,12 @@
 													</div>
 													<div class="col-lg-4">
 														<div class="input-group">
-															<select id="condicion" class="select-buscador" style="width: 100%">
+															<select id="condicion" style="width: 100%">
 																<option value="" selected></option>
-																<option value="v1">Resultado 1</option>
-																<option value="v2">Resultado 2</option>
-																<option value="v3">Resultado 3</option>
+																<option value="v1">Pendiente de Pagar/Facturar</option>
+																<option value="v2">Factura Emitida</option>
 															</select>
-															<label for="condicion">Estado</label>
+															<label for="condicion">Estado del Acuerdo</label>
 														</div>
 													</div>
 													<div class="col-lg-4">
@@ -97,8 +96,6 @@
 																<option value="v2">Borrador</option>
 																<option value="v3">Confirmado</option>
 																<option value="v4">Cancelado</option>
-																<option value="v5">Pendiente de Pagar/Facturar</option>
-																<option value="v6">Factura Emitida</option>
 															</select>
 															<label for="acuerdos-relacionados">Estado de Pago</label>
 														</div>
@@ -135,15 +132,15 @@
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag3">
-													<p>Resultado 1</p>
+													<p>Factura Emitida</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag4">
-													<p>10/03/2016 - 29/9/2017</p>
+													<p>29/09/2017</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag5">
-													<p>Factura Emitida</p>
+													<p>Confirmado</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag6">

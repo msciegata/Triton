@@ -2,16 +2,18 @@ jQuery(document).ready(function ($) {
     jQuery("#rowed2").jqGrid({
         url: 'listado_acuerdos-comerciales-venta-spot.json',
         datatype: "json",
-        colNames: ['IDENTIFICADOR', 'PROCEDENCIA', 'DESTINO', 'PRODUCTO', 'CANTIDAD', 'INCOTERM', 'ESTADO', ''],
+        colNames: ['IDENTIFICADOR', 'PROCEDENCIA', 'COMPRADOR', 'FECHA CIERRE', 'MONTO',  'PRODUCTO', 'CANTIDAD', 'ESTADO DEL ACUERDO', 'ESTADO DEL PAGO', ''],
         colModel: [
-            {name: 'campo1', sortable: false, title: false, width: '150'}, 
-            {name: 'campo2', sortable: false, title: false, width: '150'}, 
-            {name: 'campo3', sortable: false, title: false, width: '125'}, 
-            {name: 'campo4', sortable: false, title: false, width: '250'}, 
+            {name: 'campo1', sortable: false, title: false, width: '125'}, 
+            {name: 'campo2', sortable: false, title: false, width: '115'}, 
+            {name: 'campo3', sortable: false, title: false, width: '130'}, 
+            {name: 'campo4', sortable: false, title: false, width: '100'}, 
             {name: 'campo5', sortable: false, title: false, width: '100'}, 
-            {name: 'campo6', sortable: false, title: false, width: '100'}, 
-            {name: 'campo7', sortable: false, title: false, width: '125'}, 
-            {name: 'campo8', sortable: false, title: false}
+            {name: 'campo6', sortable: false, title: false, width: '155'}, 
+            {name: 'campo7', sortable: false, title: false, width: '90'}, 
+            {name: 'campo8', sortable: false, title: false, width: '115'},
+            {name: 'campo9', sortable: false, title: false, width: '100'},
+            {name: 'campo10', sortable: false, title: false},
         ],
         rowNum: 5,
         rowList: [5, 10, 15],
@@ -31,7 +33,7 @@ jQuery(document).ready(function ($) {
                 editar = "<span class='fa fa-pencil btn-acciones' type='button' value='E' />";
                 duplicar = "<span class='fa fa-clone btn-acciones' type='button' value='E' />";
                 cancelar = "<span class='fa fa-close btn-acciones' type='button' value='C' />";
-                jQuery("#rowed2").jqGrid('setRowData', ids[i], {campo8: ver + editar + duplicar + cancelar});
+                jQuery("#rowed2").jqGrid('setRowData', ids[i], {campo10: ver + editar + duplicar + cancelar});
             }
         }
     });
