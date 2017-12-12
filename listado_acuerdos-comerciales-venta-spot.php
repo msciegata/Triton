@@ -39,27 +39,43 @@
 										<div class="col-lg-12">
 											<div class="filters">
 												<div class="row">
-													<div class="col-lg-3">
+													<div class="col-lg-4">
 														<div class="input-group">
-															<select id="comprador" class="select-buscador" required style="width: 100%">
-																<option value="" selected>Seleccione</option>
-																<option value="v1">Martín Horacio García Begher</option>
-																<option value="v2">Patricia Irma Gomez</option>
-																<option value="v3">Jonatan Medinilla</option>
-																<option value="v4">Paola Sacco</option>
-																<option value="v5">Daniel Gonzales</option>
+															<select id="condicion" style="width: 100%">
+																<option value="" selected></option>
+																<option value="v1">Total Argentina S.A.</option>
+																<option value="v2">Shell Argentina S.A.</option>
 															</select>
-															<label for="comprador">Solicitante</label>
+															<label for="condicion">Comprador</label>
 														</div>
 													</div>
-													
-													
 													<div class="col-lg-4">
-														<h4>Fecha de arribo del producto</h4>
+														<div class="input-group">
+															<select id="condicion" class="select-buscador" style="width: 100%">
+																<option value="" selected></option>
+																<option value="v1">Fully Refined Paraffin Wax</option>
+																<option value="v2">Fully Refined Paraffin Wax (improved)</option>
+															</select>
+															<label for="condicion">Producto</label>
+														</div>
+													</div>
+													<div class="col-lg-4">
+														<div class="input-group">
+															<select id="condicion" class="select-buscador" style="width: 100%">
+																<option value="" selected></option>
+																<option value="v1">Resultado 1</option>
+																<option value="v2">Resultado 2</option>
+																<option value="v3">Resultado 3</option>
+															</select>
+															<label for="condicion">Estado</label>
+														</div>
+													</div>
+													<div class="col-lg-4">
+														<h4>Fecha de cierre</h4>
 														<div class="row filter-group">
 															<div class="col-lg-6">
 																<div class="input-group">
-																	<input id="fecha-cierre" class="input-date datapicker-here" type="text" required name="fecha-cierre">
+																	<input id="fecha-cierre" class="input-date datapicker-here" type="text" name="fecha-cierre">
 																	<span class="fa fa-calendar" aria-hidden="true"></span>
 																	<label for="fecha-cierre">Desde</label>
 																</div>
@@ -73,9 +89,34 @@
 															</div>
 														</div>
 													</div>
+													<div class="col-lg-4">
+														<div class="input-group">
+															<select id="acuerdos-relacionados" style="width: 100%">
+																<option value="" selected></option>
+																<option value="v1">Iniciado</option>
+																<option value="v2">Borrador</option>
+																<option value="v3">Confirmado</option>
+																<option value="v4">Cancelado</option>
+																<option value="v5">Pendiente de Pagar/Facturar</option>
+																<option value="v6">Factura Emitida</option>
+															</select>
+															<label for="acuerdos-relacionados">Estado de Pago</label>
+														</div>
+													</div>
+													<div class="col-lg-4">
+														<div class="input-group">
+															<select id="condicion" class="select-buscador" style="width: 100%">
+																<option value="" selected></option>
+																<option value="v1">Jonatan Medinilla</option>
+																<option value="v2">Patricia Gomez</option>
+																<option value="v3">Daniel Gonzalez</option>
+															</select>
+															<label for="condicion">Solicitante</label>
+														</div>
+													</div>
 													
 												</div>
-												    
+												
 												<div class="row">
 													<div class="col-lg-12">
 														<button id="btn-apply" class="btn btn-ghost-neutral">APLICAR</button>
@@ -86,23 +127,27 @@
 										<div class="col-lg-12">
 											<div class="tags-group">
 												<div class="alert tag" id="tag1">
-													<p>YPF GAS</p>
+													<p>Total Argentina S.A.</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag2">
-													<p>10.000 - 230.000 lbs</p>
+													<p>Fully Refined Paraffin Wax</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag3">
-													<p>10/03/2016 - 29/9/2017</p>
+													<p>Resultado 1</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag4">
-													<p>0056578</p>
+													<p>10/03/2016 - 29/9/2017</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag5">
-													<p>NO INICIADO</p>
+													<p>Factura Emitida</p>
+													<button type="button" class="close" data-dismiss="alert">×</button>
+												</div>
+												<div class="alert tag" id="tag6">
+													<p>Patricia Gomez</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 											</div>
@@ -146,7 +191,7 @@
                     $("#btn-apply").click(function () {
                         $('.filters').slideToggle(400, function(){
                             $('#btn-filter').toggleClass('btn-ghost-neutral btn-neutral');
-                            $('#tag1, #tag2, #tag3, #tag4, #tag5').css("display","inline-block");
+                            $('#tag1, #tag2, #tag3, #tag4, #tag5, #tag6').css("display","inline-block");
                         });
                     });
                 });

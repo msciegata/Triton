@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
     jQuery("#rowed2").jqGrid({
         url: 'listado_acuerdos-comerciales-venta-spot.json',
         datatype: "json",
-        colNames: ['IDENTIFICADOR', 'COMPRADOR', 'DESTINO', 'PRODUCTO', 'CANTIDAD', 'INCOTERM', 'ESTADO', ''],
+        colNames: ['IDENTIFICADOR', 'PROCEDENCIA', 'DESTINO', 'PRODUCTO', 'CANTIDAD', 'INCOTERM', 'ESTADO', ''],
         colModel: [
             {name: 'campo1', sortable: false, title: false, width: '150'}, 
             {name: 'campo2', sortable: false, title: false, width: '150'}, 

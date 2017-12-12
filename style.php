@@ -560,12 +560,12 @@
 									<button class="btn btn-primary disabled">button</button>
 									<br><br>
 									<h5>Positive</h5>
-									<p>- Este tipo de botones se usan para acciones de éxito,  validación o que tengan un sentido positivo. Como por ejemplo agregar, dar de alta o registrar.A continuación también figura su versión <strong>disabled</strong>.</p>
+									<p>- Este tipo de botones se usan para acciones de éxito,  validación o que tengan un sentido positivo. Como por ejemplo agregar, aprobar, dar de alta o registrar.A continuación también figura su versión <strong>disabled</strong>.</p>
 									<button class="btn btn-success">button</button>
 									<button class="btn btn-success disabled">button</button>
 									<br><br>
 									<h5>Danger</h5>
-									<p>- Este tipo de botones se usan para acciones principales del tipo peligrosas o negativas. Como pueden ser borrar, descartar o eliminar. A continuación también figura su versión <strong>disabled</strong>.</p>
+									<p>- Este tipo de botones se usan para acciones principales del tipo peligrosas o negativas. Como pueden ser borrar, rechazar, descartar o eliminar. A continuación también figura su versión <strong>disabled</strong>.</p>
 									<button class="btn btn-danger">button</button>
 									<button class="btn btn-danger disabled">button</button>
 								</div>
