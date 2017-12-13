@@ -191,6 +191,36 @@
             color: $purple
 
         }
+
+        &.fa-clone {
+            color: $darkGray
+
+        }
+
+        &.fa-clone:hover {
+            color: $negro
+
+        }
+
+        &.fa-pencil {
+            color: $darkGray
+
+        }
+
+        &.fa-pencil:hover {
+            color: $negro
+
+        }
+
+        &.fa-eye {
+            color: $darkGray
+
+        }
+
+        &.fa-eye:hover {
+            color: $negro
+
+        }
     }
 
     //Paginado de la tabla

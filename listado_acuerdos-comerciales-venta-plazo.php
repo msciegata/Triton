@@ -133,7 +133,7 @@
 		</main>
 		<?php include 'footer.php';?>
         <?php include 'js-elements.php';?>
-        <script src="js/listado_acuerdos-comerciales-a-plazo.js"></script>
+        <script src="js/listado_acuerdos-comerciales-venta-plazo.js"></script>
 		<script>
                 $(function () {
                     // Filtros

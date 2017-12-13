@@ -400,10 +400,11 @@
 								<div class="card-title">
 									<h3>Otros costos / Ingresos asociados</h3>
 									<!-- Cuando haya costos o ingresos asociados, sacar la clase hidden al siguiente div -->
+
 									<div class="add">
-										<a href="#" data-toggle="modal" data-target="#CIA-modal"> 
-											<span class="fa fa-plus"></span>Agregar
-										</a>
+										    <a href="#" data-toggle="modal" data-target="#CIA-modal"> 
+												<span class="fa fa-plus"></span>Agregar
+											</a>
 									</div>
 								</div>
 							</div>
@@ -484,6 +485,7 @@
 			</div>
 		</main>
 		<?php include 'footer.php';?>
+		<?php include 'js-elements.php';?>
 
 		<!--MODALS -->
 		<!-- CIA-modal -->
@@ -567,6 +569,6 @@
 				</div>
 			</div>
 		</div>
-		<?php include 'js-elements.php';?>
+		
 	</body>
 </html>

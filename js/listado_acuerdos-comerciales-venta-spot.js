@@ -29,12 +29,13 @@ jQuery(document).ready(function ($) {
             var ids = jQuery("#rowed2").jqGrid('getDataIDs');
             for (var i = 0; i < ids.length; i++) {
                 var cl = ids[i];
-                ver = "<span class='fa fa-eye btn-acciones' type='button' value='V' />";
-                editar = "<span class='fa fa-pencil btn-acciones' type='button' value='E' />";
-                duplicar = "<span class='fa fa-clone btn-acciones' type='button' value='E' />";
-                cancelar = "<span class='fa fa-close btn-acciones' type='button' value='C' />";
+                ver = "<span class='fa fa-eye btn-acciones' type='button' value='V' data-toggle='tooltip' data-placement='top' title='Ver Detalle' />";
+                editar = "<span class='fa fa-pencil btn-acciones' type='button' value='E' data-toggle='tooltip' data-placement='top' title='Modificar' />";
+                duplicar = "<span class='fa fa-clone btn-acciones' type='button' value='E' data-toggle='tooltip' data-placement='top' title='Duplicar' />";
+                cancelar = "<span data-toggle='modal' data-target='#cancelar-modal'><span class='fa fa-close btn-acciones' type='button' value='C' data-toggle='tooltip' data-placement='top' title='Cancelar' /></span>";
                 jQuery("#rowed2").jqGrid('setRowData', ids[i], {campo10: ver + editar + duplicar + cancelar});
-            }
+            };
+            $('[data-toggle="tooltip"]').tooltip();
         }
     });
     jQuery("#rowed2").jqGrid('navGrid', "#prowed2", {refresh: false, search: false, edit: false, add: false, del: false});

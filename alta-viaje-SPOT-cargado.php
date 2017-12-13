@@ -451,8 +451,16 @@
 			</div>
 		</main>
 		<?php include 'footer.php';?>
+		<?php include 'js-elements.php';?>
+                <script>
+                $(function () {
+                    // Tooltip
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+                </script>
 
-		<!--MODALS -->
+
+<!--MODALS -->
 		<!-- CIA-modal -->
 		<div id="CIA-modal" class="modal" role="dialog" style="display: none;">
 			<div class="moda-dialog">
@@ -537,12 +545,8 @@
 				</div>
 			</div>
 		</div>
-		<?php include 'js-elements.php';?>
-                <script>
-                $(function () {
-                    // Tooltip
-                    $('[data-toggle="tooltip"]').tooltip();
-                });
-                </script>
+
+
+
 	</body>
 </html>

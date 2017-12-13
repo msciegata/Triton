@@ -256,6 +256,7 @@ h5 {
 	}
 }
 
+
 /* Color Text */
 .text-darkGray {
 	color: $darkGray;
@@ -1950,14 +1951,52 @@ input::-ms-clear{
 	}
 }
 
+
+
+.filtro-radio-button {
+	margin:24px 0 5px; padding: 0 0 5px 0; 
+	border-bottom: 1px solid #666666;
+
+	span {
+			display: inline-block;
+			color: $orange;
+		}
+}
+
+.filtro-radio-button p{
+	color:$darkGray;
+	font-family:'Open Sans';
+	font-size:16px !important;
+}
+
+
+
+.titulo-radio-button {
+	margin:24px 0 5px; padding: 0 0 5px 0; 
+
+	span {
+			display: inline-block;
+			color: $orange;
+		}
+}
+
+.titulo-radio-button p{
+	color:$darkGray;
+	font-family:'Open Sans';
+	font-size:16px !important;
+}
+
+
 .radio-button {
 	display: inline-block;
-	margin: 20px 0 20px;
+	margin: 0px 0 20px;
     height: 49px;
 
 	div:first-of-type {
 		margin-left:0;
 	}
+ 
+    
 
 	p {
 		margin-bottom:0 !important; 
@@ -2260,6 +2299,12 @@ input::-ms-clear{
 		padding:0 15px;
 		border-bottom:none;
 		display:block;
+
+		p { 
+		    font-weight: 400;
+		    padding: 15px 0 0 0; 
+		    color:$darkGray;
+	    }
 	}
 
 	.modal-footer {
@@ -2340,3 +2385,12 @@ footer {
 	}
 
 
+
+
+//Tooltip
+.ui-jqgrid-jquery-ui.ui-widget-content .tooltip.top {
+
+   margin-top: 0px;
+    padding: 5px 0;
+
+}

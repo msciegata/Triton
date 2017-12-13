@@ -21,8 +21,11 @@
 						<h5>NO INICIADO</h5>
 					</div>
 					<div class="col-lg-6 margin-top-10 margin-bottom-30">
+						<div class="titulo-radio-button">
+															<p>Condición respecto del presupuesto<span>*</span></p>
+														</div>
                                 <div class="radio-button">
-									<p>Condición respecto del presupuesto<span>*</span></p>
+									
 									<div class="radio">
 										<input type="radio" id="radio-1" name="radio-a">
 										<label for="radio-1" class="radio-label">Dentro del presupuesto</label>

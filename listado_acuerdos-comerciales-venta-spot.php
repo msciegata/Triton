@@ -41,7 +41,7 @@
 												<div class="row">
 													<div class="col-lg-4">
 														<div class="input-group">
-															<select id="condicion" style="width: 100%">
+															<select id="condicion" class="select-buscador" style="width: 100%">
 																<option value="" selected></option>
 																<option value="v1">Total Argentina S.A.</option>
 																<option value="v2">Shell Argentina S.A.</option>
@@ -60,14 +60,24 @@
 														</div>
 													</div>
 													<div class="col-lg-4">
-														<div class="input-group">
-															<select id="condicion" style="width: 100%">
-																<option value="" selected></option>
-																<option value="v1">Pendiente de Pagar/Facturar</option>
-																<option value="v2">Factura Emitida</option>
-															</select>
-															<label for="condicion">Estado del Acuerdo</label>
+														<div class="filtro-radio-button">
+															<p>Estado del Acuerdo</p>
 														</div>
+														<div class="radio-button">
+									
+									<div class="radio">
+										<input type="radio" id="radio-1" name="radio-a">
+										<label for="radio-1" class="radio-label">Pendiente de Pagar/Facturar</label>
+									</div>
+									
+									<div class="radio">
+										<input type="radio" id="radio-2" name="radio-a">
+										<label for="radio-2" class="radio-label">Factura Emitida</label>
+									</div>
+									
+									
+									<span>This is a help test</span>
+								</div>
 													</div>
 													<div class="col-lg-4">
 														<h4>Fecha de cierre</h4>
@@ -90,7 +100,7 @@
 													</div>
 													<div class="col-lg-4">
 														<div class="input-group">
-															<select id="acuerdos-relacionados" style="width: 100%">
+															<select id="acuerdos-relacionados" class="select-buscador" style="width: 100%">
 																<option value="" selected></option>
 																<option value="v1">Iniciado</option>
 																<option value="v2">Borrador</option>
@@ -193,5 +203,42 @@
                     });
                 });
 		</script>
+
+
+
+
+
+<!--MODALS -->
+		<!-- CANCELAR-modal -->
+		<div id="cancelar-modal" class="modal" role="dialog" style="display: none;">
+			<div class="moda-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">Solicitud de cancelación</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="col-lg-12">
+						<p>Usted está por efectuar la cancelación de la necesidad de compra internacional #N2345</p>
+						</div>
+						<div class="col-lg-12">
+							<div class="input-group autoheight margin-top-20">
+                                 <textarea id="observaciones" name="observaciones" rows="1" cols="50"></textarea>
+                                 <label for="observaciones">Detalle</label>
+                            </div>
+						</div>
+				    </div>
+				    <div class="modal-footer">
+						<button class="btn btn-danger">CANCELAR</button>
+						<button class="btn btn-ghost-primary" data-dismiss="modal">SALIR</button>
+				    </div>
+				</div>
+			</div>
+		</div>
+		
+
+
 	</body>
 </html>
