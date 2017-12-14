@@ -13,7 +13,7 @@
 			<div class="container-fluid">
 				<div class="row page-title">
 					<div class="col-lg-10">
-						<h1>Listado de acuerdos comerciales <span>A PLAZO</span></h1>
+						<h1>Listado de acuerdos comerciales <span>VENTAS A PLAZO</span></h1>
 					</div>
 					
 				</div>
@@ -39,27 +39,49 @@
 										<div class="col-lg-12">
 											<div class="filters">
 												<div class="row">
-													<div class="col-lg-3">
+													<div class="col-lg-4">
 														<div class="input-group">
-															<select id="comprador" class="select-buscador" required style="width: 100%">
-																<option value="" selected>Seleccione</option>
-																<option value="v1">Martín Horacio García Begher</option>
-																<option value="v2">Patricia Irma Gomez</option>
-																<option value="v3">Jonatan Medinilla</option>
-																<option value="v4">Paola Sacco</option>
-																<option value="v5">Daniel Gonzales</option>
+															<select id="condicion" class="select-buscador" style="width: 100%">
+																<option value="" selected></option>
+																<option value="v1">Total Argentina S.A.</option>
+																<option value="v2">Shell Argentina S.A.</option>
 															</select>
-															<label for="comprador">Solicitante</label>
+															<label for="condicion">Comprador</label>
 														</div>
 													</div>
-													
-													
 													<div class="col-lg-4">
-														<h4>Fecha de arribo del producto</h4>
+														<div class="input-group">
+															<select id="condicion" class="select-buscador" style="width: 100%">
+																<option value="" selected></option>
+																<option value="v1">Fully Refined Paraffin Wax</option>
+																<option value="v2">Fully Refined Paraffin Wax (improved)</option>
+															</select>
+															<label for="condicion">Producto</label>
+														</div>
+													</div>
+													<div class="col-lg-4">
+														<div class="filtro-radio-button">
+															<p>Tiene Acuerdos relacionados</p>
+														</div>
+														<div class="radio-button">
+															<div class="radio">
+																<input type="radio" id="radio-1" name="radio-a">
+																<label for="radio-1" class="radio-label"><b>SI</b> (mayor a cero)</label>
+															</div>
+															
+															<div class="radio">
+																<input type="radio" id="radio-2" name="radio-a">
+																<label for="radio-2" class="radio-label"><b>NO</b> (si es cero)</label>
+															</div>
+															<span>This is a help test</span>
+														</div>
+													</div>
+													<div class="col-lg-4">
+														<h4>Rango de Fecha de Cierre</h4>
 														<div class="row filter-group">
 															<div class="col-lg-6">
 																<div class="input-group">
-																	<input id="fecha-cierre" class="input-date datapicker-here" type="text" required name="fecha-cierre">
+																	<input id="fecha-cierre" class="input-date datapicker-here" type="text" name="fecha-cierre">
 																	<span class="fa fa-calendar" aria-hidden="true"></span>
 																	<label for="fecha-cierre">Desde</label>
 																</div>
@@ -73,9 +95,32 @@
 															</div>
 														</div>
 													</div>
+													<div class="col-lg-4">
+														<div class="input-group">
+															<select id="acuerdos-relacionados" class="select-buscador" style="width: 100%">
+																<option value="" selected></option>
+																<option value="v1">Iniciado</option>
+																<option value="v2">Borrador</option>
+																<option value="v3">Confirmado</option>
+																<option value="v4">Cancelado</option>
+															</select>
+															<label for="acuerdos-relacionados">Estado</label>
+														</div>
+													</div>
+													<div class="col-lg-4">
+														<div class="input-group">
+															<select id="condicion" class="select-buscador" style="width: 100%">
+																<option value="" selected></option>
+																<option value="v1">Jonatan Medinilla</option>
+																<option value="v2">Patricia Gomez</option>
+																<option value="v3">Daniel Gonzalez</option>
+															</select>
+															<label for="condicion">Usuario</label>
+														</div>
+													</div>
 													
 												</div>
-												    
+												
 												<div class="row">
 													<div class="col-lg-12">
 														<button id="btn-apply" class="btn btn-ghost-neutral">APLICAR</button>
@@ -86,23 +131,27 @@
 										<div class="col-lg-12">
 											<div class="tags-group">
 												<div class="alert tag" id="tag1">
-													<p>YPF GAS</p>
+													<p>Total Argentina S.A.</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag2">
-													<p>10.000 - 230.000 lbs</p>
+													<p>Fully Refined Paraffin Wax</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag3">
-													<p>10/03/2016 - 29/9/2017</p>
+													<p>Confirmado</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag4">
-													<p>0056578</p>
+													<p>Patricia Gomez</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag5">
-													<p>NO INICIADO</p>
+													<p>29/09/2017</p>
+													<button type="button" class="close" data-dismiss="alert">×</button>
+												</div>
+												<div class="alert tag" id="tag6">
+													<p>SI</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 											</div>
@@ -145,10 +194,44 @@
                     $("#btn-apply").click(function () {
                         $('.filters').slideToggle(400, function(){
                             $('#btn-filter').toggleClass('btn-ghost-neutral btn-neutral');
-                            $('#tag1, #tag2, #tag3, #tag4, #tag5').css("display","inline-block");
+                            $('#tag1, #tag2, #tag3, #tag4, #tag5, #tag6').css("display","inline-block");
                         });
                     });
                 });
 		</script>
+
+
+
+<!--MODALS -->
+		<!-- CANCELAR-modal -->
+		<div id="cancelar-modal" class="modal" role="dialog" style="display: none;">
+			<div class="moda-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">Solicitud de cancelación</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="col-lg-12">
+						<p>Usted está por efectuar la cancelación de la necesidad de compra internacional #N2345</p>
+						</div>
+						<div class="col-lg-12">
+							<div class="input-group autoheight margin-top-20">
+                                 <textarea id="observaciones" name="observaciones" rows="1" cols="50"></textarea>
+                                 <label for="observaciones">Detalle</label>
+                            </div>
+						</div>
+				    </div>
+				    <div class="modal-footer">
+						<button class="btn btn-danger">CANCELAR</button>
+						<button class="btn btn-ghost-primary" data-dismiss="modal">SALIR</button>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+
 	</body>
 </html>

@@ -828,6 +828,17 @@ h5 {
 		}
 	}
 
+
+	.icono-accion {
+				display:inline-block;
+		background-color:$white;
+		padding: 25px 20px 30px;
+		margin-bottom:30px;
+		width: 100%;
+			    }
+
+			    
+
 	.card-body {
 		display:inline-block;
 		background-color:$white;
@@ -856,6 +867,9 @@ h5 {
 			color:$mediumGray;
 			margin-bottom: 15px;
 		}
+
+
+		
 
 		.add {
 				display: inline-block;

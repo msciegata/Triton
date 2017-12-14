@@ -1,8 +1,8 @@
 jQuery(document).ready(function ($) {
     jQuery("#rowed2").jqGrid({
-        url: 'listado_acuerdos-comerciales-venta-plazo.json',
+        url: 'listado_acuerdos-comerciales-compras-plazo.json',
         datatype: "json",
-        colNames: ['NUMERO IDENTIFICADOR DEL ACUERDO', 'PROCEDENCIA', 'COMPRADOR', 'FECHA DE CIERRE', 'NOMBRE DEL PRODUCTO', 'CANTIDAD / VOLUMEN', 'ESTADO DEL ACUERDO', 'CANTIDAD DE ACUERDOS ASOCIADOS', ''],
+        colNames: ['NUMERO IDENTIFICADOR DEL ACUERDO', 'PROCEDENCIA', 'VENDEDOR', 'FECHA DE CIERRE', 'NOMBRE DEL PRODUCTO', 'CANTIDAD / VOLUMEN', 'ESTADO DEL ACUERDO', 'CANTIDAD DE ACUERDOS ASOCIADOS', ''],
         colModel: [
             {name: 'campo1', sortable: false, title: false, width: '115'}, 
             {name: 'campo2', sortable: false, title: false, width: '105'}, 

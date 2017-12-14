@@ -13,7 +13,7 @@
 			<div class="container-fluid">
 				<div class="row page-title">
 					<div class="col-lg-10">
-						<h1>Listado de acuerdos comerciales <span>VENTA SPOT</span></h1>
+						<h1>Listado de acuerdos comerciales <span>VENTAS SPOT</span></h1>
 					</div>
 					
 				</div>
@@ -61,26 +61,23 @@
 													</div>
 													<div class="col-lg-4">
 														<div class="filtro-radio-button">
-															<p>Estado del Acuerdo</p>
+															<p>Estado de Pago</p>
 														</div>
 														<div class="radio-button">
-									
-									<div class="radio">
-										<input type="radio" id="radio-1" name="radio-a">
-										<label for="radio-1" class="radio-label">Pendiente de Pagar/Facturar</label>
-									</div>
-									
-									<div class="radio">
-										<input type="radio" id="radio-2" name="radio-a">
-										<label for="radio-2" class="radio-label">Factura Emitida</label>
-									</div>
-									
-									
-									<span>This is a help test</span>
-								</div>
+															<div class="radio">
+																<input type="radio" id="radio-1" name="radio-a">
+																<label for="radio-1" class="radio-label">Pendiente de Pagar/Facturar</label>
+															</div>
+															
+															<div class="radio">
+																<input type="radio" id="radio-2" name="radio-a">
+																<label for="radio-2" class="radio-label">Factura Emitida</label>
+															</div>
+															<span>This is a help test</span>
+														</div>
 													</div>
 													<div class="col-lg-4">
-														<h4>Fecha de cierre</h4>
+														<h4>Rango de Fecha de Cierre</h4>
 														<div class="row filter-group">
 															<div class="col-lg-6">
 																<div class="input-group">
@@ -107,7 +104,7 @@
 																<option value="v3">Confirmado</option>
 																<option value="v4">Cancelado</option>
 															</select>
-															<label for="acuerdos-relacionados">Estado de Pago</label>
+															<label for="acuerdos-relacionados">Estado del Acuerdo</label>
 														</div>
 													</div>
 													<div class="col-lg-4">
@@ -118,7 +115,7 @@
 																<option value="v2">Patricia Gomez</option>
 																<option value="v3">Daniel Gonzalez</option>
 															</select>
-															<label for="condicion">Solicitante</label>
+															<label for="condicion">Usuario</label>
 														</div>
 													</div>
 													
@@ -142,7 +139,7 @@
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag3">
-													<p>Factura Emitida</p>
+													<p>Confirmado</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag4">
@@ -150,7 +147,7 @@
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag5">
-													<p>Confirmado</p>
+													<p>Factura Emitida</p>
 													<button type="button" class="close" data-dismiss="alert">×</button>
 												</div>
 												<div class="alert tag" id="tag6">

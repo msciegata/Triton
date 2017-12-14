@@ -2,16 +2,18 @@ jQuery(document).ready(function ($) {
     jQuery("#rowed2").jqGrid({
         url: 'listado_acuerdos-comerciales-compra-spot.json',
         datatype: "json",
-        colNames: ['IDENTIFICADOR', 'VENDEDOR', 'PROCEDENCIA', 'PRODUCTO', 'CANTIDAD', 'INCOTERM', 'ESTADO', ''],
+        colNames: ['NUMERO IDENTIFICADOR DEL ACUERDO', 'VENDEDOR', 'PROCEDENCIA', 'FECHA DE CIERRE', 'MONTO ESTIMADO Y DIVISA', 'SI ES PAGO ANTICIPADO', 'NOMBRE DEL PRODUCTO', 'CANTIDAD / VOLUMEN', 'ESTADO DEL ACUERDO', ''],
         colModel: [
             {name: 'campo1', sortable: false, title: false, width: '150'}, 
-            {name: 'campo2', sortable: false, title: false, width: '150'}, 
-            {name: 'campo3', sortable: false, title: false, width: '125'}, 
-            {name: 'campo4', sortable: false, title: false, width: '250'}, 
-            {name: 'campo5', sortable: false, title: false, width: '100'}, 
-            {name: 'campo6', sortable: false, title: false, width: '100'}, 
-            {name: 'campo7', sortable: false, title: false, width: '125'}, 
-            {name: 'campo8', sortable: false, title: false}
+            {name: 'campo2', sortable: false, title: false, width: '125'}, 
+            {name: 'campo3', sortable: false, title: false, width: '140'}, 
+            {name: 'campo4', sortable: false, title: false, width: '100'}, 
+            {name: 'campo5', sortable: false, title: false, width: '140'}, 
+            {name: 'campo6', sortable: false, title: false, width: '120'}, 
+            {name: 'campo7', sortable: false, title: false, width: '165'}, 
+            {name: 'campo8', sortable: false, title: false, width: '110'},
+            {name: 'campo9', sortable: false, title: false, width: '110'}, 
+            {name: 'campo10', sortable: false, title: false}
         ],
         rowNum: 5,
         rowList: [5, 10, 15],
@@ -27,12 +29,13 @@ jQuery(document).ready(function ($) {
             var ids = jQuery("#rowed2").jqGrid('getDataIDs');
             for (var i = 0; i < ids.length; i++) {
                 var cl = ids[i];
-                ver = "<span class='fa fa-eye btn-acciones' type='button' value='V' />";
-                editar = "<span class='fa fa-pencil btn-acciones' type='button' value='E' />";
-                duplicar = "<span class='fa fa-clone btn-acciones' type='button' value='E' />";
-                cancelar = "<span class='fa fa-close btn-acciones' type='button' value='C' />";
-                jQuery("#rowed2").jqGrid('setRowData', ids[i], {campo8: ver + editar + duplicar + cancelar});
-            }
+                ver = "<span class='fa fa-eye btn-acciones' type='button' value='V' data-toggle='tooltip' data-placement='top' title='Ver Detalle' />";
+                editar = "<span class='fa fa-pencil btn-acciones' type='button' value='E' data-toggle='tooltip' data-placement='top' title='Modificar' />";
+                duplicar = "<span class='fa fa-clone btn-acciones' type='button' value='E' data-toggle='tooltip' data-placement='top' title='Duplicar' />";
+                cancelar = "<span data-toggle='modal' data-target='#cancelar-modal'><span class='fa fa-close btn-acciones' type='button' value='C' data-toggle='tooltip' data-placement='top' title='Cancelar' /></span>";
+                jQuery("#rowed2").jqGrid('setRowData', ids[i], {campo10: ver + editar + duplicar + cancelar});
+            };
+            $('[data-toggle="tooltip"]').tooltip();
         }
     });
     jQuery("#rowed2").jqGrid('navGrid', "#prowed2", {refresh: false, search: false, edit: false, add: false, del: false});

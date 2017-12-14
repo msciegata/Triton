@@ -540,6 +540,53 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="col-lg-6">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">
+								<h3>Controls</h3>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="controls">
+								<div class="checkbox">
+									<h5>Checkbox</h5>
+									<p>Checkbox<span>*</span></p>
+									<input type="checkbox" class="custom-checkbox" name="check-a" id="checkbox-example-1">
+									<label for="checkbox-example-1">Option 1</label>
+									
+									<input type="checkbox" class="custom-checkbox" name="check-b" id="checkbox-example-2">
+									<label for="checkbox-example-2">Option 2</label>
+									
+									<input type="checkbox" class="custom-checkbox" name="check-c" id="checkbox-example-3">
+									<label for="checkbox-example-3">Option 3</label>
+									<span>This is a help text</span>
+								</div>
+
+								<div class="radio-button">
+									<h5>Radio Button</h5>
+									<p>Radio Button<span>*</span></p>
+									<div class="radio">
+										<input type="radio" id="radio-1" name="radio-a">
+										<label for="radio-1" class="radio-label">Option 1</label>
+									</div>
+									
+									<div class="radio">
+										<input type="radio" id="radio-2" name="radio-a">
+										<label for="radio-2" class="radio-label">Option 2</label>
+									</div>
+									
+									<div class="radio">
+										<input type="radio" id="radio-3" name="radio-a">
+										<label for="radio-3" class="radio-label">Option 3</label>
+									</div>
+									<span>This is a help test</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="row">
 			<!-- BUTTONS -->
@@ -650,48 +697,49 @@
 					<div class="card">
 						<div class="card-header">
 							<div class="card-title">
-								<h3>Controls</h3>
+								<h3>Iconos Acciones</h3>
 							</div>
 						</div>
 						<div class="card-body">
-							<div class="controls">
-								<div class="checkbox">
-									<h5>Checkbox</h5>
-									<p>Checkbox<span>*</span></p>
-									<input type="checkbox" class="custom-checkbox" name="check-a" id="checkbox-example-1">
-									<label for="checkbox-example-1">Option 1</label>
-									
-									<input type="checkbox" class="custom-checkbox" name="check-b" id="checkbox-example-2">
-									<label for="checkbox-example-2">Option 2</label>
-									
-									<input type="checkbox" class="custom-checkbox" name="check-c" id="checkbox-example-3">
-									<label for="checkbox-example-3">Option 3</label>
-									<span>This is a help text</span>
-								</div>
-
-								<div class="radio-button">
-									<h5>Radio Button</h5>
-									<p>Radio Button<span>*</span></p>
-									<div class="radio">
-										<input type="radio" id="radio-1" name="radio-a">
-										<label for="radio-1" class="radio-label">Option 1</label>
-									</div>
-									
-									<div class="radio">
-										<input type="radio" id="radio-2" name="radio-a">
-										<label for="radio-2" class="radio-label">Option 2</label>
-									</div>
-									
-									<div class="radio">
-										<input type="radio" id="radio-3" name="radio-a">
-										<label for="radio-3" class="radio-label">Option 3</label>
-									</div>
-									<span>This is a help test</span>
-								</div>
+							<div class="ui-jqgrid-jquery-ui">
+								
+							
+							<div class="col-lg-3">
+							<p><span class="btn-acciones fa fa-eye"></span>Ver</p>
 							</div>
+
+							<div class="col-lg-3">
+							<p><span class="btn-acciones fa fa-pencil"></span>Editar</p>
+							</div>
+
+							<div class="col-lg-3">
+							<p><span class="btn-acciones fa fa-clone"></span>Duplicar</p>
+							</div>
+									
+							<div class="col-lg-3">
+							<p><span class="btn-acciones fa fa-close"></span>Cancelar</p>
+							</div>
+
+							<div class="col-lg-3">
+							<p><span class="btn-acciones fa fa-plus"></span>Agregar</p>
+							</div>	
+									
+							<div class="col-lg-3">
+							<p><span class="btn-acciones fa fa-trash"></span>Eliminar</p>
+							</div>		
+									
+							</div>		
+								
+								
+
+							
 						</div>
 					</div>
 				</div>
+
+
+
+
 			</div>
 		</div>
 	</main>
