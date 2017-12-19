@@ -730,11 +730,16 @@
 							<div class="col-lg-3">
 							<p><span class="btn-acciones fa fa-plus"></span>Agregar</p>
 							</div>	
+
+							<div class="col-lg-3">
+							<p><span class="btn-acciones fa fa-arrow-down"></span>Descargar</p>
+							</div>	
 									
 							<div class="col-lg-3">
 							<p><span class="btn-acciones fa fa-trash"></span>Eliminar</p>
-							</div>		
-									
+							</div>
+
+															
 							</div>		
 								
 								

@@ -174,6 +174,11 @@
 										</div>
 									</div>
 								</div>
+								<div class="col-lg-12 text-left">
+								<button class="btn btn-success text-left">
+									<span class="fa fa-plus"></span> AGREGAR OTRO PRODUCTO
+								</button>
+							</div>
 							</div>
 						</div>
 					</div>
@@ -181,14 +186,9 @@
 				<div class="row">
 					<div class="col-lg-12 text-right">
 						<div class="final-buttons">
-							<div class="col-lg-6 text-left">
-								<button class="btn btn-success text-left">
-									<span class="fa fa-plus"></span> AGREGAR OTRO PRODUCTO
-								</button>
-							</div>
-							<div class="col-lg-6 text-right">
+							<div class="col-lg-12 text-right">
 								<button class="btn btn-primary">REGISTRAR NECESIDAD</button>
-								<button class="btn btn-ghost-neutral" data-toggle="modal" data-target="#cancelar-modal">SALIR</button>
+								<button class="btn btn-ghost-neutral" data-toggle="modal" data-target="#salir-modal">SALIR</button>
 							</div>
 						</div>
 					</div>
@@ -197,8 +197,8 @@
 		</main>
 		<?php include 'footer.php';?>
 		<!--MODALS -->
-		<!-- CIA-modal -->
-		<div id="cancelar-modal" class="modal" role="dialog" style="display: none;">
+		<!-- SALIR-modal -->
+		<div id="salir-modal" class="modal" role="dialog" style="display: none;">
 			<div class="moda-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -213,8 +213,8 @@
 						</div>
 				    </div>
 				    <div class="modal-footer">
-						<button class="btn btn-ghost-primary" data-dismiss="modal">SI</button>
 						<button class="btn btn-danger">NO</button>
+						<button class="btn btn-ghost-primary" data-dismiss="modal">SI</button>
 				    </div>
 				</div>
 			</div>

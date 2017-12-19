@@ -183,12 +183,38 @@
             font-size: 11px;
         }
 
+        &.fa-plus:hover {
+            color: $white;
+            background-color: $mediumCyan;
+            border-radius: 20px;
+            padding:5px 1px 4px 1px;
+            font-size: 11px;
+        }
+
+        &.fa-arrow-down {
+            color: $cyan;
+        }
+
+        &.fa-arrow-down:hover {
+            color: $mediumCyan;
+        }
+
+
         &.fa-trash {
             color: $orange;
         }
 
+         &.fa-trash:hover {
+            color: $mediumOrange;
+        }
+
+
         &.fa-close {
             color: $purple
+
+        }
+        &.fa-close:hover {
+            color: $mediumPurple
 
         }
 

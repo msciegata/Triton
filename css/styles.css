@@ -272,36 +272,55 @@
       padding: 5px 1px 4px 1px;
       font-size: 11px; }
     /* line 186, sass/grid-styles.scss */
+    .ui-jqgrid-jquery-ui .btn-acciones.fa-plus:hover {
+      color: #FFFFFF;
+      background-color: #00779b;
+      border-radius: 20px;
+      padding: 5px 1px 4px 1px;
+      font-size: 11px; }
+    /* line 194, sass/grid-styles.scss */
+    .ui-jqgrid-jquery-ui .btn-acciones.fa-arrow-down {
+      color: #30ced6; }
+    /* line 198, sass/grid-styles.scss */
+    .ui-jqgrid-jquery-ui .btn-acciones.fa-arrow-down:hover {
+      color: #00779b; }
+    /* line 203, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .btn-acciones.fa-trash {
       color: #FF824A; }
-    /* line 190, sass/grid-styles.scss */
+    /* line 207, sass/grid-styles.scss */
+    .ui-jqgrid-jquery-ui .btn-acciones.fa-trash:hover {
+      color: #bb3b29; }
+    /* line 212, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .btn-acciones.fa-close {
       color: #a02789; }
-    /* line 195, sass/grid-styles.scss */
+    /* line 216, sass/grid-styles.scss */
+    .ui-jqgrid-jquery-ui .btn-acciones.fa-close:hover {
+      color: #6d1d61; }
+    /* line 221, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .btn-acciones.fa-clone {
       color: #666666; }
-    /* line 200, sass/grid-styles.scss */
+    /* line 226, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .btn-acciones.fa-clone:hover {
       color: #000000; }
-    /* line 205, sass/grid-styles.scss */
+    /* line 231, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .btn-acciones.fa-pencil {
       color: #666666; }
-    /* line 210, sass/grid-styles.scss */
+    /* line 236, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .btn-acciones.fa-pencil:hover {
       color: #000000; }
-    /* line 215, sass/grid-styles.scss */
+    /* line 241, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .btn-acciones.fa-eye {
       color: #666666; }
-    /* line 220, sass/grid-styles.scss */
+    /* line 246, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .btn-acciones.fa-eye:hover {
       color: #000000; }
-    /* line 226, sass/grid-styles.scss */
+    /* line 252, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .btn-acciones p {
       font-size: 16px; }
-  /* line 233, sass/grid-styles.scss */
+  /* line 259, sass/grid-styles.scss */
   .ui-jqgrid-jquery-ui .ui-jqgrid-pager {
     background: transparent; }
-    /* line 237, sass/grid-styles.scss */
+    /* line 263, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-icon {
       font: normal normal normal 22px/1 FontAwesome;
       text-rendering: auto;
@@ -312,29 +331,29 @@
       width: auto;
       height: auto;
       margin: 0 10px; }
-    /* line 250, sass/grid-styles.scss */
+    /* line 276, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-icon-seek-first:before {
       content: "\f100"; }
-    /* line 256, sass/grid-styles.scss */
+    /* line 282, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-icon-seek-prev:before {
       content: "\f104"; }
-    /* line 262, sass/grid-styles.scss */
+    /* line 288, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-icon-seek-next:before {
       content: "\f105"; }
-    /* line 268, sass/grid-styles.scss */
+    /* line 294, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-icon-seek-end:before {
       content: "\f101"; }
-    /* line 273, sass/grid-styles.scss */
+    /* line 299, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pager-control {
       height: 40px; }
-    /* line 277, sass/grid-styles.scss */
+    /* line 303, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-table {
       font-size: 14px; }
-      /* line 279, sass/grid-styles.scss */
+      /* line 305, sass/grid-styles.scss */
       .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-table td {
         font-weight: normal;
         padding: 0px 1px; }
-    /* line 285, sass/grid-styles.scss */
+    /* line 311, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-input {
       font-size: 14px;
       margin: 0 -6px 0 0;
@@ -344,7 +363,7 @@
       border-radius: 0px;
       background-color: transparent;
       text-align: center; }
-    /* line 296, sass/grid-styles.scss */
+    /* line 322, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-selbox {
       padding: 3px 18px 5px 0;
       border-radius: 0px;
@@ -362,58 +381,58 @@
       background-position: calc(100% - 5px) calc(1em - 4px), calc(100% - 0px) calc(1em - 4px), calc(100% - 2.5em) 0;
       background-size: 5px 5px, 5px 5px, 0 0;
       background-repeat: no-repeat; }
-      /* line 313, sass/grid-styles.scss */
+      /* line 339, sass/grid-styles.scss */
       .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-selbox::-ms-expand {
         display: none; }
-    /* line 318, sass/grid-styles.scss */
+    /* line 344, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-widget-content {
       background-color: transparent; }
-    /* line 323, sass/grid-styles.scss */
+    /* line 349, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button .fa {
       color: black;
       margin: 5px !important;
       background-color: transparent;
       padding: 2px 8px;
       font-size: 22px; }
-    /* line 331, sass/grid-styles.scss */
+    /* line 357, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button .ui-separator {
       display: none; }
-    /* line 335, sass/grid-styles.scss */
+    /* line 361, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button:hover {
       padding: 0px 1px; }
-    /* line 341, sass/grid-styles.scss */
+    /* line 367, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-state-disabled:hover {
       padding: 0px 1px; }
-    /* line 346, sass/grid-styles.scss */
+    /* line 372, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-jqgrid-pg-left,
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-jqgrid-pg-right {
       display: none; }
-    /* line 351, sass/grid-styles.scss */
+    /* line 377, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-jqgrid-pg-center {
       text-align: left; }
-      /* line 354, sass/grid-styles.scss */
+      /* line 380, sass/grid-styles.scss */
       .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-jqgrid-pg-center .ui-pg-table td:last-of-type {
         width: 100%;
         text-align: right; }
-    /* line 361, sass/grid-styles.scss */
+    /* line 387, sass/grid-styles.scss */
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button.ui-state-hover,
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button:focus,
     .ui-jqgrid-jquery-ui .ui-jqgrid-pager .ui-pg-button:hover {
       border-color: transparent;
       background-color: transparent; }
-  /* line 371, sass/grid-styles.scss */
+  /* line 397, sass/grid-styles.scss */
   .ui-jqgrid-jquery-ui .txt-cyan {
     color: #00779b; }
-  /* line 375, sass/grid-styles.scss */
+  /* line 401, sass/grid-styles.scss */
   .ui-jqgrid-jquery-ui .txt-green {
     color: #809E00; }
-  /* line 379, sass/grid-styles.scss */
+  /* line 405, sass/grid-styles.scss */
   .ui-jqgrid-jquery-ui .txt-orange {
     color: #bb3b29; }
-  /* line 383, sass/grid-styles.scss */
+  /* line 409, sass/grid-styles.scss */
   .ui-jqgrid-jquery-ui .txt-purple {
     color: #6d1d61; }
-  /* line 387, sass/grid-styles.scss */
+  /* line 413, sass/grid-styles.scss */
   .ui-jqgrid-jquery-ui .txt-yellow {
     color: #FFCE54; }
 
