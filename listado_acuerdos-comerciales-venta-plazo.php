@@ -60,20 +60,15 @@
 														</div>
 													</div>
 													<div class="col-lg-4">
-														<div class="filtro-radio-button">
-															<p>Tiene Acuerdos relacionados</p>
-														</div>
-														<div class="radio-button">
-															<div class="radio">
-																<input type="radio" id="radio-1" name="radio-a">
-																<label for="radio-1" class="radio-label"><b>SI</b> (mayor a cero)</label>
-															</div>
-															
-															<div class="radio">
-																<input type="radio" id="radio-2" name="radio-a">
-																<label for="radio-2" class="radio-label"><b>NO</b> (si es cero)</label>
-															</div>
-															<span>This is a help test</span>
+														<div class="input-group">
+															<select id="acuerdos-relacionados" class="select-buscador" style="width: 100%">
+																<option value="" selected></option>
+																<option value="v1">Iniciado</option>
+																<option value="v2">Borrador</option>
+																<option value="v3">Confirmado</option>
+																<option value="v4">Cancelado</option>
+															</select>
+															<label for="acuerdos-relacionados">Estado</label>
 														</div>
 													</div>
 													<div class="col-lg-4">
@@ -96,15 +91,20 @@
 														</div>
 													</div>
 													<div class="col-lg-4">
-														<div class="input-group">
-															<select id="acuerdos-relacionados" class="select-buscador" style="width: 100%">
-																<option value="" selected></option>
-																<option value="v1">Iniciado</option>
-																<option value="v2">Borrador</option>
-																<option value="v3">Confirmado</option>
-																<option value="v4">Cancelado</option>
-															</select>
-															<label for="acuerdos-relacionados">Estado</label>
+														<div class="filtro-radio-button">
+															<p>Tiene Acuerdos relacionados</p>
+														</div>
+														<div class="radio-button">
+															<div class="radio">
+																<input type="radio" id="radio-1" name="radio-a">
+																<label for="radio-1" class="radio-label"><b>SI</b> (mayor a cero)</label>
+															</div>
+															
+															<div class="radio">
+																<input type="radio" id="radio-2" name="radio-a">
+																<label for="radio-2" class="radio-label"><b>NO</b> (si es cero)</label>
+															</div>
+															<span>This is a help test</span>
 														</div>
 													</div>
 													<div class="col-lg-4">

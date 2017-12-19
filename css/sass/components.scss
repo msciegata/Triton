@@ -1128,6 +1128,26 @@ p {
 	border-radius:0;
 	line-height:1.3;
 
+	&.remark-neutro {
+		border:1px solid $darkGray;
+
+		span {
+			font-size: 12px;
+			color:$white;
+			background-color:$darkGray;
+			padding:6px 6px 6px;
+			border-radius:20px;
+			margin-right: 10px;
+		}
+		
+		p {
+			color:$darkGray !important;
+			margin:0;
+		}
+	}
+
+
+
 	&.remark-primary {
 		border:1px solid $cyan;
 
@@ -1218,6 +1238,8 @@ p {
 		width: 80%;
 		color:$lightBlack;
 
+
+
 		strong {
 			display: block;
 			font-family: 'Open Sans Bold';
@@ -1277,6 +1299,39 @@ p {
 		}
 	}
 }
+
+
+
+
+
+// Condicion Crediticia
+.c_crediticia {
+	display:block;
+	width:100%;
+	font-size:14px;
+	margin:15px 0 10px;
+	padding:15px 15px 0 15px;
+	border-radius:0;
+	border:1px solid $mediumGreen;
+	background-color: $lightGreen;
+	font-family: 'Open Sans Bold';
+	color:$negro;
+
+	p {
+		width: 100%;
+		color:$negro;
+
+		strong {
+			display: block;
+			font-family: 'Open Sans Bold';
+			color:$negro;
+		}
+	}
+}
+
+
+
+
 
 //Tags
 .tag {
@@ -1363,14 +1418,14 @@ input::-ms-clear{
   			.select2-selection__rendered {
   				padding-left:0px;
   				font-size: 16px;
-  				font-family: 'Open Sans Regular';
+  				font-family: 'Open Sans Regular'; 
   			}
 	  	}
   	}
 
 	.select2-container--default {
         position: inherit;
-        margin-top: 14px;
+        margin-top: 14px; 
 
 		.select2-search--dropdown {
 			input.select2-search__field {
@@ -1411,14 +1466,14 @@ input::-ms-clear{
 		.select2-selection--single {
 			border-radius: 0;
 	        border: none;
-	        border-bottom: 0.5px solid $darkGray;
+	        border-bottom: 0.5px solid $mediumGray;
 	        background-color: transparent;
 
 	        .select2-selection__arrow {
 	        	width: 10px;
 
 	        	b {
-	        		border-color:$darkGray transparent transparent transparent;
+	        		border-color:$mediumGray transparent transparent transparent;
 	        	}
 	        }
 
@@ -1525,7 +1580,7 @@ input::-ms-clear{
             -webkit-transition:color 0.3s;
         }
         select.mostrar + span .select2-selection__rendered {
-            color: $black !important;
+            color: $mediumGray !important;
         }
         select {
             text-indent: -2px;
@@ -1995,10 +2050,22 @@ input::-ms-clear{
 }
 
 .titulo-radio-button p{
-	color:$darkGray;
+	color:$darkGray ;
 	font-family:'Open Sans';
 	font-size:16px !important;
 }
+
+
+.pago-anticipado {
+	margin:24px 5px 0 0; 
+	padding: 0 0 0 0; 
+	color: $darkGray;
+	font-size:16px; 
+	font-weight: 400; 
+}
+
+
+
 
 
 .radio-button {
@@ -2256,6 +2323,53 @@ input::-ms-clear{
 	}
 }
 
+
+.nav-tabs-3 {
+	border:none;
+
+	li.tab {
+		width: 33%;
+		text-align:center;
+		border:none; 
+		float: left; 
+
+		a {
+			color:$darkGray;
+			font-size:14px;
+			font-family:'Open Sans Regular';
+			padding:5px;
+			border:none;
+			top:3px;
+			border-radius:0;
+			background-color:$extraLightGray;
+			margin:0;
+
+			&:hover {
+				background-color:$cyan;
+				color: $white;
+			}
+		}
+  
+        &.active {
+
+            a {
+                top:0;
+                border:none;
+                border-top:3px solid $cyan !important;
+                background-color:$lightGray;
+                font-family: 'Open Sans Bold';
+
+                &:hover {
+                    background-color:$lightGray;
+                    cursor:pointer;
+                    border:none;
+                }
+            }
+        }
+	}
+}
+
+
 .tab-content {
 	background-color:$lightGray;
 	padding:5px 20px 1px;
@@ -2271,8 +2385,29 @@ input::-ms-clear{
 		&.calculado {
 			height: 92px;
 		}
+
+		&.fecha {
+			height: 82px;
+		}
+
+		&.eventos {
+			height: 160px;
+		}
+
+		&.triggers {
+			height: 92px;
+		}
+
+		&.calculada {
+			height: 92px;
+		}
+
+		&.pago {
+			height: 82px;
+		}
 	}
 }
+
 
 //Modal
 .modal-backdrop {
@@ -2406,5 +2541,34 @@ footer {
 
    margin-top: 0px;
     padding: 5px 0;
+
+}
+
+
+
+
+//Separador-Productos
+.separador-productos { 
+	background: $mediumCyan;
+    margin-top: 0px;
+    padding: 15px 10px 0 10px;
+
+    h3 {
+			font-size: 18px;
+			color:$white; 
+			padding: 0px;
+		}
+
+	.numero {
+			font-size: 18px;
+			color:$mediumGray;
+			vertical-align: bottom;
+		}	
+
+	.eliminar {
+			font-size: 16px;
+			color:$mediumGray;
+			vertical-align: bottom;
+		}	
 
 }

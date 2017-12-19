@@ -21,21 +21,19 @@
 						<h5>NO INICIADO</h5>
 					</div>
 					<div class="col-lg-6 margin-top-10 margin-bottom-30">
-						<div class="titulo-radio-button">
-															<p>Condición respecto del presupuesto<span>*</span></p>
-														</div>
-                                <div class="radio-button">
-									
-									<div class="radio">
-										<input type="radio" id="radio-1" name="radio-a">
-										<label for="radio-1" class="radio-label">Dentro del presupuesto</label>
-									</div>
-									
-									<div class="radio">
-										<input type="radio" id="radio-2" name="radio-a">
-										<label for="radio-2" class="radio-label">Fuera del presupuesto</label>
-									</div>
-								</div>
+                        <div class="radio-button">
+							<p>Condición respecto del presupuesto<span>*</span></p>
+							<div class="radio">
+								<input type="radio" id="radio-1" name="radio-a">
+								<label for="radio-1" class="radio-label">Dentro del presupuesto</label>
+							</div>
+							
+							<div class="radio">
+								<input type="radio" id="radio-2" name="radio-a">
+								<label for="radio-2" class="radio-label">Fuera del presupuesto</label>
+							</div>
+							<span>El campo Condición respecto del presupuesto es requerido</span>
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -190,7 +188,7 @@
 							</div>
 							<div class="col-lg-6 text-right">
 								<button class="btn btn-primary">REGISTRAR NECESIDAD</button>
-								<button class="btn btn-ghost-neutral">CANCELAR</button>
+								<button class="btn btn-ghost-neutral" data-toggle="modal" data-target="#cancelar-modal">SALIR</button>
 							</div>
 						</div>
 					</div>
@@ -200,85 +198,23 @@
 		<?php include 'footer.php';?>
 		<!--MODALS -->
 		<!-- CIA-modal -->
-		<div id="CIA-modal" class="modal" role="dialog" style="display: none;">
+		<div id="cancelar-modal" class="modal" role="dialog" style="display: none;">
 			<div class="moda-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h3 class="modal-title">Modal title</h3>
+						<h3 class="modal-title">Solicitud de cancelación</h3>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<div class="col-lg-6">
-							<div class="col-lg-12">
-								<div class="radio-button">
-									<div class="radio">
-										<input type="radio" id="costo" name="costo-ingreso">
-										<label for="costo" class="radio-label">Costo</label>
-									</div>
-									<div class="radio">
-										<input type="radio" id="ingreso" name="costo-ingreso">
-										<label for="ingreso" class="radio-label">Ingreso</label>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="input-group">
-									<select name="concepto" id="concepto" required>
-										<option value="" selected>Seleccione</option>
-										<option value="v1">Resultado 1</option>
-										<option value="v2">Resultado 2</option>
-										<option value="v3">Resultado 3</option>
-										<option value="v4">Resultado 4</option>
-									</select>
-									<label for="concepto">Concepto<span>*</span></label>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="col-lg-4">
-								<div class="input-group">
-									<select name="divisa" id="divisa" required>
-										<option value="" selected>Seleccione</option>
-										<option value="v1">ARS</option>
-										<option value="v2">USD</option>
-										<option value="v3">EUR</option>
-										<option value="v4">GBP</option>
-										<option value="v5">BRL</option>
-									</select>
-									<label for="divisa">Divisa<span>*</span></label>
-								</div>
-							</div>
-							<div class="col-lg-8">
-								<div class="input-group">
-									<input id="importe" type="text" required name="importe">
-									<label for="importe">Importe<span>*</span></label>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="input-group">
-									<select name="contraparte" id="contraparte" required>
-										<option value="" selected>Seleccione</option>
-										<option value="v1">Resultado 1</option>
-										<option value="v2">Resultado 2</option>
-										<option value="v3">Resultado 3</option>
-										<option value="v4">Resultado 4</option>
-									</select>
-									<label for="contraparte">Contraparte</label>
-								</div>
-							</div>
-						</div>
 						<div class="col-lg-12">
-							<div class="input-group">
-								<input id="detalle" type="text" required name="detalle">
-								<label for="detalle">Detalle</label>
-							</div>
+						<p>Si sale ahora se perderá la información ingresada <b>¿Desea Salir?</b></p>
 						</div>
 				    </div>
 				    <div class="modal-footer">
-						<button class="btn btn-primary">AGREGAR</button>
-						<button class="btn btn-ghost-neutral" data-dismiss="modal">CANCELAR</button>
+						<button class="btn btn-ghost-primary" data-dismiss="modal">SI</button>
+						<button class="btn btn-danger">NO</button>
 				    </div>
 				</div>
 			</div>

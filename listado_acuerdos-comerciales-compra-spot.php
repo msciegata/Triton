@@ -83,6 +83,25 @@
 														</div>
 													</div>
 													<div class="col-lg-4">
+														<h4>Rango de Fecha de Cierre</h4>
+														<div class="row filter-group">
+															<div class="col-lg-6">
+																<div class="input-group">
+																	<input id="fecha-cierre" class="input-date datapicker-here" type="text" name="fecha-cierre">
+																	<span class="fa fa-calendar" aria-hidden="true"></span>
+																	<label for="fecha-cierre">Desde</label>
+																</div>
+															</div>
+															<div class="col-lg-6">
+																<div class="input-group">
+																	<input id="fecha-cierre" class="input-date datapicker-here" type="text" required name="fecha-cierre">
+																	<span class="fa fa-calendar" aria-hidden="true"></span>
+																	<label for="fecha-cierre">Hasta</label>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-4">
 														<div class="filtro-radio-button">
 															<p>Estado de Pago</p>
 														</div>
@@ -116,26 +135,6 @@
 															<span>This is a help test</span>
 														</div>
 													</div>
-													<div class="col-lg-4">
-														<h4>Rango de Fecha de cierre</h4>
-														<div class="row filter-group">
-															<div class="col-lg-6">
-																<div class="input-group">
-																	<input id="fecha-cierre" class="input-date datapicker-here" type="text" name="fecha-cierre">
-																	<span class="fa fa-calendar" aria-hidden="true"></span>
-																	<label for="fecha-cierre">Desde</label>
-																</div>
-															</div>
-															<div class="col-lg-6">
-																<div class="input-group">
-																	<input id="fecha-cierre" class="input-date datapicker-here" type="text" required name="fecha-cierre">
-																	<span class="fa fa-calendar" aria-hidden="true"></span>
-																	<label for="fecha-cierre">Hasta</label>
-																</div>
-															</div>
-														</div>
-													</div>
-																									
 												</div>
 												
 												<div class="row">

@@ -495,6 +495,13 @@
 							</div>
 						</div>
 						<div class="card-body">
+
+							<div class="remark remark-neutro">
+								<p>
+									<span class="fa fa-clock-o"></span>Esto es una llamada de atención dentro de una card.
+								</p>
+							</div>
+
 							<div class="remark remark-primary">
 								<p>
 									<span class="fa fa-bell"></span>Esto es una llamada de atención dentro de una card.

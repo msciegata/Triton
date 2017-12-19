@@ -21,20 +21,19 @@
 						<h5>NO INICIADO</h5>
 					</div>
 					<div class="col-lg-6 margin-top-10 margin-bottom-30">
-                                <div class="radio-button">
-									<div class="titulo-radio-button">
-															<p>Condición respecto del presupuesto<span>*</span></p>
-														</div>
-									<div class="radio">
-										<input type="radio" id="radio-1" name="radio-a">
-										<label for="radio-1" class="radio-label">Dentro del presupuesto</label>
-									</div>
-									
-									<div class="radio">
-										<input type="radio" id="radio-2" name="radio-a">
-										<label for="radio-2" class="radio-label">Fuera del presupuesto</label>
-									</div>
-								</div>
+                        <div class="radio-button error">
+							<p>Condición respecto del presupuesto<span>*</span></p>
+							<div class="radio">
+								<input type="radio" id="radio-1" name="radio-a">
+								<label for="radio-1" class="radio-label">Dentro del presupuesto</label>
+							</div>
+							
+							<div class="radio">
+								<input type="radio" id="radio-2" name="radio-a">
+								<label for="radio-2" class="radio-label">Fuera del presupuesto</label>
+							</div>
+							<span>El campo Condición respecto del presupuesto es requerido</span>
+						</div>
 					</div>
 				</div>
 				<div class="row">
