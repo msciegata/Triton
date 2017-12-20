@@ -324,8 +324,77 @@
 
 										</div>
 									</div>
-
-									
+									<div class="well">
+										<div class="well-header">
+											<h6>Definición del evento para el pase del título y riesgo</h6>
+										</div>
+										<div class="well-body">
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="input-group margin-bottom-30">
+														<select id="armador" name="armador" required>
+															<option value="" selected>Seleccione</option>
+															<option value="v1">Título y riesgo 01</option>
+															<option value="v2">Título y riesgo 02</option>
+															<option value="v3">Título y riesgo 03</option>
+															<option value="v4">Título y riesgo 04</option>
+															<option value="v5">Título y riesgo 05</option>
+														</select>
+														<label for="armador">Título y riesgo</label>
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<div class="laytime margin-top-30">
+														<ul class="nav nav-tabs" id="laytime-tab" role="tablist">
+															<li role="presentation" class="tab active">
+																<a href="#pago" data-toggle="tab" aria-controls="pago">Fecha fija</a>
+															</li>
+															<li role="presentation" class="tab">
+																<a href="#calculada" data-toggle="tab" aria-controls="calculada">Fecha asociada a un evento</a>
+															</li>
+														</ul>
+														<div class="tab-content">
+															<div role="tabpanel" class="tab-pane pago active" id="pago">
+																<div class="col-lg-12">
+																	<div class="input-group">
+																		<input id="fecha-cierre" class="input-date datapicker-here" type="text" required name="fecha-cierre">
+																		<span class="fa fa-calendar" aria-hidden="true"></span>
+																		<label for="fecha-cierre">Fecha<span>*</span></label>
+																	</div>
+																</div>
+															</div>
+															<div role="tabpanel" class="tab-pane calculada" id="calculada">
+																<div class="input-group">
+														<select id="armador" name="armador" required>
+															<option value="" selected>Seleccione</option>
+															<option value="v1">Título y riesgo 01</option>
+															<option value="v2">Título y riesgo 02</option>
+															<option value="v3">Título y riesgo 03</option>
+															<option value="v4">Título y riesgo 04</option>
+															<option value="v5">Título y riesgo 05</option>
+														</select>
+														<label for="armador">Seleccionar un evento</label>
+													</div>
+															</div>
+														</div>
+													</div>
+										        </div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="radio-button margin-top-25">
+											<h6>Novation</h6>
+											<div class="radio">
+												<input type="radio" id="radio-1" name="radio-a">
+												<label for="radio-1Novation" class="radio-label">SI</label>
+											</div>
+											<div class="radio">
+												<input type="radio" id="radio-2" name="radio-a">
+												<label for="radio-2" class="radio-label">NO</label>
+											</div>
+										</div>
+									</div>
 							   </div>
 							   <div class="col-lg-6">
 									<div class="well">

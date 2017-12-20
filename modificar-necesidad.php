@@ -174,11 +174,11 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-12 text-left">
+							</div>
+							<div class="col-lg-12 text-left">
 								<button class="btn btn-success text-left">
 									<span class="fa fa-plus"></span> AGREGAR OTRO PRODUCTO
 								</button>
-							</div>
 							</div>
 						</div>
 					</div>
