@@ -1886,7 +1886,7 @@ input::-ms-clear {
 /* line 1356, sass/components.scss */
 .input-group .select2-container--default {
   position: inherit;
-  margin-top: 14px;
+  margin-top: 15px;
 }
 /* line 1361, sass/components.scss */
 .input-group .select2-container--default .select2-search--dropdown input.select2-search__field {
