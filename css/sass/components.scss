@@ -1423,7 +1423,11 @@ input::-ms-clear{
   			.select2-selection__rendered {
   				padding-left:0px;
   				font-size: 16px;
+<<<<<<< HEAD
   				font-family: 'Open Sans Regular'; 
+=======
+  				font-family: 'Open Sans Regular';
+>>>>>>> parent of 4a6ba4f... Style.php controles, ajuste general:
   			}
 	  	}
   	}
@@ -1589,7 +1593,11 @@ input::-ms-clear{
             -webkit-transition:color 0.3s;
         }
         select.mostrar + span .select2-selection__rendered {
+<<<<<<< HEAD
             color: $mediumGray !important;
+=======
+            color: $black !important;
+>>>>>>> parent of 4a6ba4f... Style.php controles, ajuste general:
         }
         select {
             text-indent: -2px;
