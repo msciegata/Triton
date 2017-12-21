@@ -32,11 +32,8 @@
 								<input type="radio" id="radio-2" name="radio-a">
 								<label for="radio-2" class="radio-label">Fuera del presupuesto</label>
 							</div>
-<<<<<<< HEAD
-							<p>El campo Condición respecto del presupuesto es requerido</p>
-=======
+
 							<span>El campo Condición respecto del presupuesto es requerido</span>
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 						</div>
 					</div>
 				</div>

@@ -130,11 +130,8 @@ header {
 
 			p {
 				font-family: 'Open Sans Light';
-<<<<<<< HEAD
-				margin-right: 10px;
-=======
+
 				margin-right: 10px; 
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 				padding: 10px 0 0 0; 
 			}
 
@@ -836,20 +833,13 @@ h5 {
 
 
 	.icono-accion {
-<<<<<<< HEAD
-		display:inline-block;
-=======
 				display:inline-block;
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 		background-color:$white;
 		padding: 25px 20px 30px;
 		margin-bottom:30px;
 		width: 100%;
-<<<<<<< HEAD
-		}
-=======
+
 			    }
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 
 			    
 
@@ -1146,17 +1136,11 @@ p {
 		border:1px solid $darkGray;
 
 		span {
-<<<<<<< HEAD
-			font-size: 13px;
-			color:$white;
-			background-color:$darkGray;
-			padding:6px 7px 6px 7px;
-=======
+
 			font-size: 12px;
 			color:$white;
 			background-color:$darkGray;
 			padding:6px 6px 6px;
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 			border-radius:20px;
 			margin-right: 10px;
 		}
@@ -1446,11 +1430,7 @@ input::-ms-clear{
 
 	.select2-container--default {
         position: inherit;
-<<<<<<< HEAD
-        margin-top: 14px;
-=======
         margin-top: 14px; 
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 
 		.select2-search--dropdown {
 			input.select2-search__field {
@@ -2060,11 +2040,7 @@ input::-ms-clear{
 .filtro-radio-button p{
 	color:$darkGray;
 	font-family:'Open Sans';
-<<<<<<< HEAD
-	font-size:16px;
-=======
 	font-size:16px !important;
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 }
 
 
@@ -2435,25 +2411,7 @@ input::-ms-clear{
 		&.pago {
 			height: 82px;
 		}
-<<<<<<< HEAD
 
-		&.f-fija {
-			height: 82px;
-		}
-
-		&.f-asociada {
-			height: 82px;
-		}
-
-		&.h-fija {
-			height: 82px;
-		}
-
-		&.h-demora {
-			height: 112px;
-		}
-=======
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 	}
 }
 
@@ -2595,32 +2553,3 @@ footer {
 
 
 
-
-<<<<<<< HEAD
-=======
-//Separador-Productos
-.separador-productos { 
-	background: $mediumCyan;
-    margin-top: 0px;
-    padding: 15px 10px 0 10px;
-
-    h3 {
-			font-size: 18px;
-			color:$white; 
-			padding: 0px;
-		}
-
-	.numero {
-			font-size: 18px;
-			color:$mediumGray;
-			vertical-align: bottom;
-		}	
-
-	.eliminar {
-			font-size: 16px;
-			color:$mediumGray;
-			vertical-align: bottom;
-		}	
-
-}
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d

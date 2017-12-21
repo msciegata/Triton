@@ -101,7 +101,7 @@
 															</div>
 														</div>
 													</div>
-													<div class="col-lg-4">
+													<div class="col-lg-5">
 														<div class="filtro-radio-button">
 															<p>Estado de Pago</p>
 														</div>
@@ -118,19 +118,19 @@
 															<span>This is a help test</span>
 														</div>
 													</div>
-													<div class="col-lg-4">
+													<div class="col-lg-3">
 														<div class="filtro-radio-button">
 															<p>Pago Anticipado</p>
 														</div>
 														<div class="radio-button">
 															<div class="radio">
-																<input type="radio" id="radio-1" name="radio-a">
-																<label for="radio-1" class="radio-label">SI</label>
+																<input type="radio" id="radio-3" name="radio-a">
+																<label for="radio-3" class="radio-label">SI</label>
 															</div>
 															
 															<div class="radio">
-																<input type="radio" id="radio-2" name="radio-a">
-																<label for="radio-2" class="radio-label">NO</label>
+																<input type="radio" id="radio-4" name="radio-a">
+																<label for="radio-4" class="radio-label">NO</label>
 															</div>
 															<span>This is a help test</span>
 														</div>

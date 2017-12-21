@@ -60,20 +60,15 @@
 														</div>
 													</div>
 													<div class="col-lg-4">
-														<div class="filtro-radio-button">
-															<p>Estado de Pago</p>
-														</div>
-														<div class="radio-button">
-															<div class="radio">
-																<input type="radio" id="radio-1" name="radio-a">
-																<label for="radio-1" class="radio-label">Pendiente de Pagar/Facturar</label>
-															</div>
-															
-															<div class="radio">
-																<input type="radio" id="radio-2" name="radio-a">
-																<label for="radio-2" class="radio-label">Factura Emitida</label>
-															</div>
-															<span>This is a help test</span>
+														<div class="input-group">
+															<select id="acuerdos-relacionados" class="select-buscador" style="width: 100%">
+																<option value="" selected></option>
+																<option value="v1">Iniciado</option>
+																<option value="v2">Borrador</option>
+																<option value="v3">Confirmado</option>
+																<option value="v4">Cancelado</option>
+															</select>
+															<label for="acuerdos-relacionados">Estado del Acuerdo</label>
 														</div>
 													</div>
 													<div class="col-lg-4">
@@ -95,19 +90,24 @@
 															</div>
 														</div>
 													</div>
-													<div class="col-lg-4">
-														<div class="input-group">
-															<select id="acuerdos-relacionados" class="select-buscador" style="width: 100%">
-																<option value="" selected></option>
-																<option value="v1">Iniciado</option>
-																<option value="v2">Borrador</option>
-																<option value="v3">Confirmado</option>
-																<option value="v4">Cancelado</option>
-															</select>
-															<label for="acuerdos-relacionados">Estado del Acuerdo</label>
+													<div class="col-lg-5">
+														<div class="filtro-radio-button">
+															<p>Estado de Pago</p>
+														</div>
+														<div class="radio-button">
+															<div class="radio">
+																<input type="radio" id="radio-1" name="radio-a">
+																<label for="radio-1" class="radio-label">Pendiente de Pagar/Facturar</label>
+															</div>
+															
+															<div class="radio">
+																<input type="radio" id="radio-2" name="radio-a">
+																<label for="radio-2" class="radio-label">Factura Emitida</label>
+															</div>
+															<span>This is a help test</span>
 														</div>
 													</div>
-													<div class="col-lg-4">
+													<div class="col-lg-3">
 														<div class="input-group">
 															<select id="condicion" class="select-buscador" style="width: 100%">
 																<option value="" selected></option>

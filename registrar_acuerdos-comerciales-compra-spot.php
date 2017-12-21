@@ -347,16 +347,7 @@
 													<div class="laytime margin-top-30">
 														<ul class="nav nav-tabs" id="laytime-tab" role="tablist">
 															<li role="presentation" class="tab active">
-<<<<<<< HEAD
-																<a href="#f-fija" data-toggle="tab" aria-controls="f-fija">Fecha fija</a>
-															</li>
-															<li role="presentation" class="tab">
-																<a href="#f-asociada" data-toggle="tab" aria-controls="f-asociada">Fecha asociada a un evento</a>
-															</li>
-														</ul>
-														<div class="tab-content">
-															<div role="tabpanel" class="tab-pane f-fija active" id="f-fija">
-=======
+
 																<a href="#pago" data-toggle="tab" aria-controls="pago">Fecha fija</a>
 															</li>
 															<li role="presentation" class="tab">
@@ -365,7 +356,6 @@
 														</ul>
 														<div class="tab-content">
 															<div role="tabpanel" class="tab-pane pago active" id="pago">
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 																<div class="col-lg-12">
 																	<div class="input-group">
 																		<input id="fecha-cierre" class="input-date datapicker-here" type="text" required name="fecha-cierre">
@@ -374,11 +364,8 @@
 																	</div>
 																</div>
 															</div>
-<<<<<<< HEAD
-															<div role="tabpanel" class="tab-pane f-asociada" id="f-asociada">
-=======
+
 															<div role="tabpanel" class="tab-pane calculada" id="calculada">
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 																<div class="input-group">
 														<select id="armador" name="armador" required>
 															<option value="" selected>Seleccione</option>
@@ -629,102 +616,7 @@
 											</div>
 										</div>
 									</div>
-<<<<<<< HEAD
-									<div class="row">
-											<div class="col-lg-12">
-												<div class="laytime">
-													<h6 class="margin-bottom-15">Laytime</h6>
-													<div class="well-laytime">
-														<ul class="nav nav-tabs" id="laytime-tab" role="tablist">
-															<li role="presentation" class="tab active">
-																<a href="#h-fija" data-toggle="tab" aria-controls="h-fija">Horas fijas por demora</a>
-															</li>
-															<li role="presentation" class="tab">
-																<a href="#h-demora" data-toggle="tab" aria-controls="h-demora">Horas de demora por Caudal</a>
-															</li>
-														</ul>
-														<div class="tab-content">
-															<div role="tabpanel" class="tab-pane h-fija active" id="h-fija">
-																<div class="col-lg-4">
-																	<div class="input-group">
-																		<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
-																		<span class="fa fa-clock-o" aria-hidden="true"></span>
-																		<label for="horario-inicio">Horario</label>
-																	</div>
-															    </div>
-															</div>
-															<div role="tabpanel" class="tab-pane h-demora" id="h-demora">
-																<div class="col-lg-5">
-																	<div class="input-group">
-																		<input id="caudal-volumen" type="text" required name="caudal-volumen">
-																		<label for="caudal-volumen">Caudal/Volumen</label>
-																	</div>
-																</div>
-																<div class="col-lg-3">
-																	<div class="input-group">
-																		<select id="UOM" name="UOM" required>
-																			<option value="" selected>Seleccione</option>
-																			<option value="v1">TN</option>
-																			<option value="v2">CM3</option>
-																			<option value="v2">LTS</option>
-																		</select>
-																		<label for="UOM">UOM</label>
-																	</div>
-																</div>
-																<div class="col-lg-4">
-																	<div class="radio-button margin-top-25">
-																		<h6>Tiempo</h6>
-																		<div class="radio">
-																			<input type="radio" id="radio-1" name="radio-a">
-																			<label for="radio-1" class="radio-label">Hora</label>
-																		</div>
-																		<div class="radio">
-																			<input type="radio" id="radio-2" name="radio-a">
-																			<label for="radio-2" class="radio-label">Día</label>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													    <div class="col-lg-7">
-																	<div class="input-group">
-																		<select id="UOM" name="UOM" required>
-																			<option value="" selected>Seleccione</option>
-																			<option value="v1">TN</option>
-																			<option value="v2">CM3</option>
-																			<option value="v2">LTS</option>
-																		</select>
-																		<label for="UOM">Evento a partir del cual inicia el laytime</label>
-																	</div>
-																</div>
-																<div class="col-lg-3">
-																	<div class="input-group">
-																		<select id="UOM" name="UOM" required>
-																			<option value="" selected>Seleccione</option>
-																			<option value="v1">TN</option>
-																			<option value="v2">CM3</option>
-																			<option value="v2">LTS</option>
-																		</select>
-																		<label for="UOM">Demurrage rate</label>
-																	</div>
-																</div>
-																<div class="col-lg-2">
-																	<div class="input-group">
-																		<select id="UOM" name="UOM" required>
-																			<option value="" selected>Seleccione</option>
-																			<option value="v1">TN</option>
-																			<option value="v2">CM3</option>
-																			<option value="v2">LTS</option>
-																		</select>
-																		<label for="UOM">Moneda</label>
-																	</div>
-																</div>
-													</div>
-												</div>
-											</div>
-									</div>
-=======
->>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
+
 								</div>
 
 
