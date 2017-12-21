@@ -1891,11 +1891,14 @@ input::-ms-clear {
 .input-group .select2-container--default {
   position: inherit;
   margin-top: 15px;
+<<<<<<< HEAD
 }
 <<<<<<< HEAD
 /* line 1361, sass/components.scss */
 .input-group .select2-container--default .select2-search--dropdown input.select2-search__field {
   border: 0px solid #222222 !important;
+=======
+>>>>>>> parent of 1342f3f... Select buscador duplicado, correccion linea blanca en chrome al 110
 }
 /* line 1370, sass/components.scss */
 =======
