@@ -20,14 +20,19 @@
 						</div>
 						<h5>NO INICIADO</h5>
 					</div>
-					<div class="col-lg-6 margin-top-10">
-						<div class="input-group">
-							<select id="mov-triton" class="select-buscador" required style="width: 100%">
-								<option value="" selected>Seleccione</option>
-								<option value="v1">Dentro del presupuesto</option>
-								<option value="v2">Fuera del presupuesto</option>
-							</select>
-							<label for="mov-triton">Condición respecto del presupuesto<span>*</span></label>
+					<div class="col-lg-6 margin-top-10 margin-bottom-30">
+                        <div class="radio-button error">
+							<p>Condición respecto del presupuesto<span>*</span></p>
+							<div class="radio">
+								<input type="radio" id="radio-1" name="radio-a">
+								<label for="radio-1" class="radio-label">Dentro del presupuesto</label>
+							</div>
+							
+							<div class="radio">
+								<input type="radio" id="radio-2" name="radio-a">
+								<label for="radio-2" class="radio-label">Fuera del presupuesto</label>
+							</div>
+							<p>El campo Condición respecto del presupuesto es requerido</p>
 						</div>
 					</div>
 				</div>
@@ -170,21 +175,21 @@
 									</div>
 								</div>
 							</div>
+							<div class="col-lg-12 text-left">
+								<button class="btn btn-success text-left">
+									<span class="fa fa-plus"></span> AGREGAR OTRO PRODUCTO
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-12 text-right">
 						<div class="final-buttons">
-							<div class="col-lg-6 text-left">
-								<button class="btn btn-success text-left">
-									<span class="fa fa-plus"></span> AGREGAR OTRO PRODUCTO
-								</button>
-							</div>
-							<div class="col-lg-6 text-right">
+							<div class="col-lg-12 text-right">
 								<button class="btn btn-primary">GUARDAR MODIFICACIÓN</button>
-								<button class="btn btn-danger">CANCELAR NECESIDAD</button>
-								<button class="btn btn-ghost-neutral">SALIR</button>
+								<button class="btn btn-danger" data-toggle="modal" data-target="#cancelar-modal">CANCELAR NECESIDAD</button>
+								<button class="btn btn-ghost-neutral" data-toggle="modal" data-target="#salir-modal">SALIR</button>
 							</div>
 						</div>
 					</div>
@@ -193,86 +198,46 @@
 		</main>
 		<?php include 'footer.php';?>
 		<!--MODALS -->
-		<!-- CIA-modal -->
-		<div id="CIA-modal" class="modal" role="dialog" style="display: none;">
+		<!-- SALIR-modal -->
+		<div id="salir-modal" class="modal" role="dialog" style="display: none;">
 			<div class="moda-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h3 class="modal-title">Modal title</h3>
+						<h3 class="modal-title">Solicitud de cancelación</h3>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<div class="col-lg-6">
-							<div class="col-lg-12">
-								<div class="radio-button">
-									<div class="radio">
-										<input type="radio" id="costo" name="costo-ingreso">
-										<label for="costo" class="radio-label">Costo</label>
-									</div>
-									<div class="radio">
-										<input type="radio" id="ingreso" name="costo-ingreso">
-										<label for="ingreso" class="radio-label">Ingreso</label>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="input-group">
-									<select name="concepto" id="concepto" required>
-										<option value="" selected>Seleccione</option>
-										<option value="v1">Resultado 1</option>
-										<option value="v2">Resultado 2</option>
-										<option value="v3">Resultado 3</option>
-										<option value="v4">Resultado 4</option>
-									</select>
-									<label for="concepto">Concepto<span>*</span></label>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="col-lg-4">
-								<div class="input-group">
-									<select name="divisa" id="divisa" required>
-										<option value="" selected>Seleccione</option>
-										<option value="v1">ARS</option>
-										<option value="v2">USD</option>
-										<option value="v3">EUR</option>
-										<option value="v4">GBP</option>
-										<option value="v5">BRL</option>
-									</select>
-									<label for="divisa">Divisa<span>*</span></label>
-								</div>
-							</div>
-							<div class="col-lg-8">
-								<div class="input-group">
-									<input id="importe" type="text" required name="importe">
-									<label for="importe">Importe<span>*</span></label>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="input-group">
-									<select name="contraparte" id="contraparte" required>
-										<option value="" selected>Seleccione</option>
-										<option value="v1">Resultado 1</option>
-										<option value="v2">Resultado 2</option>
-										<option value="v3">Resultado 3</option>
-										<option value="v4">Resultado 4</option>
-									</select>
-									<label for="contraparte">Contraparte</label>
-								</div>
-							</div>
-						</div>
 						<div class="col-lg-12">
-							<div class="input-group">
-								<input id="detalle" type="text" required name="detalle">
-								<label for="detalle">Detalle</label>
-							</div>
+						<p>Si sale ahora se perderá la información ingresada <b>¿Desea Salir?</b></p>
 						</div>
 				    </div>
 				    <div class="modal-footer">
-						<button class="btn btn-primary">AGREGAR</button>
-						<button class="btn btn-ghost-neutral" data-dismiss="modal">CANCELAR</button>
+						<button class="btn btn-danger">NO</button>
+						<button class="btn btn-ghost-primary" data-dismiss="modal">SI</button>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!-- CANCELAR-modal -->
+		<div id="cancelar-modal" class="modal" role="dialog" style="display: none;">
+			<div class="moda-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">Solicitud de cancelación</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="col-lg-12">
+						<p>Usted está por efectuar la cancelación de la necesidad de compra internacional #N2345</p>
+						</div>
+				    </div>
+				    <div class="modal-footer">
+						<button class="btn btn-danger">CANCELAR</button>
+						<button class="btn btn-ghost-primary" data-dismiss="modal">SALIR</button>
 				    </div>
 				</div>
 			</div>
@@ -280,29 +245,37 @@
                 <?php include 'js-elements.php';?>
                 <script src="js/listado_viajes-SPOT.js"></script>
                 <script>
-                new qq.FineUploader({
-                    element: document.getElementById("contrato-SAP-upload"),
-                    template: 'qq-template',
-                    request: {
-                        endpoint: '/server/uploads'
-                    },
-                    thumbnails: {
-                        placeholders: {
-                            waitingPath: '/source/placeholders/waiting-generic.png',
-                            notAvailablePath: '/source/placeholders/not_available-generic.png'
-                        }
-                    },
-                    validation: {
-                        allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
-                    },
-                    extraButtons: [
-                        {
-                            element: document.getElementById("well-add-button"),
-                            validation: {
-                                allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
+                $(function () {
+                    new qq.FineUploader({
+                        element: document.getElementById("contrato-SAP-upload"),
+                        template: 'qq-template',
+                        autoUpload: false,
+                        request: {
+                            endpoint: '/server/uploads'
+                        },
+                        thumbnails: {
+                            placeholders: {
+                                waitingPath: '/source/placeholders/waiting-generic.png',
+                                notAvailablePath: '/source/placeholders/not_available-generic.png'
+                            }
+                        },
+                        validation: {
+                            allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
+                        },
+                        extraButtons: [
+                            {
+                                element: document.getElementById("well-add-button"),
+                                validation: {
+                                    allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
+                                }
+                            }
+                        ],
+                        callbacks: {
+                            onSubmitted: function () {
+                                $("#contrato-SAP-upload").find(".empty-message").hide();
                             }
                         }
-                    ]
+                    });
                 });
                 </script>
 	</body>

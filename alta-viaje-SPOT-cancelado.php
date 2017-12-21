@@ -13,12 +13,12 @@
 			<div class="container-fluid">
 				<div class="row page-title">
 					<div class="col-lg-10">
-						<h1>Viaje <span>SPOT.0013</span></h1>
+						<h1>Alta de viaje <span>SPOT</span></h1>
 					</div>
 					<div class="col-lg-2 state">
-						<div class="circle bg-purple">
+						<div class="circle bg-gray">
 						</div>
-						<h5>CANCELADO</h5>
+						<h5>NO INICIADO</h5>
 					</div>
 				</div>
 				<div class="row">
@@ -456,8 +456,16 @@
 			</div>
 		</main>
 		<?php include 'footer.php';?>
+		<?php include 'js-elements.php';?>
+        <script>
+        $(function () {
+            // Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        </script>
 
-		<!--MODALS -->
+
+<!--MODALS -->
 		<!-- CIA-modal -->
 		<div id="CIA-modal" class="modal" role="dialog" style="display: none;">
 			<div class="moda-dialog">
@@ -542,12 +550,8 @@
 				</div>
 			</div>
 		</div>
-		<?php include 'js-elements.php';?>
-        <script>
-        $(function () {
-            // Tooltip
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-        </script>
+
+
+        
 	</body>
 </html>

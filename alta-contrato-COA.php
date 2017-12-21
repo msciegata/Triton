@@ -237,6 +237,7 @@
 			</div>
 		</main>
 		<?php include 'footer.php';?>
+		<?php include 'js-elements.php';?>
 
 		<!--MODALS -->
 		<!-- CIA-modal -->
@@ -323,6 +324,5 @@
 				</div>
 			</div>
 		</div>
-		<?php include 'js-elements.php';?>
 	</body>
 </html>

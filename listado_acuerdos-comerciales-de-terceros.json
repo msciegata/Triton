@@ -1,0 +1,39 @@
+{
+        "userdata":[],
+        "rows":[
+                {"campo1":"AC.TERC.0002",
+                "campo2":"Total Argentina S.A.",
+                "campo3":"Petrobras S.A.",
+                "campo4":"Fully Refined Paraffin Wax",
+                "campo5":"58 TN",
+                "campo6":"<span class='txt-green'>PLANIFICADA</span>",
+                "campo7":" "
+                },
+                {"campo1":"AC.TERC.8543",
+                "campo2":"Shell Argentina S.A.",
+                "campo3":"Petrobras S.A.",
+                "campo4":"Fully Refined Paraffin Wax",
+                "campo5":"43 TN",
+                "campo6":"<span class='txt-green'>PLANIFICADA</span>",
+                "campo7":" "
+                },
+                {"campo1":"AC.TERC.0321",
+                "campo2":"Shell Argentina S.A.",
+                "campo3":"Axion S.A.",
+                "campo4":"Fully Refined Paraffin Wax",
+                "campo5":"82 TN",
+                "campo6":"<span class='txt-green'>PLANIFICADA</span>",
+                "campo7":" "
+                },
+                {"campo1":"AC.TERC.1678",
+                "campo2":"Shell Argentina S.A.",
+                "campo3":"Axion S.A.",
+                "campo4":"Fully Refined Paraffin Wax",
+                "campo5":"699 TN",
+                "campo6":"<span class='txt-green'>PLANIFICADA</span>",
+                "campo7":" "
+                }
+        ],
+        "total":10,
+        "page":1
+}

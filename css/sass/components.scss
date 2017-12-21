@@ -117,7 +117,7 @@ header {
 		.user {
 			position:absolute;
 			right: 20px;
-			top:10px;
+			top:12px;
 			display: inline-block;
 			color:$white;
 
@@ -131,11 +131,25 @@ header {
 			p {
 				font-family: 'Open Sans Light';
 				margin-right: 10px;
+				padding: 10px 0 0 0; 
 			}
 
 			span {
-				font-size: 18px;
+				
 			}
+
+				   
+            div.foto-usuario { 
+                height: 60px;
+                width: 60px;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                border-radius: 50%;
+                background-size: 100% auto;
+                float: right;
+            }
+
+
 		}
 	}
 
@@ -299,6 +313,7 @@ h5 {
 .bg-purple {
 	background-color: $purple;
 }
+
 
 .state {
 	background-color:$white;
@@ -630,6 +645,7 @@ h5 {
 		padding:10px 15px 10px;
 		margin-top:15px;
 
+
 		.well-trash {
 			display: inline-block;
 		    position: absolute;
@@ -812,6 +828,17 @@ h5 {
 			}
 		}
 	}
+
+
+	.icono-accion {
+		display:inline-block;
+		background-color:$white;
+		padding: 25px 20px 30px;
+		margin-bottom:30px;
+		width: 100%;
+		}
+
+			    
 
 	.card-body {
 		display:inline-block;
@@ -1099,6 +1126,26 @@ p {
 	border-radius:0;
 	line-height:1.3;
 
+	&.remark-neutro {
+		border:1px solid $darkGray;
+
+		span {
+			font-size: 13px;
+			color:$white;
+			background-color:$darkGray;
+			padding:6px 7px 6px 7px;
+			border-radius:20px;
+			margin-right: 10px;
+		}
+		
+		p {
+			color:$darkGray !important;
+			margin:0;
+		}
+	}
+
+
+
 	&.remark-primary {
 		border:1px solid $cyan;
 
@@ -1345,7 +1392,7 @@ input::-ms-clear{
 
 	.select2-container--default {
         position: inherit;
-        margin-top: 15px;
+        margin-top: 14px;
 
 		.select2-search--dropdown {
 			input.select2-search__field {
@@ -1431,8 +1478,8 @@ input::-ms-clear{
     		calc(100% - 5px) calc(1em + 8px), 
     		calc(100% - 2.5em) 0;
   		background-size:
-    		6px 6px,
-   			6px 6px,
+    		5px 5px,
+   			5px 5px,
     		0 0;
   		background-repeat: no-repeat;
 
@@ -1988,6 +2035,54 @@ input::-ms-clear{
 	}
 }
 
+
+
+.filtro-radio-button {
+	margin:24px 0 5px; padding: 0 0 5px 0; 
+	border-bottom: 1px solid #666666;
+
+	span {
+			display: inline-block;
+			color: $orange;
+		}
+}
+
+.filtro-radio-button p{
+	color:$darkGray;
+	font-family:'Open Sans';
+	font-size:16px;
+}
+
+
+
+.titulo-radio-button {
+	margin:24px 0 5px; padding: 0 0 5px 0; 
+
+	span {
+			display: inline-block;
+			color: $orange;
+		}
+}
+
+.titulo-radio-button p{
+	color:$darkGray ;
+	font-family:'Open Sans';
+	font-size:16px !important;
+}
+
+
+.pago-anticipado {
+	margin:24px 5px 0 0; 
+	padding: 0 0 0 0; 
+	color: $darkGray;
+	font-size:16px; 
+	font-weight: 400; 
+}
+
+
+
+
+
 .radio-button {
 	display: inline-block;
 	margin: 20px 0 20px;
@@ -2196,6 +2291,7 @@ input::-ms-clear{
 	}
 }
 
+
 //NAV TABS
 .nav-tabs {
 	border:none;
@@ -2241,6 +2337,53 @@ input::-ms-clear{
 	}
 }
 
+
+.nav-tabs-3 {
+	border:none;
+
+	li.tab {
+		width: 33%;
+		text-align:center;
+		border:none; 
+		float: left; 
+
+		a {
+			color:$darkGray;
+			font-size:14px;
+			font-family:'Open Sans Regular';
+			padding:5px;
+			border:none;
+			top:3px;
+			border-radius:0;
+			background-color:$extraLightGray;
+			margin:0;
+
+			&:hover {
+				background-color:$cyan;
+				color: $white;
+			}
+		}
+  
+        &.active {
+
+            a {
+                top:0;
+                border:none;
+                border-top:3px solid $cyan !important;
+                background-color:$lightGray;
+                font-family: 'Open Sans Bold';
+
+                &:hover {
+                    background-color:$lightGray;
+                    cursor:pointer;
+                    border:none;
+                }
+            }
+        }
+	}
+}
+
+
 .tab-content {
 	background-color:$lightGray;
 	padding:5px 20px 1px;
@@ -2255,6 +2398,42 @@ input::-ms-clear{
 
 		&.calculado {
 			height: 92px;
+		}
+
+		&.fecha {
+			height: 82px;
+		}
+
+		&.eventos {
+			height: 160px;
+		}
+
+		&.triggers {
+			height: 92px;
+		}
+
+		&.calculada {
+			height: 92px;
+		}
+
+		&.pago {
+			height: 82px;
+		}
+
+		&.f-fija {
+			height: 82px;
+		}
+
+		&.f-asociada {
+			height: 82px;
+		}
+
+		&.h-fija {
+			height: 82px;
+		}
+
+		&.h-demora {
+			height: 112px;
 		}
 	}
 }
@@ -2298,6 +2477,12 @@ input::-ms-clear{
 		padding:0 15px;
 		border-bottom:none;
 		display:block;
+
+		p { 
+		    font-weight: 400;
+		    padding: 15px 0 0 0; 
+		    color:$darkGray;
+	    }
 	}
 
 	.modal-footer {
@@ -2342,3 +2527,52 @@ footer {
 		}
 	}
 }
+
+
+
+.btn-filtro {
+	border:1px solid $black;
+	color:$black;
+	outline:none;
+	box-shadow:none;
+	}
+
+
+	.btn-filtro:hover,
+	.btn-filtro:focus,
+	.btn-filtro:active {
+		border:1px solid transparent;
+		background-color:$darkGray !important;
+		color:white;
+	}
+
+	.btn-filtro:visited {
+		border:1px solid $black;
+		color:$black;
+	}
+
+	.btn-filtro .fa {
+		color: $white;
+		background-color:$black;
+	}		
+
+    .btn-filtro .fa:hover,
+    .btn-filtro .fa:focus,
+	.btn-filtro .fa:active {
+		background-color: $black;
+	}
+
+
+
+
+//Tooltip
+.ui-jqgrid-jquery-ui.ui-widget-content .tooltip.top {
+
+   margin-top: 0px;
+    padding: 5px 0;
+
+}
+
+
+
+

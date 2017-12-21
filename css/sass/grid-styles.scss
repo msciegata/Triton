@@ -92,7 +92,7 @@
                 margin: 0;
                 white-space: normal;
                 color: $white;
-                font-size: 16px;
+                font-size: 15px;
                 margin: inherit;
                 line-height: normal;
             }
@@ -146,7 +146,7 @@
 
             &.jqgrow {
                 td {
-                    font-size: 14px;
+                    font-size: 13px;
                     padding: 15px 10px 15px 20px;
                     overflow: hidden;
                     white-space: normal;
@@ -170,6 +170,11 @@
         vertical-align: middle;
         width: 20px;
 
+
+        &.disabled {
+
+        }
+
         &.fa-plus {
             color: $white;
             background-color: $cyan;
@@ -178,12 +183,75 @@
             font-size: 11px;
         }
 
+        &.fa-plus:hover {
+            color: $white;
+            background-color: $mediumCyan;
+            border-radius: 20px;
+            padding:5px 1px 4px 1px;
+            font-size: 11px;
+        }
+
+        &.fa-arrow-down {
+            color: $cyan;
+        }
+
+        &.fa-arrow-down:hover {
+            color: $mediumCyan;
+        }
+
+
         &.fa-trash {
             color: $orange;
         }
 
+         &.fa-trash:hover {
+            color: $mediumOrange;
+        }
+
+
         &.fa-close {
             color: $purple
+
+        }
+        &.fa-close:hover {
+            color: $mediumPurple
+
+        }
+
+        &.fa-clone {
+            color: $darkGray
+
+        }
+
+        &.fa-clone:hover {
+            color: $negro
+
+        }
+
+        &.fa-pencil {
+            color: $darkGray
+
+        }
+
+        &.fa-pencil:hover {
+            color: $negro
+
+        }
+
+        &.fa-eye {
+            color: $darkGray
+
+        }
+
+        &.fa-eye:hover {
+            color: $negro
+
+        }
+
+
+        p { 
+            font-size: 16px;
+
         }
     }
 
@@ -341,4 +409,11 @@
     .txt-purple {
         color: $mediumPurple;
     }
+
+    .txt-yellow {
+        color: $yellow;
+    }
+
+
+
 }

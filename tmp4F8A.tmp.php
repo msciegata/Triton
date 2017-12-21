@@ -194,12 +194,12 @@
 										<label for="UOM">Select no search<span>*</span></label>
 									</div>
 									<div class="input-group">
-										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio">
+										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio" value="13/11/2017">
 										<span class="fa fa-calendar" aria-hidden="true"></span>
 										<label for="fecha-inicio">Date Picker</label>
 									</div>
 									<div class="input-group">
-										<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required>
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker</label>
 									</div>
@@ -249,7 +249,7 @@
 										<label for="fecha-inicio">Date Picker</label>
 									</div>
 									<div class="input-group validated">
-										<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required>
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker<span>*</span></label>
 									</div>
@@ -299,7 +299,7 @@
 										<label for="fecha-inicio">Date Picker<span>*</span></label>
 									</div>
 									<div class="input-group error">
-										<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required>
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker</label>
 									</div>
@@ -351,7 +351,7 @@
 										<label for="fecha-inicio">Date Picker<span>*</span></label>
 									</div>
 									<div class="input-group">
-										<input id="horario-inicio" disabled type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" disabled type="text" class="input-small timepicker" required>
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker</label>
 									</div>
@@ -396,12 +396,12 @@
 										<label for="UOM">Select No Search<span>*</span></label>
 									</div>
 									<div class="input-group warning">
-										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio">
+										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio" value="13/10/2017">
 										<span class="fa fa-calendar" aria-hidden="true"></span>
 										<label for="fecha-inicio">Date Picker</label>
 									</div>
 									<div class="input-group warning">
-										<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required value="13:25">
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker<span>*</span></label>
 									</div>
@@ -415,13 +415,13 @@
 										<input id="input-example" type="text" required name="example" value="Information entered">
 										<span class="fa fa-exclamation" aria-hidden="true"></span>
 										<label for="input-example">Input No Icon<span>*</span></label>
-										<p>This is a help text</p>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 									<div class="input-group duplicated">
 										<input id="input-example" type="text" required name="example" value="Information entered">
 										<span class="fa fa-tag" aria-hidden="true"></span>
 										<label for="input-example">Input Icon<span>*</span></label>
-										<p>This is a help text</p>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 									<div class="input-group duplicated">
 										<select id="product-name" class="select-buscador" required style="width: 100%">
@@ -434,7 +434,7 @@
 											<option value="v6">Resultado 6</option>
 										</select>
 										<label for="product-name">Select Search<span>*</span></label>
-										<p>This is a help text</p>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 									<div class="input-group duplicated">
 										<select id="UOM" name="UOM" required>
@@ -444,16 +444,19 @@
 											<option value="v2">Opción 3</option>
 										</select>
 										<label for="UOM">Select No Search<span>*</span></label>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 									<div class="input-group duplicated">
-										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio">
+										<input class="input-date" id="fecha-inicio" type="text" required name="fecha-inicio" value="13/10/2017">
 										<span class="fa fa-calendar" aria-hidden="true"></span>
 										<label for="fecha-inicio">Date Picker</label>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 									<div class="input-group duplicated">
-										<input id="horario-inicio" type="text" class="form-control input-small timepicker" required>
+										<input id="horario-inicio" type="text" class="input-small timepicker" required value="13:25">
 										<span class="fa fa-clock-o" aria-hidden="true"></span>
 										<label for="horario-inicio">Time Picker<span>*</span></label>
+										<p><span class="fa fa-exclamation"></span>This is a help text</p>
 									</div>
 								</div>
 							</div>
@@ -495,13 +498,6 @@
 							</div>
 						</div>
 						<div class="card-body">
-
-							<div class="remark remark-neutro">
-								<p>
-									<span class="fa fa-clock-o"></span>Esto es una llamada de atención dentro de una card.
-								</p>
-							</div>
-
 							<div class="remark remark-primary">
 								<p>
 									<span class="fa fa-bell"></span>Esto es una llamada de atención dentro de una card.
@@ -547,53 +543,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="col-lg-6">
-					<div class="card">
-						<div class="card-header">
-							<div class="card-title">
-								<h3>Controls</h3>
-							</div>
-						</div>
-						<div class="card-body">
-							<div class="controls">
-								<div class="checkbox">
-									<h5>Checkbox</h5>
-									<p>Checkbox<span>*</span></p>
-									<input type="checkbox" class="custom-checkbox" name="check-a" id="checkbox-example-1">
-									<label for="checkbox-example-1">Option 1</label>
-									
-									<input type="checkbox" class="custom-checkbox" name="check-b" id="checkbox-example-2">
-									<label for="checkbox-example-2">Option 2</label>
-									
-									<input type="checkbox" class="custom-checkbox" name="check-c" id="checkbox-example-3">
-									<label for="checkbox-example-3">Option 3</label>
-									<span>This is a help text</span>
-								</div>
-
-								<div class="radio-button">
-									<h5>Radio Button</h5>
-									<p>Radio Button<span>*</span></p>
-									<div class="radio">
-										<input type="radio" id="radio-1" name="radio-a">
-										<label for="radio-1" class="radio-label">Option 1</label>
-									</div>
-									
-									<div class="radio">
-										<input type="radio" id="radio-2" name="radio-a">
-										<label for="radio-2" class="radio-label">Option 2</label>
-									</div>
-									
-									<div class="radio">
-										<input type="radio" id="radio-3" name="radio-a">
-										<label for="radio-3" class="radio-label">Option 3</label>
-									</div>
-									<span>This is a help test</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 			<div class="row">
 			<!-- BUTTONS -->
@@ -614,12 +563,12 @@
 									<button class="btn btn-primary disabled">button</button>
 									<br><br>
 									<h5>Positive</h5>
-									<p>- Este tipo de botones se usan para acciones de éxito,  validación o que tengan un sentido positivo. Como por ejemplo agregar, aprobar, dar de alta o registrar.A continuación también figura su versión <strong>disabled</strong>.</p>
+									<p>- Este tipo de botones se usan para acciones de éxito,  validación o que tengan un sentido positivo. Como por ejemplo agregar, dar de alta o registrar.A continuación también figura su versión <strong>disabled</strong>.</p>
 									<button class="btn btn-success">button</button>
 									<button class="btn btn-success disabled">button</button>
 									<br><br>
 									<h5>Danger</h5>
-									<p>- Este tipo de botones se usan para acciones principales del tipo peligrosas o negativas. Como pueden ser borrar, rechazar, descartar o eliminar. A continuación también figura su versión <strong>disabled</strong>.</p>
+									<p>- Este tipo de botones se usan para acciones principales del tipo peligrosas o negativas. Como pueden ser borrar, descartar o eliminar. A continuación también figura su versión <strong>disabled</strong>.</p>
 									<button class="btn btn-danger">button</button>
 									<button class="btn btn-danger disabled">button</button>
 								</div>
@@ -704,54 +653,48 @@
 					<div class="card">
 						<div class="card-header">
 							<div class="card-title">
-								<h3>Iconos Acciones</h3>
+								<h3>Controls</h3>
 							</div>
 						</div>
 						<div class="card-body">
-							<div class="ui-jqgrid-jquery-ui">
-								
-							
-							<div class="col-lg-3">
-							<p><span class="btn-acciones fa fa-eye"></span>Ver</p>
-							</div>
-
-							<div class="col-lg-3">
-							<p><span class="btn-acciones fa fa-pencil"></span>Editar</p>
-							</div>
-
-							<div class="col-lg-3">
-							<p><span class="btn-acciones fa fa-clone"></span>Duplicar</p>
-							</div>
+							<div class="controls">
+								<div class="checkbox">
+									<h5>Checkbox</h5>
+									<p>Checkbox<span>*</span></p>
+									<input type="checkbox" class="custom-checkbox" name="check-a" id="checkbox-example-1">
+									<label for="checkbox-example-1">Option 1</label>
 									
-							<div class="col-lg-3">
-							<p><span class="btn-acciones fa fa-close"></span>Cancelar</p>
-							</div>
-
-							<div class="col-lg-3">
-							<p><span class="btn-acciones fa fa-plus"></span>Agregar</p>
-							</div>	
-
-							<div class="col-lg-3">
-							<p><span class="btn-acciones fa fa-arrow-down"></span>Descargar</p>
-							</div>	
+									<input type="checkbox" class="custom-checkbox" name="check-b" id="checkbox-example-2">
+									<label for="checkbox-example-2">Option 2</label>
 									
-							<div class="col-lg-3">
-							<p><span class="btn-acciones fa fa-trash"></span>Eliminar</p>
+									<input type="checkbox" class="custom-checkbox" name="check-c" id="checkbox-example-3">
+									<label for="checkbox-example-3">Option 3</label>
+									<span>This is a help text</span>
+								</div>
+
+								<div class="radio-button">
+									<h5>Radio Button</h5>
+									<p>Radio Button<span>*</span></p>
+									<div class="radio">
+										<input type="radio" id="radio-1" name="radio-a">
+										<label for="radio-1" class="radio-label">Option 1</label>
+									</div>
+									
+									<div class="radio">
+										<input type="radio" id="radio-2" name="radio-a">
+										<label for="radio-2" class="radio-label">Option 2</label>
+									</div>
+									
+									<div class="radio">
+										<input type="radio" id="radio-3" name="radio-a">
+										<label for="radio-3" class="radio-label">Option 3</label>
+									</div>
+									<span>This is a help test</span>
+								</div>
 							</div>
-
-															
-							</div>		
-								
-								
-
-							
 						</div>
 					</div>
 				</div>
-
-
-
-
 			</div>
 		</div>
 	</main>
@@ -782,12 +725,7 @@
                             allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
                         }
                     }
-                ],
-                callbacks: {
-                    onSubmitted: function () {
-                        $("#contrato-SAP-upload").find(".empty-message").hide();
-                    }
-                }
+                ]
             });
         });
         </script>
