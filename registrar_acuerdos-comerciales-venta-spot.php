@@ -58,6 +58,14 @@
 											</div>
 										</div>
 									</div>
+<<<<<<< HEAD
+=======
+																		
+									
+								
+									
+									
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 								</div>
 								<div class="col-lg-6">
 									<div class="row">
@@ -89,6 +97,7 @@
 														</div>
 														<div class="col-lg-5">
 															<div class="input-group">
+<<<<<<< HEAD
 																<button class="btn btn-ghost-neutral">Verificar Crédito</button>
 															</div>
 														</div>
@@ -191,6 +200,9 @@
 														<div class="col-lg-5">
 															<div class="input-group">
 																<button class="btn btn-primary">Verificar Crédito</button>
+=======
+																<button class="btn btn-ghost-primary">Verificar Crédito</button>
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 															</div>
 														</div>
 													</div>
@@ -207,6 +219,7 @@
 												</div>
 											</div>
 										</div>
+<<<<<<< HEAD
 										<div class="r-cost-coa hidden">
 									        <!-- Cuando la condición crediticia no coincide, aplicar el siguiente div -->
 									        <div class="remark remark-warning">
@@ -217,13 +230,34 @@
 									        <div class="remark remark-warning">
 												<p><span class="fa fa-exclamation"></span>NO ES NECESARIO CONTAR CON NINGUNA</p>
 											</div>
+=======
+
+
+										
+										<div class="r-cost-coa hidden">
+											        <!-- Cuando la condición crediticia no coincide, aplicar el siguiente div -->
+											        <div class="remark remark-warning">
+														<p><span class="fa fa-exclamation"></span>NECESITA UNA CARTA DE CRÉDITO / PCG</p>
+													</div>
+
+													<!-- Cuando la condición crediticia si coincide, aplicar el siguiente div -->
+											        <div class="remark remark-warning">
+														<p><span class="fa fa-exclamation"></span>NO ES NECESARIO CONTAR CON NINGUNA</p>
+													</div>
+
+
+											
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 										</div>
 									</div>
 								</div>	
 							</div>
 						</div>
 					</div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 					<div class="col-lg-12">
 						<div class="final-buttons">
 							<button class="btn btn-primary">REGISTRAR CONTRATO</button>
@@ -231,7 +265,10 @@
 						</div>
 					</div>
 				</div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 			</div>
 		</main>
 		<?php include 'footer.php';?>

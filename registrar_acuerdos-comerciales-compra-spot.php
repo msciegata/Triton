@@ -347,6 +347,7 @@
 													<div class="laytime margin-top-30">
 														<ul class="nav nav-tabs" id="laytime-tab" role="tablist">
 															<li role="presentation" class="tab active">
+<<<<<<< HEAD
 																<a href="#f-fija" data-toggle="tab" aria-controls="f-fija">Fecha fija</a>
 															</li>
 															<li role="presentation" class="tab">
@@ -355,6 +356,16 @@
 														</ul>
 														<div class="tab-content">
 															<div role="tabpanel" class="tab-pane f-fija active" id="f-fija">
+=======
+																<a href="#pago" data-toggle="tab" aria-controls="pago">Fecha fija</a>
+															</li>
+															<li role="presentation" class="tab">
+																<a href="#calculada" data-toggle="tab" aria-controls="calculada">Fecha asociada a un evento</a>
+															</li>
+														</ul>
+														<div class="tab-content">
+															<div role="tabpanel" class="tab-pane pago active" id="pago">
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 																<div class="col-lg-12">
 																	<div class="input-group">
 																		<input id="fecha-cierre" class="input-date datapicker-here" type="text" required name="fecha-cierre">
@@ -363,7 +374,11 @@
 																	</div>
 																</div>
 															</div>
+<<<<<<< HEAD
 															<div role="tabpanel" class="tab-pane f-asociada" id="f-asociada">
+=======
+															<div role="tabpanel" class="tab-pane calculada" id="calculada">
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 																<div class="input-group">
 														<select id="armador" name="armador" required>
 															<option value="" selected>Seleccione</option>
@@ -614,6 +629,7 @@
 											</div>
 										</div>
 									</div>
+<<<<<<< HEAD
 									<div class="row">
 											<div class="col-lg-12">
 												<div class="laytime">
@@ -707,6 +723,8 @@
 												</div>
 											</div>
 									</div>
+=======
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 								</div>
 
 

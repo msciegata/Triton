@@ -130,7 +130,11 @@ header {
 
 			p {
 				font-family: 'Open Sans Light';
+<<<<<<< HEAD
 				margin-right: 10px;
+=======
+				margin-right: 10px; 
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 				padding: 10px 0 0 0; 
 			}
 
@@ -255,6 +259,7 @@ h5 {
 		color:$orange;
 	}
 }
+
 
 /* Color Text */
 .text-darkGray {
@@ -831,12 +836,20 @@ h5 {
 
 
 	.icono-accion {
+<<<<<<< HEAD
 		display:inline-block;
+=======
+				display:inline-block;
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 		background-color:$white;
 		padding: 25px 20px 30px;
 		margin-bottom:30px;
 		width: 100%;
+<<<<<<< HEAD
 		}
+=======
+			    }
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 
 			    
 
@@ -868,6 +881,9 @@ h5 {
 			color:$mediumGray;
 			margin-bottom: 15px;
 		}
+
+
+		
 
 		.add {
 				display: inline-block;
@@ -1130,10 +1146,17 @@ p {
 		border:1px solid $darkGray;
 
 		span {
+<<<<<<< HEAD
 			font-size: 13px;
 			color:$white;
 			background-color:$darkGray;
 			padding:6px 7px 6px 7px;
+=======
+			font-size: 12px;
+			color:$white;
+			background-color:$darkGray;
+			padding:6px 6px 6px;
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 			border-radius:20px;
 			margin-right: 10px;
 		}
@@ -1236,6 +1259,8 @@ p {
 		width: 80%;
 		color:$lightBlack;
 
+
+
 		strong {
 			display: block;
 			font-family: 'Open Sans Bold';
@@ -1295,6 +1320,39 @@ p {
 		}
 	}
 }
+
+
+
+
+
+// Condicion Crediticia
+.c_crediticia {
+	display:block;
+	width:100%;
+	font-size:14px;
+	margin:15px 0 10px;
+	padding:15px 15px 0 15px;
+	border-radius:0;
+	border:1px solid $mediumGreen;
+	background-color: $lightGreen;
+	font-family: 'Open Sans Bold';
+	color:$negro;
+
+	p {
+		width: 100%;
+		color:$negro;
+
+		strong {
+			display: block;
+			font-family: 'Open Sans Bold';
+			color:$negro;
+		}
+	}
+}
+
+
+
+
 
 //Tags
 .tag {
@@ -1381,18 +1439,18 @@ input::-ms-clear{
   			.select2-selection__rendered {
   				padding-left:0px;
   				font-size: 16px;
-  				font-family: 'Open Sans Regular';
-                                color: $transparent;
-                                transition:color 0.3s;
-                                -moz-transition:color 0.3s;
-                                -webkit-transition:color 0.3s;
+  				font-family: 'Open Sans Regular'; 
   			}
 	  	}
   	}
 
 	.select2-container--default {
         position: inherit;
+<<<<<<< HEAD
         margin-top: 14px;
+=======
+        margin-top: 14px; 
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 
 		.select2-search--dropdown {
 			input.select2-search__field {
@@ -1433,14 +1491,14 @@ input::-ms-clear{
 		.select2-selection--single {
 			border-radius: 0;
 	        border: none;
-	        border-bottom: 0.5px solid $darkGray;
+	        border-bottom: 0.5px solid $mediumGray;
 	        background-color: transparent;
 
 	        .select2-selection__arrow {
 	        	width: 10px;
 
 	        	b {
-	        		border-color:$darkGray transparent transparent transparent;
+	        		border-color:$mediumGray transparent transparent transparent;
 	        	}
 	        }
 
@@ -1449,23 +1507,8 @@ input::-ms-clear{
 			}
 		}
 	}
-        
-        select {
-            &.mostrar {
-                & + .select2-container .select2-selection--single .select2-selection__rendered {
-                    color:$black;
-                }
-                &:disabled + span .select2-selection__rendered {
-                    color:$mediumGray !important;
-                }
-            }
-            &:disabled + span  .select2-selection__arrow b {
-                border-color:$mediumGray transparent transparent transparent !important;
-            }
-        }
 
     select {
-        text-indent: -1px;
     	-webkit-appearance: none;
   		-moz-appearance: none;
   		-ms-appearance: none;
@@ -1490,13 +1533,6 @@ input::-ms-clear{
   		option {
   			color:$darkGray;
   		}
-                
-                &:disabled {
-                    background-image:
-                        linear-gradient(45deg, transparent 50%, $mediumGray 50%),
-                        linear-gradient(135deg, $mediumGray 50%, transparent 50%),
-                        linear-gradient(to right, transparent, transparent) !important;
-                }
     }
 
 	input, select, textarea, .label-campo {
@@ -1526,8 +1562,8 @@ input::-ms-clear{
 			border-bottom:1px solid $azulYPF;
 		}
 
-		@at-root .input-group select:disabled + span .select2-selection--single, &:disabled {
-			border-bottom:0.5px solid $mediumGray !important;
+		&:disabled {
+			border-bottom:0.5px solid $mediumGray;
 
 			~ span.fa {
 				color:$mediumGray;
@@ -1561,7 +1597,20 @@ input::-ms-clear{
 			height: auto;
 		}
 	}
-	
+        
+        select + span .select2-selection__rendered {
+            color: $transparent !important;
+            transition:color 0.3s;
+            -moz-transition:color 0.3s;
+            -webkit-transition:color 0.3s;
+        }
+        select.mostrar + span .select2-selection__rendered {
+            color: $mediumGray !important;
+        }
+        select {
+            text-indent: -2px;
+        }
+        
     .label-campo {
         padding-top: 0px;
     }
@@ -1613,21 +1662,12 @@ input::-ms-clear{
 			color: $white;
 		}
 
-                .select2-selection--single {
-                    background-color:$lightCyan;
-                    border-bottom:2px solid $cyan;
-                }
-                
-                select.mostrar + .select2-container .select2-selection--single .select2-selection__rendered,
-                input.mostrar, select.mostrar, textarea.mostrar, .label-campo, input:focus, select:focus, textarea:focus, {
-                    color:$white;
-                }
-                
 		input, 
 		select, 
 		textarea, 
 		.label-campo {
 			border-radius:0;
+			color: $white;
 			font-family: 'Open Sans Regular';
 			font-size:16px;
 			padding:15px 5px 5px;
@@ -1729,10 +1769,11 @@ input::-ms-clear{
 	    	color:$green;
 	    }
 
-		.select2-selection--single, input, select, textarea {
+		input {
 			border-bottom:0.5px solid $green;
 	
-			&:focus ~ label, {
+			&:focus ~ label,
+			&:valid ~ label, {
 				margin-top:25px;
 				top:-30px;
 				font-size:14px;
@@ -1744,7 +1785,7 @@ input::-ms-clear{
 			}
 		}
 
-		label, label.label-arriba {
+		label {
 			color:$green;
 			font-family:'Open Sans Light';
 
@@ -1756,17 +1797,6 @@ input::-ms-clear{
 		p {
 			display:none;
 		}
-                
-                .select2-selection__arrow b {
-                    border-color:$green transparent transparent transparent !important;
-                }
-                
-                select {
-                    background-image:
-                        linear-gradient(45deg, transparent 50%, $green 50%),
-                        linear-gradient(135deg, $green 50%, transparent 50%),
-                        linear-gradient(to right, transparent, transparent);
-                }
 	}
 
 	&.error {
@@ -1776,10 +1806,11 @@ input::-ms-clear{
 	    	font-size: 18px;
 	    }
 
-		.select2-selection--single, input, select, textarea {
+		input {
 			border-bottom:0.5px solid $purple;
 	
-			&:focus ~ label {
+			&:focus ~ label,
+			&:valid ~ label, {
 				margin-top:25px;
 				top:-30px;
 				font-size:14px;
@@ -1792,7 +1823,7 @@ input::-ms-clear{
 			}
 		}
 
-		label, label.label-arriba {
+		label {
 			color:$purple;
 			font-family:'Open Sans Light';
 
@@ -1805,17 +1836,6 @@ input::-ms-clear{
 			color:$purple;
 			display:block;
 		}
-                
-                .select2-selection__arrow b {
-                    border-color:$purple transparent transparent transparent !important;
-                }
-                
-                select {
-                    background-image:
-                        linear-gradient(45deg, transparent 50%, $purple 50%),
-                        linear-gradient(135deg, $purple 50%, transparent 50%),
-                        linear-gradient(to right, transparent, transparent);
-                }
 	}
 
 	&.warning {
@@ -1824,10 +1844,11 @@ input::-ms-clear{
 	    	color:$orange;
 	    }
 
-		.select2-selection--single, input, select, textarea {
+		input {
 			border-bottom:0.5px solid $orange;
 	
-			&:focus ~ label {
+			&:focus ~ label,
+			&:valid ~ label, {
 				margin-top:25px;
 				top:-30px;
 				font-size:14px;
@@ -1840,7 +1861,7 @@ input::-ms-clear{
 			}
 		}
 
-		label, label.label-arriba {
+		label {
 			color:$orange;
 			font-family:'Open Sans Light';
 
@@ -1853,17 +1874,6 @@ input::-ms-clear{
 			color:$orange;
 			display:block;
 		}
-                
-                .select2-selection__arrow b {
-                    border-color:$orange transparent transparent transparent !important;
-                }
-                
-                select {
-                    background-image:
-                        linear-gradient(45deg, transparent 50%, $orange 50%),
-                        linear-gradient(135deg, $orange 50%, transparent 50%),
-                        linear-gradient(to right, transparent, transparent);
-                }
 	}
 }
 
@@ -2050,7 +2060,11 @@ input::-ms-clear{
 .filtro-radio-button p{
 	color:$darkGray;
 	font-family:'Open Sans';
+<<<<<<< HEAD
 	font-size:16px;
+=======
+	font-size:16px !important;
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 }
 
 
@@ -2085,12 +2099,14 @@ input::-ms-clear{
 
 .radio-button {
 	display: inline-block;
-	margin: 20px 0 20px;
+	margin: 0px 0 20px;
     height: 49px;
 
 	div:first-of-type {
 		margin-left:0;
 	}
+ 
+    
 
 	p {
 		margin-bottom:0 !important; 
@@ -2419,6 +2435,7 @@ input::-ms-clear{
 		&.pago {
 			height: 82px;
 		}
+<<<<<<< HEAD
 
 		&.f-fija {
 			height: 82px;
@@ -2435,8 +2452,11 @@ input::-ms-clear{
 		&.h-demora {
 			height: 112px;
 		}
+=======
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
 	}
 }
+
 
 //Modal
 .modal-backdrop {
@@ -2576,3 +2596,31 @@ footer {
 
 
 
+<<<<<<< HEAD
+=======
+//Separador-Productos
+.separador-productos { 
+	background: $mediumCyan;
+    margin-top: 0px;
+    padding: 15px 10px 0 10px;
+
+    h3 {
+			font-size: 18px;
+			color:$white; 
+			padding: 0px;
+		}
+
+	.numero {
+			font-size: 18px;
+			color:$mediumGray;
+			vertical-align: bottom;
+		}	
+
+	.eliminar {
+			font-size: 16px;
+			color:$mediumGray;
+			vertical-align: bottom;
+		}	
+
+}
+>>>>>>> 036fdb60d9fdfd338556958ee5889038df60094d
